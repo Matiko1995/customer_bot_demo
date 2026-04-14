@@ -3,41 +3,41 @@ import { Server } from 'node:http';
 import { resolve, dirname, join, extname, basename } from 'node:path';
 import nodeCrypto, { createHash, randomInt } from 'node:crypto';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, createError, getHeader, setHeader, getMethod, getQuery as getQuery$1, readBody, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getResponseStatus, getRouterParam, getCookie, setCookie, deleteCookie, getResponseStatusText } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/h3/dist/index.mjs';
-import { escapeHtml } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/@vue/shared/dist/shared.cjs.js';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, createError, getHeader, setHeader, getMethod, getQuery as getQuery$1, readBody, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getResponseStatus, getRouterParam, getCookie, setCookie, deleteCookie, getResponseStatusText } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/h3/dist/index.mjs';
+import { escapeHtml } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/@vue/shared/dist/shared.cjs.js';
 import { readFile, mkdir, writeFile, readdir } from 'node:fs/promises';
 import { Buffer as Buffer$1 } from 'node:buffer';
-import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/ufo/dist/index.mjs';
-import destr, { destr as destr$1 } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/destr/dist/index.mjs';
-import { renderToString } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/vue/server-renderer/index.mjs';
-import { klona } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/klona/dist/index.mjs';
-import defu, { defuFn } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/defu/dist/defu.mjs';
-import { snakeCase } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/scule/dist/index.mjs';
-import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/unhead/dist/server.mjs';
-import { stringify, uneval } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/devalue/index.js';
-import { isVNode, isRef, toValue } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/vue/index.mjs';
-import { createHooks } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/nitropack/node_modules/hookable/dist/index.mjs';
-import { createFetch, Headers as Headers$1 } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/ofetch/dist/node.mjs';
-import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/node-mock-http/dist/index.mjs';
-import { createStorage as createStorage$1, prefixStorage } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://D:/ai/aifactory_website/customer_bot/node_modules/unstorage/drivers/fs.mjs';
-import { digest } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/ohash/dist/index.mjs';
-import { toRouteMatcher, createRouter } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/radix3/dist/index.mjs';
-import consola, { consola as consola$1 } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/consola/dist/index.mjs';
-import { ErrorParser } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/youch-core/build/index.js';
-import { Youch } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/youch/build/index.js';
-import { SourceMapConsumer } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/source-map/source-map.js';
+import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/ufo/dist/index.mjs';
+import destr, { destr as destr$1 } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/destr/dist/index.mjs';
+import { renderToString } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/vue/server-renderer/index.mjs';
+import { klona } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/klona/dist/index.mjs';
+import defu, { defuFn } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/defu/dist/defu.mjs';
+import { snakeCase } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/scule/dist/index.mjs';
+import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/unhead/dist/server.mjs';
+import { stringify, uneval } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/devalue/index.js';
+import { isVNode, isRef, toValue } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/vue/index.mjs';
+import { createHooks } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/nitropack/node_modules/hookable/dist/index.mjs';
+import { createFetch, Headers as Headers$1 } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/ofetch/dist/node.mjs';
+import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/node-mock-http/dist/index.mjs';
+import { createStorage as createStorage$1, prefixStorage } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/unstorage/drivers/fs.mjs';
+import { digest } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/ohash/dist/index.mjs';
+import { toRouteMatcher, createRouter } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/radix3/dist/index.mjs';
+import consola, { consola as consola$1 } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/consola/dist/index.mjs';
+import { ErrorParser } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/youch-core/build/index.js';
+import { Youch } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/youch/build/index.js';
+import { SourceMapConsumer } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/source-map/source-map.js';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { getContext } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/unctx/dist/index.mjs';
-import { captureRawStackTrace, parseRawStackTrace } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/errx/dist/index.js';
-import _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw from 'file://D:/ai/aifactory_website/customer_bot/node_modules/@nuxt/vite-builder/dist/fix-stacktrace.mjs';
+import { getContext } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/unctx/dist/index.mjs';
+import { captureRawStackTrace, parseRawStackTrace } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/errx/dist/index.js';
+import _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/@nuxt/vite-builder/dist/fix-stacktrace.mjs';
 import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname as dirname$1, resolve as resolve$1 } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/pathe/dist/index.mjs';
-import { walkResolver } from 'file://D:/ai/aifactory_website/customer_bot/node_modules/unhead/dist/utils.mjs';
+import { dirname as dirname$1, resolve as resolve$1 } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/pathe/dist/index.mjs';
+import { walkResolver } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/unhead/dist/utils.mjs';
 
-const serverAssets = [{"baseName":"server","dir":"D:/ai/aifactory_website/customer_bot/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"D:/ai/aifactory_website/customer_bot_demo/server/assets"}];
 
 const assets$1 = createStorage$1();
 
@@ -49,11 +49,11 @@ const storage = createStorage$1({});
 
 storage.mount('/assets', assets$1);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:/ai/aifactory_website/customer_bot","watchOptions":{"ignored":[null]}}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:/ai/aifactory_website/customer_bot/server","watchOptions":{"ignored":[null]}}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:/ai/aifactory_website/customer_bot/.nuxt"}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:/ai/aifactory_website/customer_bot/.nuxt/cache"}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"D:/ai/aifactory_website/customer_bot/.data/kv"}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:/ai/aifactory_website/customer_bot_demo","watchOptions":{"ignored":[null]}}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:/ai/aifactory_website/customer_bot_demo/server","watchOptions":{"ignored":[null]}}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:/ai/aifactory_website/customer_bot_demo/.nuxt"}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:/ai/aifactory_website/customer_bot_demo/.nuxt/cache"}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"D:/ai/aifactory_website/customer_bot_demo/.data/kv"}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -2020,7 +2020,7 @@ async function errorHandler(error, event) {
   // H3 will handle fallback
 }
 
-const rootDir = "D:/ai/aifactory_website/customer_bot";
+const rootDir = "D:/ai/aifactory_website/customer_bot_demo";
 
 const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
 
@@ -2049,7 +2049,7 @@ const asyncContext = getContext("nuxt-dev", {
 	asyncContext: true,
 	AsyncLocalStorage
 });
-const _8u4YFeAt_fLTgOoFQaol9xdDrwe2aRzgnFZecKUDs7U = (nitroApp) => {
+const _tcIlYJgp0_7bEStgvoLd96EBJe6W7ZCs0qqLvkzZkE = (nitroApp) => {
 	const handler = nitroApp.h3App.handler;
 	nitroApp.h3App.handler = (event) => {
 		return asyncContext.callAsync({
@@ -2123,7 +2123,7 @@ function onConsoleLog(callback) {
 }
 
 const plugins = [
-  _8u4YFeAt_fLTgOoFQaol9xdDrwe2aRzgnFZecKUDs7U,
+  _tcIlYJgp0_7bEStgvoLd96EBJe6W7ZCs0qqLvkzZkE,
 _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw
 ];
 
@@ -2152,7 +2152,7 @@ function getAsset (id) {
 
 const METHODS = /* @__PURE__ */ new Set(["HEAD", "GET"]);
 const EncodingMap = { gzip: ".gz", br: ".br" };
-const _3xqaAl = eventHandler((event) => {
+const _bQgATO = eventHandler((event) => {
   if (event.method && !METHODS.has(event.method)) {
     return;
   }
@@ -2227,7 +2227,7 @@ function resolveAllowedOrigins() {
         .map((item) => normalizeOrigin(item))
         .filter(Boolean);
 }
-const _Z4ewqf = defineEventHandler((event) => {
+const _UIslGc = defineEventHandler((event) => {
     const requestOrigin = typeof getHeader(event, 'origin') === 'string' ? normalizeOrigin(String(getHeader(event, 'origin'))) : '';
     const allowedOrigins = resolveAllowedOrigins();
     const allowOrigin = requestOrigin && allowedOrigins.includes(requestOrigin) ? requestOrigin : allowedOrigins[0] || '*';
@@ -2318,9 +2318,9 @@ function publicAssetsURL(...path) {
 const APP_ROOT_OPEN_TAG = `<${appRootTag}${propsToString(appRootAttrs)}>`;
 const APP_ROOT_CLOSE_TAG = `</${appRootTag}>`;
 // @ts-expect-error file will be produced after app build
-const getServerEntry = () => import('file://D:/ai/aifactory_website/customer_bot/.nuxt//dist/server/server.mjs').then((r) => r.default || r);
+const getServerEntry = () => import('file://D:/ai/aifactory_website/customer_bot_demo/.nuxt//dist/server/server.mjs').then((r) => r.default || r);
 // @ts-expect-error file will be produced after app build
-const getClientManifest = () => import('file://D:/ai/aifactory_website/customer_bot/.nuxt//dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getClientManifest = () => import('file://D:/ai/aifactory_website/customer_bot_demo/.nuxt//dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 // -- SSR Renderer --
 const getSSRRenderer = lazyCachedFunction(async () => {
 	// Load server bundle
@@ -2612,92 +2612,92 @@ async function getIslandContext(event) {
 	};
 }
 
-const _lazy_yz4J0s = () => Promise.resolve().then(function () { return billing_get$1; });
-const _lazy_D_dIyv = () => Promise.resolve().then(function () { return chats_get$3; });
-const _lazy_OR1GYX = () => Promise.resolve().then(function () { return contentStats_get$1; });
-const _lazy_VS3RNi = () => Promise.resolve().then(function () { return leads_get$3; });
-const _lazy_ok8EwH = () => Promise.resolve().then(function () { return login_post$3; });
-const _lazy_VfduKW = () => Promise.resolve().then(function () { return overview_get$3; });
-const _lazy_Ysthk9 = () => Promise.resolve().then(function () { return tenants_get$1; });
-const _lazy_kJia_0 = () => Promise.resolve().then(function () { return tenants_post$1; });
-const _lazy_Vs_Bg5 = () => Promise.resolve().then(function () { return _tenantId__delete$1; });
-const _lazy_v8h6Cp = () => Promise.resolve().then(function () { return _tenantId__get$1; });
-const _lazy_ZMGBwg = () => Promise.resolve().then(function () { return _tenantId__put$1; });
-const _lazy_bF7GWq = () => Promise.resolve().then(function () { return agentDocs_get$1; });
-const _lazy_Rtg2qk = () => Promise.resolve().then(function () { return _fileName__put$1; });
-const _lazy_Azo2Rk = () => Promise.resolve().then(function () { return indexStats_get$1; });
-const _lazy_16TMUG = () => Promise.resolve().then(function () { return jobs_get$1; });
-const _lazy_cwFX1F = () => Promise.resolve().then(function () { return retry_post$1; });
-const _lazy_A6kv_M = () => Promise.resolve().then(function () { return reindex_post$1; });
-const _lazy_3on3Pw = () => Promise.resolve().then(function () { return resetCode_post$3; });
-const _lazy_RbTA88 = () => Promise.resolve().then(function () { return restore_post$1; });
-const _lazy_9mBMsE = () => Promise.resolve().then(function () { return sources_get$1; });
-const _lazy_zJHExf = () => Promise.resolve().then(function () { return sources_post$1; });
-const _lazy_u2fCqk = () => Promise.resolve().then(function () { return _sourceId__delete$1; });
-const _lazy_8HDzUf = () => Promise.resolve().then(function () { return _sourceId__put$1; });
-const _lazy_noAUVL = () => Promise.resolve().then(function () { return sync_post$1; });
-const _lazy_U7ZBZZ = () => Promise.resolve().then(function () { return upload_post$1; });
-const _lazy_UidVOf = () => Promise.resolve().then(function () { return training_post$1; });
-const _lazy_0YXui6 = () => Promise.resolve().then(function () { return chat_post$1; });
-const _lazy_VCHzWy = () => Promise.resolve().then(function () { return contact_post$1; });
-const _lazy_rjQ2GS = () => Promise.resolve().then(function () { return config_get$1; });
-const _lazy_DWjDR3 = () => Promise.resolve().then(function () { return changePassword_post$1; });
-const _lazy_6GM9bC = () => Promise.resolve().then(function () { return chats_get$1; });
-const _lazy_u2Rm2Q = () => Promise.resolve().then(function () { return leads_get$1; });
-const _lazy_YiteqK = () => Promise.resolve().then(function () { return login_post$1; });
-const _lazy_JVypLi = () => Promise.resolve().then(function () { return logout_post$1; });
-const _lazy_UaYnYf = () => Promise.resolve().then(function () { return me_get$1; });
-const _lazy_w8w4QF = () => Promise.resolve().then(function () { return overview_get$1; });
-const _lazy_R20QsW = () => Promise.resolve().then(function () { return resetCode_post$1; });
-const _lazy_xatDb_ = () => Promise.resolve().then(function () { return resetPassword_post$1; });
-const _lazy_mpdrfE = () => Promise.resolve().then(function () { return customerBot_js_get$1; });
-const _lazy_hTWONt = () => Promise.resolve().then(function () { return renderer; });
+const _lazy_zCMG6_ = () => Promise.resolve().then(function () { return billing_get$1; });
+const _lazy_yJtrwV = () => Promise.resolve().then(function () { return chats_get$3; });
+const _lazy_fg9QA8 = () => Promise.resolve().then(function () { return contentStats_get$1; });
+const _lazy_Y5FZ76 = () => Promise.resolve().then(function () { return leads_get$3; });
+const _lazy_UzC_bt = () => Promise.resolve().then(function () { return login_post$3; });
+const _lazy_aHfqi9 = () => Promise.resolve().then(function () { return overview_get$3; });
+const _lazy_shqxDj = () => Promise.resolve().then(function () { return tenants_get$1; });
+const _lazy_QAkgZ2 = () => Promise.resolve().then(function () { return tenants_post$1; });
+const _lazy_iN5K8g = () => Promise.resolve().then(function () { return _tenantId__delete$1; });
+const _lazy_6o9SsI = () => Promise.resolve().then(function () { return _tenantId__get$1; });
+const _lazy_jj51xj = () => Promise.resolve().then(function () { return _tenantId__put$1; });
+const _lazy_JJBWh0 = () => Promise.resolve().then(function () { return agentDocs_get$1; });
+const _lazy_OMmUQO = () => Promise.resolve().then(function () { return _fileName__put$1; });
+const _lazy_YIkfVC = () => Promise.resolve().then(function () { return indexStats_get$1; });
+const _lazy_mt91xy = () => Promise.resolve().then(function () { return jobs_get$1; });
+const _lazy_s1HqZG = () => Promise.resolve().then(function () { return retry_post$1; });
+const _lazy__qMpfh = () => Promise.resolve().then(function () { return reindex_post$1; });
+const _lazy_iFyi8I = () => Promise.resolve().then(function () { return resetCode_post$3; });
+const _lazy_tufC3L = () => Promise.resolve().then(function () { return restore_post$1; });
+const _lazy_hcNwzm = () => Promise.resolve().then(function () { return sources_get$1; });
+const _lazy_eFyNu7 = () => Promise.resolve().then(function () { return sources_post$1; });
+const _lazy_T57Rh5 = () => Promise.resolve().then(function () { return _sourceId__delete$1; });
+const _lazy_LFJNSm = () => Promise.resolve().then(function () { return _sourceId__put$1; });
+const _lazy_HN6SPN = () => Promise.resolve().then(function () { return sync_post$1; });
+const _lazy_hoKTtc = () => Promise.resolve().then(function () { return upload_post$1; });
+const _lazy_QlKK37 = () => Promise.resolve().then(function () { return training_post$1; });
+const _lazy_9Z5ADJ = () => Promise.resolve().then(function () { return chat_post$1; });
+const _lazy_5HNLbX = () => Promise.resolve().then(function () { return contact_post$1; });
+const _lazy_pTGV3n = () => Promise.resolve().then(function () { return config_get$1; });
+const _lazy_1l3HLY = () => Promise.resolve().then(function () { return changePassword_post$1; });
+const _lazy_LRfp44 = () => Promise.resolve().then(function () { return chats_get$1; });
+const _lazy_ottQ15 = () => Promise.resolve().then(function () { return leads_get$1; });
+const _lazy__sMzzv = () => Promise.resolve().then(function () { return login_post$1; });
+const _lazy_Pdpgv9 = () => Promise.resolve().then(function () { return logout_post$1; });
+const _lazy_7ZNfZk = () => Promise.resolve().then(function () { return me_get$1; });
+const _lazy_AuE0Yi = () => Promise.resolve().then(function () { return overview_get$1; });
+const _lazy_MRfApj = () => Promise.resolve().then(function () { return resetCode_post$1; });
+const _lazy_tK6i1X = () => Promise.resolve().then(function () { return resetPassword_post$1; });
+const _lazy_OiceEe = () => Promise.resolve().then(function () { return customerBot_js_get$1; });
+const _lazy_XHyL97 = () => Promise.resolve().then(function () { return renderer; });
 
 const handlers = [
-  { route: '', handler: _3xqaAl, lazy: false, middleware: true, method: undefined },
-  { route: '', handler: _Z4ewqf, lazy: false, middleware: true, method: undefined },
-  { route: '/api/admin/billing', handler: _lazy_yz4J0s, lazy: true, middleware: false, method: "get" },
-  { route: '/api/admin/chats', handler: _lazy_D_dIyv, lazy: true, middleware: false, method: "get" },
-  { route: '/api/admin/content-stats', handler: _lazy_OR1GYX, lazy: true, middleware: false, method: "get" },
-  { route: '/api/admin/leads', handler: _lazy_VS3RNi, lazy: true, middleware: false, method: "get" },
-  { route: '/api/admin/login', handler: _lazy_ok8EwH, lazy: true, middleware: false, method: "post" },
-  { route: '/api/admin/overview', handler: _lazy_VfduKW, lazy: true, middleware: false, method: "get" },
-  { route: '/api/admin/tenants', handler: _lazy_Ysthk9, lazy: true, middleware: false, method: "get" },
-  { route: '/api/admin/tenants', handler: _lazy_kJia_0, lazy: true, middleware: false, method: "post" },
-  { route: '/api/admin/tenants/:tenantId', handler: _lazy_Vs_Bg5, lazy: true, middleware: false, method: "delete" },
-  { route: '/api/admin/tenants/:tenantId', handler: _lazy_v8h6Cp, lazy: true, middleware: false, method: "get" },
-  { route: '/api/admin/tenants/:tenantId', handler: _lazy_ZMGBwg, lazy: true, middleware: false, method: "put" },
-  { route: '/api/admin/tenants/:tenantId/agent-docs', handler: _lazy_bF7GWq, lazy: true, middleware: false, method: "get" },
-  { route: '/api/admin/tenants/:tenantId/agent-docs/:fileName', handler: _lazy_Rtg2qk, lazy: true, middleware: false, method: "put" },
-  { route: '/api/admin/tenants/:tenantId/index-stats', handler: _lazy_Azo2Rk, lazy: true, middleware: false, method: "get" },
-  { route: '/api/admin/tenants/:tenantId/jobs', handler: _lazy_16TMUG, lazy: true, middleware: false, method: "get" },
-  { route: '/api/admin/tenants/:tenantId/jobs/:jobId/retry', handler: _lazy_cwFX1F, lazy: true, middleware: false, method: "post" },
-  { route: '/api/admin/tenants/:tenantId/jobs/reindex', handler: _lazy_A6kv_M, lazy: true, middleware: false, method: "post" },
-  { route: '/api/admin/tenants/:tenantId/reset-code', handler: _lazy_3on3Pw, lazy: true, middleware: false, method: "post" },
-  { route: '/api/admin/tenants/:tenantId/restore', handler: _lazy_RbTA88, lazy: true, middleware: false, method: "post" },
-  { route: '/api/admin/tenants/:tenantId/sources', handler: _lazy_9mBMsE, lazy: true, middleware: false, method: "get" },
-  { route: '/api/admin/tenants/:tenantId/sources', handler: _lazy_zJHExf, lazy: true, middleware: false, method: "post" },
-  { route: '/api/admin/tenants/:tenantId/sources/:sourceId', handler: _lazy_u2fCqk, lazy: true, middleware: false, method: "delete" },
-  { route: '/api/admin/tenants/:tenantId/sources/:sourceId', handler: _lazy_8HDzUf, lazy: true, middleware: false, method: "put" },
-  { route: '/api/admin/tenants/:tenantId/sources/:sourceId/sync', handler: _lazy_noAUVL, lazy: true, middleware: false, method: "post" },
-  { route: '/api/admin/tenants/:tenantId/sources/:sourceId/upload', handler: _lazy_U7ZBZZ, lazy: true, middleware: false, method: "post" },
-  { route: '/api/admin/tenants/:tenantId/training', handler: _lazy_UidVOf, lazy: true, middleware: false, method: "post" },
-  { route: '/api/chat', handler: _lazy_0YXui6, lazy: true, middleware: false, method: "post" },
-  { route: '/api/contact', handler: _lazy_VCHzWy, lazy: true, middleware: false, method: "post" },
-  { route: '/api/embed/config', handler: _lazy_rjQ2GS, lazy: true, middleware: false, method: "get" },
-  { route: '/api/tenant/change-password', handler: _lazy_DWjDR3, lazy: true, middleware: false, method: "post" },
-  { route: '/api/tenant/chats', handler: _lazy_6GM9bC, lazy: true, middleware: false, method: "get" },
-  { route: '/api/tenant/leads', handler: _lazy_u2Rm2Q, lazy: true, middleware: false, method: "get" },
-  { route: '/api/tenant/login', handler: _lazy_YiteqK, lazy: true, middleware: false, method: "post" },
-  { route: '/api/tenant/logout', handler: _lazy_JVypLi, lazy: true, middleware: false, method: "post" },
-  { route: '/api/tenant/me', handler: _lazy_UaYnYf, lazy: true, middleware: false, method: "get" },
-  { route: '/api/tenant/overview', handler: _lazy_w8w4QF, lazy: true, middleware: false, method: "get" },
-  { route: '/api/tenant/reset-code', handler: _lazy_R20QsW, lazy: true, middleware: false, method: "post" },
-  { route: '/api/tenant/reset-password', handler: _lazy_xatDb_, lazy: true, middleware: false, method: "post" },
-  { route: '/customer-bot.js', handler: _lazy_mpdrfE, lazy: true, middleware: false, method: "get" },
-  { route: '/__nuxt_error', handler: _lazy_hTWONt, lazy: true, middleware: false, method: undefined },
+  { route: '', handler: _bQgATO, lazy: false, middleware: true, method: undefined },
+  { route: '', handler: _UIslGc, lazy: false, middleware: true, method: undefined },
+  { route: '/api/admin/billing', handler: _lazy_zCMG6_, lazy: true, middleware: false, method: "get" },
+  { route: '/api/admin/chats', handler: _lazy_yJtrwV, lazy: true, middleware: false, method: "get" },
+  { route: '/api/admin/content-stats', handler: _lazy_fg9QA8, lazy: true, middleware: false, method: "get" },
+  { route: '/api/admin/leads', handler: _lazy_Y5FZ76, lazy: true, middleware: false, method: "get" },
+  { route: '/api/admin/login', handler: _lazy_UzC_bt, lazy: true, middleware: false, method: "post" },
+  { route: '/api/admin/overview', handler: _lazy_aHfqi9, lazy: true, middleware: false, method: "get" },
+  { route: '/api/admin/tenants', handler: _lazy_shqxDj, lazy: true, middleware: false, method: "get" },
+  { route: '/api/admin/tenants', handler: _lazy_QAkgZ2, lazy: true, middleware: false, method: "post" },
+  { route: '/api/admin/tenants/:tenantId', handler: _lazy_iN5K8g, lazy: true, middleware: false, method: "delete" },
+  { route: '/api/admin/tenants/:tenantId', handler: _lazy_6o9SsI, lazy: true, middleware: false, method: "get" },
+  { route: '/api/admin/tenants/:tenantId', handler: _lazy_jj51xj, lazy: true, middleware: false, method: "put" },
+  { route: '/api/admin/tenants/:tenantId/agent-docs', handler: _lazy_JJBWh0, lazy: true, middleware: false, method: "get" },
+  { route: '/api/admin/tenants/:tenantId/agent-docs/:fileName', handler: _lazy_OMmUQO, lazy: true, middleware: false, method: "put" },
+  { route: '/api/admin/tenants/:tenantId/index-stats', handler: _lazy_YIkfVC, lazy: true, middleware: false, method: "get" },
+  { route: '/api/admin/tenants/:tenantId/jobs', handler: _lazy_mt91xy, lazy: true, middleware: false, method: "get" },
+  { route: '/api/admin/tenants/:tenantId/jobs/:jobId/retry', handler: _lazy_s1HqZG, lazy: true, middleware: false, method: "post" },
+  { route: '/api/admin/tenants/:tenantId/jobs/reindex', handler: _lazy__qMpfh, lazy: true, middleware: false, method: "post" },
+  { route: '/api/admin/tenants/:tenantId/reset-code', handler: _lazy_iFyi8I, lazy: true, middleware: false, method: "post" },
+  { route: '/api/admin/tenants/:tenantId/restore', handler: _lazy_tufC3L, lazy: true, middleware: false, method: "post" },
+  { route: '/api/admin/tenants/:tenantId/sources', handler: _lazy_hcNwzm, lazy: true, middleware: false, method: "get" },
+  { route: '/api/admin/tenants/:tenantId/sources', handler: _lazy_eFyNu7, lazy: true, middleware: false, method: "post" },
+  { route: '/api/admin/tenants/:tenantId/sources/:sourceId', handler: _lazy_T57Rh5, lazy: true, middleware: false, method: "delete" },
+  { route: '/api/admin/tenants/:tenantId/sources/:sourceId', handler: _lazy_LFJNSm, lazy: true, middleware: false, method: "put" },
+  { route: '/api/admin/tenants/:tenantId/sources/:sourceId/sync', handler: _lazy_HN6SPN, lazy: true, middleware: false, method: "post" },
+  { route: '/api/admin/tenants/:tenantId/sources/:sourceId/upload', handler: _lazy_hoKTtc, lazy: true, middleware: false, method: "post" },
+  { route: '/api/admin/tenants/:tenantId/training', handler: _lazy_QlKK37, lazy: true, middleware: false, method: "post" },
+  { route: '/api/chat', handler: _lazy_9Z5ADJ, lazy: true, middleware: false, method: "post" },
+  { route: '/api/contact', handler: _lazy_5HNLbX, lazy: true, middleware: false, method: "post" },
+  { route: '/api/embed/config', handler: _lazy_pTGV3n, lazy: true, middleware: false, method: "get" },
+  { route: '/api/tenant/change-password', handler: _lazy_1l3HLY, lazy: true, middleware: false, method: "post" },
+  { route: '/api/tenant/chats', handler: _lazy_LRfp44, lazy: true, middleware: false, method: "get" },
+  { route: '/api/tenant/leads', handler: _lazy_ottQ15, lazy: true, middleware: false, method: "get" },
+  { route: '/api/tenant/login', handler: _lazy__sMzzv, lazy: true, middleware: false, method: "post" },
+  { route: '/api/tenant/logout', handler: _lazy_Pdpgv9, lazy: true, middleware: false, method: "post" },
+  { route: '/api/tenant/me', handler: _lazy_7ZNfZk, lazy: true, middleware: false, method: "get" },
+  { route: '/api/tenant/overview', handler: _lazy_AuE0Yi, lazy: true, middleware: false, method: "get" },
+  { route: '/api/tenant/reset-code', handler: _lazy_MRfApj, lazy: true, middleware: false, method: "post" },
+  { route: '/api/tenant/reset-password', handler: _lazy_tK6i1X, lazy: true, middleware: false, method: "post" },
+  { route: '/customer-bot.js', handler: _lazy_OiceEe, lazy: true, middleware: false, method: "get" },
+  { route: '/__nuxt_error', handler: _lazy_XHyL97, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: handler$1, lazy: false, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_hTWONt, lazy: true, middleware: false, method: undefined }
+  { route: '/**', handler: _lazy_XHyL97, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {

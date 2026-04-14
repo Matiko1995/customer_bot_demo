@@ -1,1 +1,1 @@
-export { default } from "file:///D:/ai/aifactory_website/customer_bot/node_modules/@nuxt/vite-builder/dist/vite-node-entry.mjs"
+export { default } from "file:///D:/ai/aifactory_website/customer_bot_demo/node_modules/@nuxt/vite-builder/dist/vite-node-entry.mjs"
