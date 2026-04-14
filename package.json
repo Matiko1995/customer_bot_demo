@@ -1,5 +1,5 @@
 {
-  "name": "customer-bot",
+  "name": "customer-bot2",
   "private": true,
   "type": "module",
   "workspaces": [
@@ -8,13 +8,13 @@
   ],
   "scripts": {
     "dev": "npm run app:dev",
-    "build": "npm run app:build",
+    "build": "npm run app:widget:build && npm run app:build",
     "preview": "npm run app:preview",
     "app:dev": "node -r ./scripts/preload-windows-build.cjs ./node_modules/nuxt/bin/nuxt.mjs dev --no-fork --host 127.0.0.1 --port 3203",
     "app:build": "node -r ./scripts/preload-windows-build.cjs ./node_modules/nuxt/bin/nuxt.mjs build",
     "app:preview": "cmd /c \"set HOST=127.0.0.1&& set PORT=3202&& node .output\\server\\index.mjs\"",
     "app:widget:build": "tsup && node scripts/write-widget-version.mjs",
-    "app:bundle": "npm run app:widget:build && npm run app:build && node scripts/archive-build-output.mjs",
+    "app:bundle": "npm run build && node scripts/archive-build-output.mjs",
     "db:migrate": "node --import tsx server/lib/db/run-migrations.ts",
     "data:import:fastener": "node --experimental-strip-types scripts/import-fastener-training-pack.ts",
     "service:tenant-identity": "node --experimental-strip-types services\\tenant-identity-service\\src\\server.ts",
@@ -35,6 +35,7 @@
     "verify:postgres-rag": "node --experimental-strip-types scripts/verify-postgres-rag-repository.ts",
     "verify:pm2-ecosystem": "node --experimental-strip-types scripts/verify-pm2-ecosystem.ts",
     "verify:rag-settings": "node --experimental-strip-types scripts/verify-rag-settings.ts",
+    "verify:release-pipeline": "node --experimental-strip-types scripts/verify-release-pipeline.ts",
     "verify:remote-gateways": "node --experimental-strip-types scripts/verify-remote-gateways.ts",
     "verify:remote-stack": "node --experimental-strip-types scripts/verify-remote-stack-http.ts",
     "verify:service-skeleton": "node --experimental-strip-types scripts/verify-service-skeleton.ts",

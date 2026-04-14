@@ -44,6 +44,12 @@ if [ "$RUN_BUILD" = "1" ]; then
   npm run build
 fi
 
+if [ ! -f "$ROOT_DIR/dist/customer-bot.js" ]; then
+  echo "==> Missing widget artifact: $ROOT_DIR/dist/customer-bot.js"
+  echo "==> Run npm run app:widget:build (or npm run build) before restarting services"
+  exit 1
+fi
+
 if [ -f "$ROOT_DIR/dist/widget-version.json" ]; then
   export CUSTOMER_BOT_WIDGET_VERSION="$(node -e "const fs=require('fs'); const p='$ROOT_DIR/dist/widget-version.json'; const data=JSON.parse(fs.readFileSync(p,'utf8')); process.stdout.write(data.version||'')")"
   echo "==> Widget version: $CUSTOMER_BOT_WIDGET_VERSION"

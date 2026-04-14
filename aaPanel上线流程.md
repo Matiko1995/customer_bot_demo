@@ -148,13 +148,15 @@ EMBED_DELIVERY_SERVICE_URL=https://bot.factory.website/embed
 
 ```bash
 cd /www/wwwroot/bot.factory.website/app
-npm run app:build
+npm run build
 ```
 
 说明：
 
-- 当前默认上线构建入口用 `app:build`
-- `app:bundle` 会额外走 widget 打包链，只有你明确需要重新打包挂件时再使用
+- 当前上线构建入口应该使用 `build`
+- `build` 会同时生成 Nuxt 服务端产物和 `dist/customer-bot.js`
+- `app:build` 只构建 Nuxt 主应用，不适合当前多服务正式发布链路
+- `app:bundle` 会在 `build` 基础上额外归档发布产物
 
 ## 7. PM2 启动
 
@@ -284,7 +286,7 @@ npm run app:dev
 主应用构建：
 
 ```bash
-npm run app:build
+npm run build
 ```
 
 本地整栈：
