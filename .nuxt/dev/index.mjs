@@ -1,42 +1,42 @@
 import process from 'node:process';globalThis._importMeta_={url:import.meta.url,env:process.env};import { tmpdir } from 'node:os';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, createError, getHeader, setHeader, getMethod, getQuery as getQuery$1, readBody, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getResponseStatus, getRouterParam, getCookie, setCookie, deleteCookie, getResponseStatusText } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/h3/dist/index.mjs';
 import { Server } from 'node:http';
 import { resolve, dirname, join } from 'node:path';
 import nodeCrypto, { randomInt, createHash } from 'node:crypto';
 import { parentPort, threadId } from 'node:worker_threads';
-import { escapeHtml } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/@vue/shared/dist/shared.cjs.js';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, createError, getHeader, setHeader, getMethod, getQuery as getQuery$1, readBody, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getResponseStatus, getRouterParam, getCookie, setCookie, deleteCookie, getResponseStatusText } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/h3/dist/index.mjs';
+import { escapeHtml } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/@vue/shared/dist/shared.cjs.js';
 import { readFile, mkdir, writeFile } from 'node:fs/promises';
-import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/ufo/dist/index.mjs';
-import destr, { destr as destr$1 } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/destr/dist/index.mjs';
-import { createHooks } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/nitropack/node_modules/hookable/dist/index.mjs';
-import { createFetch, Headers as Headers$1 } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/ofetch/dist/node.mjs';
-import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/node-mock-http/dist/index.mjs';
-import { createStorage as createStorage$1, prefixStorage } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/unstorage/drivers/fs.mjs';
-import { digest } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/ohash/dist/index.mjs';
-import { klona } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/klona/dist/index.mjs';
-import defu, { defuFn } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/defu/dist/defu.mjs';
-import { snakeCase } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/scule/dist/index.mjs';
-import { getContext } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/unctx/dist/index.mjs';
-import { toRouteMatcher, createRouter } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/radix3/dist/index.mjs';
-import consola, { consola as consola$1 } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/consola/dist/index.mjs';
-import { ErrorParser } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/youch-core/build/index.js';
-import { Youch } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/youch/build/index.js';
-import { SourceMapConsumer } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/source-map/source-map.js';
+import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/ufo/dist/index.mjs';
+import destr, { destr as destr$1 } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/destr/dist/index.mjs';
+import { renderToString } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/vue/server-renderer/index.mjs';
+import { klona } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/klona/dist/index.mjs';
+import defu, { defuFn } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/defu/dist/defu.mjs';
+import { snakeCase } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/scule/dist/index.mjs';
+import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/unhead/dist/server.mjs';
+import { stringify, uneval } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/devalue/index.js';
+import { isVNode, isRef, toValue } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/vue/index.mjs';
+import { createHooks } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/nitropack/node_modules/hookable/dist/index.mjs';
+import { createFetch, Headers as Headers$1 } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/ofetch/dist/node.mjs';
+import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/node-mock-http/dist/index.mjs';
+import { createStorage as createStorage$1, prefixStorage } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/unstorage/drivers/fs.mjs';
+import { digest } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/ohash/dist/index.mjs';
+import { toRouteMatcher, createRouter } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/radix3/dist/index.mjs';
+import consola, { consola as consola$1 } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/consola/dist/index.mjs';
+import { ErrorParser } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/youch-core/build/index.js';
+import { Youch } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/youch/build/index.js';
+import { SourceMapConsumer } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/source-map/source-map.js';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { stringify, uneval } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/devalue/index.js';
-import { captureRawStackTrace, parseRawStackTrace } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/errx/dist/index.js';
-import { isVNode, isRef, toValue } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/vue/index.mjs';
-import _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/@nuxt/vite-builder/dist/fix-stacktrace.mjs';
+import { getContext } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/unctx/dist/index.mjs';
+import { captureRawStackTrace, parseRawStackTrace } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/errx/dist/index.js';
+import _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/@nuxt/vite-builder/dist/fix-stacktrace.mjs';
 import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname as dirname$1, resolve as resolve$1 } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/pathe/dist/index.mjs';
-import { createHead as createHead$1, propsToString, renderSSRHead } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/unhead/dist/server.mjs';
-import { renderToString } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/vue/server-renderer/index.mjs';
-import { walkResolver } from 'file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/node_modules/unhead/dist/utils.mjs';
+import { dirname as dirname$1, resolve as resolve$1 } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/pathe/dist/index.mjs';
+import { walkResolver } from 'file://D:/ai/aifactory_website/customer_bot_demo/node_modules/unhead/dist/utils.mjs';
 
-const serverAssets = [{"baseName":"server","dir":"/Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"D:/ai/aifactory_website/customer_bot_demo/server/assets"}];
 
 const assets$1 = createStorage$1();
 
@@ -48,11 +48,11 @@ const storage = createStorage$1({});
 
 storage.mount('/assets', assets$1);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/matiko/Documents/Webstrom/aifactory_website/customer_bot","watchOptions":{"ignored":[null]}}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/server","watchOptions":{"ignored":[null]}}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/.nuxt"}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/.nuxt/cache"}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/.data/kv"}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:/ai/aifactory_website/customer_bot_demo","watchOptions":{"ignored":[null]}}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:/ai/aifactory_website/customer_bot_demo/server","watchOptions":{"ignored":[null]}}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:/ai/aifactory_website/customer_bot_demo/.nuxt"}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:/ai/aifactory_website/customer_bot_demo/.nuxt/cache"}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"D:/ai/aifactory_website/customer_bot_demo/.data/kv"}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -698,11 +698,6 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
     }
     return void 0;
   }
-});
-
-getContext("nitro-app", {
-  asyncContext: false,
-  AsyncLocalStorage: void 0
 });
 
 const config = useRuntimeConfig();
@@ -2032,13 +2027,13 @@ if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
 window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 `;
 
-const _PLv7xErYKPZRrrkaaxHX0ijhAAz2pW6Rxxi4xlb5Po = (function(nitro) {
+const _BgdwjrEH0XUdvnIw2FcY1RKSZR04e4yQLoT6wtJqcRo = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
-const rootDir = "/Users/matiko/Documents/Webstrom/aifactory_website/customer_bot";
+const rootDir = "D:/ai/aifactory_website/customer_bot_demo";
 
 const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
 
@@ -2067,7 +2062,7 @@ const asyncContext = getContext("nuxt-dev", {
 	asyncContext: true,
 	AsyncLocalStorage
 });
-const _oWcoP6LH8E86g2hnncpibrkZ4hp7Ax6SX8hFjBhSzo = (nitroApp) => {
+const _tcIlYJgp0_7bEStgvoLd96EBJe6W7ZCs0qqLvkzZkE = (nitroApp) => {
 	const handler = nitroApp.h3App.handler;
 	nitroApp.h3App.handler = (event) => {
 		return asyncContext.callAsync({
@@ -2141,27 +2136,12 @@ function onConsoleLog(callback) {
 }
 
 const plugins = [
-  _PLv7xErYKPZRrrkaaxHX0ijhAAz2pW6Rxxi4xlb5Po,
-_oWcoP6LH8E86g2hnncpibrkZ4hp7Ax6SX8hFjBhSzo,
+  _BgdwjrEH0XUdvnIw2FcY1RKSZR04e4yQLoT6wtJqcRo,
+_tcIlYJgp0_7bEStgvoLd96EBJe6W7ZCs0qqLvkzZkE,
 _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw
 ];
 
-const assets = {
-  "/index.mjs": {
-    "type": "text/javascript; charset=utf-8",
-    "etag": "\"32702-0gItflAlkpKXPaHgFM4sL/6vax0\"",
-    "mtime": "2026-03-22T07:56:23.277Z",
-    "size": 206594,
-    "path": "index.mjs"
-  },
-  "/index.mjs.map": {
-    "type": "application/json",
-    "etag": "\"c11b9-tykFxxADxuGL851iwbiNVqYtiVY\"",
-    "mtime": "2026-03-22T07:56:23.280Z",
-    "size": 790969,
-    "path": "index.mjs.map"
-  }
-};
+const assets = {};
 
 function readAsset (id) {
   const serverDir = dirname$1(fileURLToPath(globalThis._importMeta_.url));
@@ -2186,7 +2166,7 @@ function getAsset (id) {
 
 const METHODS = /* @__PURE__ */ new Set(["HEAD", "GET"]);
 const EncodingMap = { gzip: ".gz", br: ".br" };
-const _mpCeFX = eventHandler((event) => {
+const _bQgATO = eventHandler((event) => {
   if (event.method && !METHODS.has(event.method)) {
     return;
   }
@@ -2251,25 +2231,28 @@ const _mpCeFX = eventHandler((event) => {
 });
 
 function normalizeOrigin(origin) {
-  return origin.trim().replace(/\/$/, "");
+    return origin.trim().replace(/\/$/, '');
 }
 function resolveAllowedOrigins() {
-  const defaults = ["https://www.aifactory.website", "https://aifactory.website", "http://localhost:3000"];
-  const raw = process.env.CUSTOMER_BOT_ALLOWED_ORIGINS || defaults.join(",");
-  return raw.split(",").map((item) => normalizeOrigin(item)).filter(Boolean);
+    const defaults = ['https://www.aifactory.website', 'https://aifactory.website', 'http://localhost:3000'];
+    const raw = process.env.CUSTOMER_BOT_ALLOWED_ORIGINS || defaults.join(',');
+    return raw
+        .split(',')
+        .map((item) => normalizeOrigin(item))
+        .filter(Boolean);
 }
-const _xU5C25 = defineEventHandler((event) => {
-  const requestOrigin = typeof getHeader(event, "origin") === "string" ? normalizeOrigin(String(getHeader(event, "origin"))) : "";
-  const allowedOrigins = resolveAllowedOrigins();
-  const allowOrigin = requestOrigin && allowedOrigins.includes(requestOrigin) ? requestOrigin : allowedOrigins[0] || "*";
-  setHeader(event, "Access-Control-Allow-Origin", allowOrigin);
-  setHeader(event, "Vary", "Origin");
-  setHeader(event, "Access-Control-Allow-Methods", "GET, POST, PUT, OPTIONS");
-  setHeader(event, "Access-Control-Allow-Headers", "Content-Type, Authorization");
-  if (getMethod(event) === "OPTIONS") {
-    setResponseStatus(event, 204);
-    return "";
-  }
+const _UIslGc = defineEventHandler((event) => {
+    const requestOrigin = typeof getHeader(event, 'origin') === 'string' ? normalizeOrigin(String(getHeader(event, 'origin'))) : '';
+    const allowedOrigins = resolveAllowedOrigins();
+    const allowOrigin = requestOrigin && allowedOrigins.includes(requestOrigin) ? requestOrigin : allowedOrigins[0] || '*';
+    setHeader(event, 'Access-Control-Allow-Origin', allowOrigin);
+    setHeader(event, 'Vary', 'Origin');
+    setHeader(event, 'Access-Control-Allow-Methods', 'GET, POST, PUT, OPTIONS');
+    setHeader(event, 'Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    if (getMethod(event) === 'OPTIONS') {
+        setResponseStatus(event, 204);
+        return '';
+    }
 });
 
 const VueResolver = (_, value) => {
@@ -2349,9 +2332,9 @@ function publicAssetsURL(...path) {
 const APP_ROOT_OPEN_TAG = `<${appRootTag}${propsToString(appRootAttrs)}>`;
 const APP_ROOT_CLOSE_TAG = `</${appRootTag}>`;
 // @ts-expect-error file will be produced after app build
-const getServerEntry = () => import('file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/.nuxt//dist/server/server.mjs').then((r) => r.default || r);
+const getServerEntry = () => import('file://D:/ai/aifactory_website/customer_bot_demo/.nuxt//dist/server/server.mjs').then((r) => r.default || r);
 // @ts-expect-error file will be produced after app build
-const getClientManifest = () => import('file:///Users/matiko/Documents/Webstrom/aifactory_website/customer_bot/.nuxt//dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getClientManifest = () => import('file://D:/ai/aifactory_website/customer_bot_demo/.nuxt//dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 // -- SSR Renderer --
 const getSSRRenderer = lazyCachedFunction(async () => {
 	// Load server bundle
@@ -2643,68 +2626,68 @@ async function getIslandContext(event) {
 	};
 }
 
-const _lazy_EhxJaW = () => Promise.resolve().then(function () { return billing_get$1; });
-const _lazy_oi_sC1 = () => Promise.resolve().then(function () { return chats_get$3; });
-const _lazy_6nhPJ4 = () => Promise.resolve().then(function () { return contentStats_get$1; });
-const _lazy_o5nctK = () => Promise.resolve().then(function () { return leads_get$3; });
-const _lazy_Emqv9G = () => Promise.resolve().then(function () { return login_post$3; });
-const _lazy_UvtfYx = () => Promise.resolve().then(function () { return overview_get$3; });
-const _lazy__BzXwv = () => Promise.resolve().then(function () { return tenants_get$1; });
-const _lazy_PuhDEH = () => Promise.resolve().then(function () { return tenants_post$1; });
-const _lazy_FSX2Pf = () => Promise.resolve().then(function () { return _tenantId__delete$1; });
-const _lazy_PA639l = () => Promise.resolve().then(function () { return _tenantId__get$1; });
-const _lazy_zleyXh = () => Promise.resolve().then(function () { return _tenantId__put$1; });
-const _lazy_sGz5fh = () => Promise.resolve().then(function () { return resetCode_post$3; });
-const _lazy_EOZgbp = () => Promise.resolve().then(function () { return restore_post$1; });
-const _lazy_O6jNGb = () => Promise.resolve().then(function () { return training_post$1; });
-const _lazy_5ELkyr = () => Promise.resolve().then(function () { return chat_post$1; });
-const _lazy_j1QvCP = () => Promise.resolve().then(function () { return contact_post$1; });
-const _lazy_wpqpyq = () => Promise.resolve().then(function () { return config_get$1; });
-const _lazy_wmzq0a = () => Promise.resolve().then(function () { return changePassword_post$1; });
-const _lazy_bWLaCk = () => Promise.resolve().then(function () { return chats_get$1; });
-const _lazy_GYB2OI = () => Promise.resolve().then(function () { return leads_get$1; });
-const _lazy_gW1IQz = () => Promise.resolve().then(function () { return login_post$1; });
-const _lazy_W8CXmq = () => Promise.resolve().then(function () { return logout_post$1; });
-const _lazy_Ew0F5z = () => Promise.resolve().then(function () { return me_get$1; });
-const _lazy_4cjFwQ = () => Promise.resolve().then(function () { return overview_get$1; });
-const _lazy_i8i6fF = () => Promise.resolve().then(function () { return resetCode_post$1; });
-const _lazy_xIFJSj = () => Promise.resolve().then(function () { return resetPassword_post$1; });
-const _lazy_wZ_Ygp = () => Promise.resolve().then(function () { return customerBot_js_get$1; });
-const _lazy_l29ODy = () => Promise.resolve().then(function () { return renderer; });
+const _lazy_zCMG6_ = () => Promise.resolve().then(function () { return billing_get$1; });
+const _lazy_yJtrwV = () => Promise.resolve().then(function () { return chats_get$3; });
+const _lazy_fg9QA8 = () => Promise.resolve().then(function () { return contentStats_get$1; });
+const _lazy_Y5FZ76 = () => Promise.resolve().then(function () { return leads_get$3; });
+const _lazy_UzC_bt = () => Promise.resolve().then(function () { return login_post$3; });
+const _lazy_aHfqi9 = () => Promise.resolve().then(function () { return overview_get$3; });
+const _lazy_shqxDj = () => Promise.resolve().then(function () { return tenants_get$1; });
+const _lazy_QAkgZ2 = () => Promise.resolve().then(function () { return tenants_post$1; });
+const _lazy_iN5K8g = () => Promise.resolve().then(function () { return _tenantId__delete$1; });
+const _lazy_6o9SsI = () => Promise.resolve().then(function () { return _tenantId__get$1; });
+const _lazy_jj51xj = () => Promise.resolve().then(function () { return _tenantId__put$1; });
+const _lazy_iFyi8I = () => Promise.resolve().then(function () { return resetCode_post$3; });
+const _lazy_tufC3L = () => Promise.resolve().then(function () { return restore_post$1; });
+const _lazy_QlKK37 = () => Promise.resolve().then(function () { return training_post$1; });
+const _lazy_9Z5ADJ = () => Promise.resolve().then(function () { return chat_post$1; });
+const _lazy_5HNLbX = () => Promise.resolve().then(function () { return contact_post$1; });
+const _lazy_pTGV3n = () => Promise.resolve().then(function () { return config_get$1; });
+const _lazy_1l3HLY = () => Promise.resolve().then(function () { return changePassword_post$1; });
+const _lazy_LRfp44 = () => Promise.resolve().then(function () { return chats_get$1; });
+const _lazy_ottQ15 = () => Promise.resolve().then(function () { return leads_get$1; });
+const _lazy__sMzzv = () => Promise.resolve().then(function () { return login_post$1; });
+const _lazy_Pdpgv9 = () => Promise.resolve().then(function () { return logout_post$1; });
+const _lazy_7ZNfZk = () => Promise.resolve().then(function () { return me_get$1; });
+const _lazy_AuE0Yi = () => Promise.resolve().then(function () { return overview_get$1; });
+const _lazy_MRfApj = () => Promise.resolve().then(function () { return resetCode_post$1; });
+const _lazy_tK6i1X = () => Promise.resolve().then(function () { return resetPassword_post$1; });
+const _lazy_OiceEe = () => Promise.resolve().then(function () { return customerBot_js_get$1; });
+const _lazy_XHyL97 = () => Promise.resolve().then(function () { return renderer; });
 
 const handlers = [
-  { route: '', handler: _mpCeFX, lazy: false, middleware: true, method: undefined },
-  { route: '', handler: _xU5C25, lazy: false, middleware: true, method: undefined },
-  { route: '/api/admin/billing', handler: _lazy_EhxJaW, lazy: true, middleware: false, method: "get" },
-  { route: '/api/admin/chats', handler: _lazy_oi_sC1, lazy: true, middleware: false, method: "get" },
-  { route: '/api/admin/content-stats', handler: _lazy_6nhPJ4, lazy: true, middleware: false, method: "get" },
-  { route: '/api/admin/leads', handler: _lazy_o5nctK, lazy: true, middleware: false, method: "get" },
-  { route: '/api/admin/login', handler: _lazy_Emqv9G, lazy: true, middleware: false, method: "post" },
-  { route: '/api/admin/overview', handler: _lazy_UvtfYx, lazy: true, middleware: false, method: "get" },
-  { route: '/api/admin/tenants', handler: _lazy__BzXwv, lazy: true, middleware: false, method: "get" },
-  { route: '/api/admin/tenants', handler: _lazy_PuhDEH, lazy: true, middleware: false, method: "post" },
-  { route: '/api/admin/tenants/:tenantId', handler: _lazy_FSX2Pf, lazy: true, middleware: false, method: "delete" },
-  { route: '/api/admin/tenants/:tenantId', handler: _lazy_PA639l, lazy: true, middleware: false, method: "get" },
-  { route: '/api/admin/tenants/:tenantId', handler: _lazy_zleyXh, lazy: true, middleware: false, method: "put" },
-  { route: '/api/admin/tenants/:tenantId/reset-code', handler: _lazy_sGz5fh, lazy: true, middleware: false, method: "post" },
-  { route: '/api/admin/tenants/:tenantId/restore', handler: _lazy_EOZgbp, lazy: true, middleware: false, method: "post" },
-  { route: '/api/admin/tenants/:tenantId/training', handler: _lazy_O6jNGb, lazy: true, middleware: false, method: "post" },
-  { route: '/api/chat', handler: _lazy_5ELkyr, lazy: true, middleware: false, method: "post" },
-  { route: '/api/contact', handler: _lazy_j1QvCP, lazy: true, middleware: false, method: "post" },
-  { route: '/api/embed/config', handler: _lazy_wpqpyq, lazy: true, middleware: false, method: "get" },
-  { route: '/api/tenant/change-password', handler: _lazy_wmzq0a, lazy: true, middleware: false, method: "post" },
-  { route: '/api/tenant/chats', handler: _lazy_bWLaCk, lazy: true, middleware: false, method: "get" },
-  { route: '/api/tenant/leads', handler: _lazy_GYB2OI, lazy: true, middleware: false, method: "get" },
-  { route: '/api/tenant/login', handler: _lazy_gW1IQz, lazy: true, middleware: false, method: "post" },
-  { route: '/api/tenant/logout', handler: _lazy_W8CXmq, lazy: true, middleware: false, method: "post" },
-  { route: '/api/tenant/me', handler: _lazy_Ew0F5z, lazy: true, middleware: false, method: "get" },
-  { route: '/api/tenant/overview', handler: _lazy_4cjFwQ, lazy: true, middleware: false, method: "get" },
-  { route: '/api/tenant/reset-code', handler: _lazy_i8i6fF, lazy: true, middleware: false, method: "post" },
-  { route: '/api/tenant/reset-password', handler: _lazy_xIFJSj, lazy: true, middleware: false, method: "post" },
-  { route: '/customer-bot.js', handler: _lazy_wZ_Ygp, lazy: true, middleware: false, method: "get" },
-  { route: '/__nuxt_error', handler: _lazy_l29ODy, lazy: true, middleware: false, method: undefined },
+  { route: '', handler: _bQgATO, lazy: false, middleware: true, method: undefined },
+  { route: '', handler: _UIslGc, lazy: false, middleware: true, method: undefined },
+  { route: '/api/admin/billing', handler: _lazy_zCMG6_, lazy: true, middleware: false, method: "get" },
+  { route: '/api/admin/chats', handler: _lazy_yJtrwV, lazy: true, middleware: false, method: "get" },
+  { route: '/api/admin/content-stats', handler: _lazy_fg9QA8, lazy: true, middleware: false, method: "get" },
+  { route: '/api/admin/leads', handler: _lazy_Y5FZ76, lazy: true, middleware: false, method: "get" },
+  { route: '/api/admin/login', handler: _lazy_UzC_bt, lazy: true, middleware: false, method: "post" },
+  { route: '/api/admin/overview', handler: _lazy_aHfqi9, lazy: true, middleware: false, method: "get" },
+  { route: '/api/admin/tenants', handler: _lazy_shqxDj, lazy: true, middleware: false, method: "get" },
+  { route: '/api/admin/tenants', handler: _lazy_QAkgZ2, lazy: true, middleware: false, method: "post" },
+  { route: '/api/admin/tenants/:tenantId', handler: _lazy_iN5K8g, lazy: true, middleware: false, method: "delete" },
+  { route: '/api/admin/tenants/:tenantId', handler: _lazy_6o9SsI, lazy: true, middleware: false, method: "get" },
+  { route: '/api/admin/tenants/:tenantId', handler: _lazy_jj51xj, lazy: true, middleware: false, method: "put" },
+  { route: '/api/admin/tenants/:tenantId/reset-code', handler: _lazy_iFyi8I, lazy: true, middleware: false, method: "post" },
+  { route: '/api/admin/tenants/:tenantId/restore', handler: _lazy_tufC3L, lazy: true, middleware: false, method: "post" },
+  { route: '/api/admin/tenants/:tenantId/training', handler: _lazy_QlKK37, lazy: true, middleware: false, method: "post" },
+  { route: '/api/chat', handler: _lazy_9Z5ADJ, lazy: true, middleware: false, method: "post" },
+  { route: '/api/contact', handler: _lazy_5HNLbX, lazy: true, middleware: false, method: "post" },
+  { route: '/api/embed/config', handler: _lazy_pTGV3n, lazy: true, middleware: false, method: "get" },
+  { route: '/api/tenant/change-password', handler: _lazy_1l3HLY, lazy: true, middleware: false, method: "post" },
+  { route: '/api/tenant/chats', handler: _lazy_LRfp44, lazy: true, middleware: false, method: "get" },
+  { route: '/api/tenant/leads', handler: _lazy_ottQ15, lazy: true, middleware: false, method: "get" },
+  { route: '/api/tenant/login', handler: _lazy__sMzzv, lazy: true, middleware: false, method: "post" },
+  { route: '/api/tenant/logout', handler: _lazy_Pdpgv9, lazy: true, middleware: false, method: "post" },
+  { route: '/api/tenant/me', handler: _lazy_7ZNfZk, lazy: true, middleware: false, method: "get" },
+  { route: '/api/tenant/overview', handler: _lazy_AuE0Yi, lazy: true, middleware: false, method: "get" },
+  { route: '/api/tenant/reset-code', handler: _lazy_MRfApj, lazy: true, middleware: false, method: "post" },
+  { route: '/api/tenant/reset-password', handler: _lazy_tK6i1X, lazy: true, middleware: false, method: "post" },
+  { route: '/customer-bot.js', handler: _lazy_OiceEe, lazy: true, middleware: false, method: "get" },
+  { route: '/__nuxt_error', handler: _lazy_XHyL97, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: handler$1, lazy: false, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_l29ODy, lazy: true, middleware: false, method: undefined }
+  { route: '/**', handler: _lazy_XHyL97, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -3044,458 +3027,458 @@ const styles$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   default: styles
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const ADMIN_COOKIE = "customer_bot_admin";
-const TENANT_COOKIE = "customer_bot_tenant";
+const ADMIN_COOKIE = 'customer_bot_admin';
+const TENANT_COOKIE = 'customer_bot_tenant';
 function getAdminConfig() {
-  return {
-    email: process.env.CUSTOMER_BOT_ADMIN_EMAIL || "admin@example.com",
-    password: process.env.CUSTOMER_BOT_ADMIN_PASSWORD || "admin123456"
-  };
+    return {
+        email: process.env.CUSTOMER_BOT_ADMIN_EMAIL || 'admin@example.com',
+        password: process.env.CUSTOMER_BOT_ADMIN_PASSWORD || 'admin123456'
+    };
 }
 function validateAdminCredentials(email, password) {
-  const config = getAdminConfig();
-  return email === config.email && password === config.password;
+    const config = getAdminConfig();
+    return email === config.email && password === config.password;
 }
 function setAdminSession(event) {
-  setCookie(event, ADMIN_COOKIE, "authenticated", {
-    httpOnly: true,
-    sameSite: "lax",
-    path: "/"
-  });
+    setCookie(event, ADMIN_COOKIE, 'authenticated', {
+        httpOnly: true,
+        sameSite: 'lax',
+        path: '/'
+    });
 }
 function requireAdminSession(event) {
-  const session = getCookie(event, ADMIN_COOKIE);
-  if (session !== "authenticated") {
-    throw createError({
-      statusCode: 401,
-      statusMessage: "Unauthorized"
-    });
-  }
+    const session = getCookie(event, ADMIN_COOKIE);
+    if (session !== 'authenticated') {
+        throw createError({
+            statusCode: 401,
+            statusMessage: 'Unauthorized'
+        });
+    }
 }
 function setTenantSession(event, payload) {
-  setCookie(event, TENANT_COOKIE, JSON.stringify(payload), {
-    httpOnly: true,
-    sameSite: "lax",
-    path: "/"
-  });
+    setCookie(event, TENANT_COOKIE, JSON.stringify(payload), {
+        httpOnly: true,
+        sameSite: 'lax',
+        path: '/'
+    });
 }
 function clearTenantSession(event) {
-  deleteCookie(event, TENANT_COOKIE, {
-    path: "/"
-  });
+    deleteCookie(event, TENANT_COOKIE, {
+        path: '/'
+    });
 }
 function requireTenantSession(event) {
-  const raw = getCookie(event, TENANT_COOKIE);
-  if (!raw) {
-    throw createError({
-      statusCode: 401,
-      statusMessage: "Unauthorized"
-    });
-  }
-  try {
-    const parsed = JSON.parse(raw);
-    if (!parsed.tenantUserId || !parsed.tenantId || !parsed.email) {
-      throw new Error("invalid tenant session");
+    const raw = getCookie(event, TENANT_COOKIE);
+    if (!raw) {
+        throw createError({
+            statusCode: 401,
+            statusMessage: 'Unauthorized'
+        });
     }
-    return parsed;
-  } catch {
-    throw createError({
-      statusCode: 401,
-      statusMessage: "Unauthorized"
-    });
-  }
+    try {
+        const parsed = JSON.parse(raw);
+        if (!parsed.tenantUserId || !parsed.tenantId || !parsed.email) {
+            throw new Error('invalid tenant session');
+        }
+        return parsed;
+    }
+    catch {
+        throw createError({
+            statusCode: 401,
+            statusMessage: 'Unauthorized'
+        });
+    }
 }
 
 const billingPlans = [
-  {
-    id: "plan-basic",
-    name: "\u57FA\u7840\u7248",
-    monthlyFee: "99.00",
-    includedTokens: 5e4,
-    overagePricePerThousandTokens: "1.00",
-    active: true
-  },
-  {
-    id: "plan-standard",
-    name: "\u6807\u51C6\u7248",
-    monthlyFee: "199.00",
-    includedTokens: 1e5,
-    overagePricePerThousandTokens: "0.80",
-    active: true
-  },
-  {
-    id: "plan-pro",
-    name: "\u4E13\u4E1A\u7248",
-    monthlyFee: "399.00",
-    includedTokens: 25e4,
-    overagePricePerThousandTokens: "0.60",
-    active: true
-  }
+    {
+        id: 'plan-basic',
+        name: '基础版',
+        monthlyFee: '99.00',
+        includedTokens: 50000,
+        overagePricePerThousandTokens: '1.00',
+        active: true
+    },
+    {
+        id: 'plan-standard',
+        name: '标准版',
+        monthlyFee: '199.00',
+        includedTokens: 100000,
+        overagePricePerThousandTokens: '0.80',
+        active: true
+    },
+    {
+        id: 'plan-pro',
+        name: '专业版',
+        monthlyFee: '399.00',
+        includedTokens: 250000,
+        overagePricePerThousandTokens: '0.60',
+        active: true
+    }
 ];
 function getBillingPlanById(planId) {
-  var _a;
-  if (!planId) {
-    return null;
-  }
-  return (_a = billingPlans.find((item) => item.id === planId)) != null ? _a : null;
+    var _a;
+    if (!planId) {
+        return null;
+    }
+    return (_a = billingPlans.find((item) => item.id === planId)) !== null && _a !== void 0 ? _a : null;
 }
 
 function getMonthKey(timestamp) {
-  const date = new Date(timestamp);
-  const year = date.getUTCFullYear();
-  const month = String(date.getUTCMonth() + 1).padStart(2, "0");
-  return `${year}-${month}`;
+    const date = new Date(timestamp);
+    const year = date.getUTCFullYear();
+    const month = String(date.getUTCMonth() + 1).padStart(2, '0');
+    return `${year}-${month}`;
 }
 function addMoney(left, right) {
-  return (Number(left) + Number(right)).toFixed(2);
+    return (Number(left) + Number(right)).toFixed(2);
 }
 function multiplyMoney(left, right) {
-  return (Number(left) * right).toFixed(2);
+    return (Number(left) * right).toFixed(2);
 }
 function buildMonthlyBillingSummary(records, plan, subscription) {
-  const grouped = /* @__PURE__ */ new Map();
-  for (const record of records) {
-    if (record.status !== "success") {
-      continue;
+    const grouped = new Map();
+    for (const record of records) {
+        if (record.status !== 'success') {
+            continue;
+        }
+        const month = getMonthKey(record.createdAt);
+        const key = `${record.tenantId}:${month}`;
+        const existing = grouped.get(key);
+        if (existing) {
+            existing.inputTokens += record.inputTokens;
+            existing.outputTokens += record.outputTokens;
+            existing.totalTokens += record.totalTokens;
+            if (!plan || !subscription) {
+                existing.amount = addMoney(existing.amount, record.amount);
+            }
+            continue;
+        }
+        grouped.set(key, {
+            tenantId: record.tenantId,
+            month,
+            inputTokens: record.inputTokens,
+            outputTokens: record.outputTokens,
+            totalTokens: record.totalTokens,
+            includedTokens: 0,
+            billableTokens: 0,
+            baseFee: '0.00',
+            overageFee: '0.00',
+            amount: !plan || !subscription ? Number(record.amount).toFixed(2) : '0.00'
+        });
     }
-    const month = getMonthKey(record.createdAt);
-    const key = `${record.tenantId}:${month}`;
-    const existing = grouped.get(key);
-    if (existing) {
-      existing.inputTokens += record.inputTokens;
-      existing.outputTokens += record.outputTokens;
-      existing.totalTokens += record.totalTokens;
-      if (!plan || !subscription) {
-        existing.amount = addMoney(existing.amount, record.amount);
-      }
-      continue;
+    for (const summary of grouped.values()) {
+        if (!plan || !subscription) {
+            continue;
+        }
+        summary.includedTokens = plan.includedTokens;
+        summary.billableTokens = Math.max(0, summary.totalTokens - plan.includedTokens);
+        summary.baseFee = Number(plan.monthlyFee).toFixed(2);
+        summary.overageFee = multiplyMoney(plan.overagePricePerThousandTokens, summary.billableTokens / 1000);
+        summary.amount = addMoney(summary.baseFee, summary.overageFee);
     }
-    grouped.set(key, {
-      tenantId: record.tenantId,
-      month,
-      inputTokens: record.inputTokens,
-      outputTokens: record.outputTokens,
-      totalTokens: record.totalTokens,
-      includedTokens: 0,
-      billableTokens: 0,
-      baseFee: "0.00",
-      overageFee: "0.00",
-      amount: !plan || !subscription ? Number(record.amount).toFixed(2) : "0.00"
-    });
-  }
-  for (const summary of grouped.values()) {
-    if (!plan || !subscription) {
-      continue;
-    }
-    summary.includedTokens = plan.includedTokens;
-    summary.billableTokens = Math.max(0, summary.totalTokens - plan.includedTokens);
-    summary.baseFee = Number(plan.monthlyFee).toFixed(2);
-    summary.overageFee = multiplyMoney(plan.overagePricePerThousandTokens, summary.billableTokens / 1e3);
-    summary.amount = addMoney(summary.baseFee, summary.overageFee);
-  }
-  return Array.from(grouped.values()).sort((left, right) => left.month.localeCompare(right.month));
+    return Array.from(grouped.values()).sort((left, right) => left.month.localeCompare(right.month));
 }
 function buildBillingCsv(summaries) {
-  const header = [
-    "tenantId",
-    "month",
-    "inputTokens",
-    "outputTokens",
-    "totalTokens",
-    "includedTokens",
-    "billableTokens",
-    "baseFee",
-    "overageFee",
-    "amount"
-  ];
-  const rows = summaries.map(
-    (item) => [
-      item.tenantId,
-      item.month,
-      item.inputTokens,
-      item.outputTokens,
-      item.totalTokens,
-      item.includedTokens,
-      item.billableTokens,
-      item.baseFee,
-      item.overageFee,
-      item.amount
-    ].join(",")
-  );
-  return [header.join(","), ...rows].join("\n");
+    const header = [
+        'tenantId',
+        'month',
+        'inputTokens',
+        'outputTokens',
+        'totalTokens',
+        'includedTokens',
+        'billableTokens',
+        'baseFee',
+        'overageFee',
+        'amount'
+    ];
+    const rows = summaries.map((item) => [
+        item.tenantId,
+        item.month,
+        item.inputTokens,
+        item.outputTokens,
+        item.totalTokens,
+        item.includedTokens,
+        item.billableTokens,
+        item.baseFee,
+        item.overageFee,
+        item.amount
+    ].join(','));
+    return [header.join(','), ...rows].join('\n');
 }
 
-const DEMO_TENANT_ID = "tenant-demo";
+const DEMO_TENANT_ID = 'tenant-demo';
 
 function getStorageFilePath() {
-  return process.env.CUSTOMER_BOT_DATA_FILE || resolve(process.cwd(), ".data/customer-bot-storage.json");
+    return process.env.CUSTOMER_BOT_DATA_FILE || resolve(process.cwd(), '.data/customer-bot-storage.json');
 }
 function createDemoTenant() {
-  const now = Date.now();
-  return {
-    id: DEMO_TENANT_ID,
-    name: "Demo Tenant",
-    status: "active",
-    brandName: "AIFactory Demo Bot",
-    themeColor: "#118ab2",
-    contactPhone: "+86 138-0000-0000",
-    contactEmail: "demo@example.com",
-    contactAddress: "Shanghai",
-    systemPrompt: "\u4F60\u662F AIFactory \u7684 AI \u5BA2\u670D\u6F14\u793A\u52A9\u624B\u3002\u8BF7\u4F18\u5148\u56DE\u7B54\u4EA7\u54C1\u80FD\u529B\u3001\u90E8\u7F72\u65B9\u5F0F\u3001\u62A5\u4EF7\u6D41\u7A0B\uFF0C\u5E76\u4E3B\u52A8\u5F15\u5BFC\u7528\u6237\u7559\u8D44\u3002",
-    embedKey: "embed-demo-tenant",
-    billingSubscription: {
-      planId: "plan-standard",
-      startedAt: now,
-      notes: "demo tenant default plan"
-    },
-    contentConfig: void 0,
-    createdAt: now,
-    updatedAt: now
-  };
+    const now = Date.now();
+    return {
+        id: DEMO_TENANT_ID,
+        name: 'Demo Tenant',
+        status: 'active',
+        brandName: 'AIFactory Demo Bot',
+        themeColor: '#118ab2',
+        contactPhone: '+86 138-0000-0000',
+        contactEmail: 'demo@example.com',
+        contactAddress: 'Shanghai',
+        systemPrompt: '你是 AIFactory 的 AI 客服演示助手。请优先回答产品能力、部署方式、报价流程，并主动引导用户留资。',
+        embedKey: 'embed-demo-tenant',
+        billingSubscription: {
+            planId: 'plan-standard',
+            startedAt: now,
+            notes: 'demo tenant default plan'
+        },
+        contentConfig: undefined,
+        createdAt: now,
+        updatedAt: now
+    };
 }
 
 const cloneRecord = (value) => structuredClone(value);
 const createEmptyState = () => ({
-  tenants: [],
-  sessions: [],
-  messages: [],
-  leads: [],
-  usage: [],
-  tenantUsers: [],
-  tenantPasswordResets: []
+    tenants: [],
+    sessions: [],
+    messages: [],
+    leads: [],
+    usage: [],
+    tenantUsers: [],
+    tenantPasswordResets: []
 });
 const createFileStore = (options) => {
-  let statePromise;
-  let writeQueue = Promise.resolve();
-  async function persist(state) {
-    const nextState = cloneRecord(state);
-    writeQueue = writeQueue.then(async () => {
-      await mkdir(dirname(options.filePath), { recursive: true });
-      await writeFile(options.filePath, JSON.stringify(nextState, null, 2), "utf8");
-    });
-    await writeQueue;
-  }
-  async function loadState() {
-    try {
-      const raw = await readFile(options.filePath, "utf8");
-      const parsed = JSON.parse(raw);
-      return {
-        tenants: Array.isArray(parsed.tenants) ? parsed.tenants.map(cloneRecord) : [],
-        sessions: Array.isArray(parsed.sessions) ? parsed.sessions.map(cloneRecord) : [],
-        messages: Array.isArray(parsed.messages) ? parsed.messages.map(cloneRecord) : [],
-        leads: Array.isArray(parsed.leads) ? parsed.leads.map(cloneRecord) : [],
-        usage: Array.isArray(parsed.usage) ? parsed.usage.map(cloneRecord) : [],
-        tenantUsers: Array.isArray(parsed.tenantUsers) ? parsed.tenantUsers.map(cloneRecord) : [],
-        tenantPasswordResets: Array.isArray(parsed.tenantPasswordResets) ? parsed.tenantPasswordResets.map(cloneRecord) : []
-      };
-    } catch (error) {
-      const maybeError = error;
-      if ((maybeError == null ? void 0 : maybeError.code) !== "ENOENT") {
-        throw error;
-      }
-      return createEmptyState();
+    let statePromise;
+    let writeQueue = Promise.resolve();
+    async function persist(state) {
+        const nextState = cloneRecord(state);
+        writeQueue = writeQueue.then(async () => {
+            await mkdir(dirname(options.filePath), { recursive: true });
+            await writeFile(options.filePath, JSON.stringify(nextState, null, 2), 'utf8');
+        });
+        await writeQueue;
     }
-  }
-  async function ensureState() {
-    if (!statePromise) {
-      statePromise = (async () => {
-        var _a;
-        const state = await loadState();
-        const seedTenants = (_a = options.seedTenants) != null ? _a : [];
-        let changed = false;
-        for (const tenant of seedTenants) {
-          if (!state.tenants.some((item) => item.id === tenant.id)) {
-            state.tenants.push(cloneRecord(tenant));
-            changed = true;
-          }
+    async function loadState() {
+        try {
+            const raw = await readFile(options.filePath, 'utf8');
+            const parsed = JSON.parse(raw);
+            return {
+                tenants: Array.isArray(parsed.tenants) ? parsed.tenants.map(cloneRecord) : [],
+                sessions: Array.isArray(parsed.sessions) ? parsed.sessions.map(cloneRecord) : [],
+                messages: Array.isArray(parsed.messages) ? parsed.messages.map(cloneRecord) : [],
+                leads: Array.isArray(parsed.leads) ? parsed.leads.map(cloneRecord) : [],
+                usage: Array.isArray(parsed.usage) ? parsed.usage.map(cloneRecord) : [],
+                tenantUsers: Array.isArray(parsed.tenantUsers) ? parsed.tenantUsers.map(cloneRecord) : [],
+                tenantPasswordResets: Array.isArray(parsed.tenantPasswordResets) ? parsed.tenantPasswordResets.map(cloneRecord) : []
+            };
         }
-        if (changed) {
-          await persist(state);
+        catch (error) {
+            const maybeError = error;
+            if ((maybeError === null || maybeError === void 0 ? void 0 : maybeError.code) !== 'ENOENT') {
+                throw error;
+            }
+            return createEmptyState();
         }
-        return state;
-      })();
     }
-    return statePromise;
-  }
-  async function updateState(mutator) {
-    const state = await ensureState();
-    await mutator(state);
-    await persist(state);
-  }
-  return {
-    async saveTenant(tenant) {
-      await updateState((state) => {
-        const nextTenant = cloneRecord(tenant);
-        const index = state.tenants.findIndex((item) => item.id === tenant.id);
-        if (index >= 0) {
-          state.tenants[index] = nextTenant;
-          return;
+    async function ensureState() {
+        if (!statePromise) {
+            statePromise = (async () => {
+                var _a;
+                const state = await loadState();
+                const seedTenants = (_a = options.seedTenants) !== null && _a !== void 0 ? _a : [];
+                let changed = false;
+                for (const tenant of seedTenants) {
+                    if (!state.tenants.some((item) => item.id === tenant.id)) {
+                        state.tenants.push(cloneRecord(tenant));
+                        changed = true;
+                    }
+                }
+                if (changed) {
+                    await persist(state);
+                }
+                return state;
+            })();
         }
-        state.tenants.push(nextTenant);
-      });
-    },
-    async getTenantById(tenantId) {
-      const state = await ensureState();
-      const tenant = state.tenants.find((item) => item.id === tenantId);
-      return tenant ? cloneRecord(tenant) : void 0;
-    },
-    async getTenantByEmbedKey(embedKey) {
-      const state = await ensureState();
-      const tenant = state.tenants.find((item) => item.embedKey === embedKey);
-      return tenant ? cloneRecord(tenant) : void 0;
-    },
-    async listTenants() {
-      const state = await ensureState();
-      return state.tenants.map(cloneRecord);
-    },
-    async saveSession(session) {
-      await updateState((state) => {
-        const nextSession = cloneRecord(session);
-        const index = state.sessions.findIndex((item) => item.id === session.id);
-        if (index >= 0) {
-          state.sessions[index] = nextSession;
-          return;
-        }
-        state.sessions.push(nextSession);
-      });
-    },
-    async getSessionById(sessionId) {
-      const state = await ensureState();
-      const session = state.sessions.find((item) => item.id === sessionId);
-      return session ? cloneRecord(session) : void 0;
-    },
-    async listSessionsByTenant(tenantId) {
-      const state = await ensureState();
-      return state.sessions.filter((item) => item.tenantId === tenantId).map(cloneRecord);
-    },
-    async saveMessage(message) {
-      await updateState((state) => {
-        state.messages.push(cloneRecord(message));
-      });
-    },
-    async listMessagesBySession(sessionId) {
-      const state = await ensureState();
-      return state.messages.filter((item) => item.sessionId === sessionId).map(cloneRecord);
-    },
-    async saveLead(lead) {
-      await updateState((state) => {
-        state.leads.push(cloneRecord(lead));
-      });
-    },
-    async listLeadsByTenant(tenantId) {
-      const state = await ensureState();
-      return state.leads.filter((item) => item.tenantId === tenantId).map(cloneRecord);
-    },
-    async saveUsageRecord(record) {
-      await updateState((state) => {
-        state.usage.push(cloneRecord(record));
-      });
-    },
-    async listUsageByTenant(tenantId) {
-      const state = await ensureState();
-      return state.usage.filter((item) => item.tenantId === tenantId).map(cloneRecord);
-    },
-    async saveTenantUser(user) {
-      await updateState((state) => {
-        const nextUser = cloneRecord(user);
-        const index = state.tenantUsers.findIndex((item) => item.id === user.id);
-        if (index >= 0) {
-          state.tenantUsers[index] = nextUser;
-          return;
-        }
-        state.tenantUsers.push(nextUser);
-      });
-    },
-    async getTenantUserByEmail(email) {
-      const state = await ensureState();
-      const normalized = email.trim().toLowerCase();
-      const user = state.tenantUsers.find((item) => item.email.toLowerCase() === normalized);
-      return user ? cloneRecord(user) : void 0;
-    },
-    async getTenantUserById(userId) {
-      const state = await ensureState();
-      const user = state.tenantUsers.find((item) => item.id === userId);
-      return user ? cloneRecord(user) : void 0;
-    },
-    async listTenantUsersByTenant(tenantId) {
-      const state = await ensureState();
-      return state.tenantUsers.filter((item) => item.tenantId === tenantId).map(cloneRecord);
-    },
-    async saveTenantPasswordReset(record) {
-      await updateState((state) => {
-        const nextRecord = cloneRecord(record);
-        const index = state.tenantPasswordResets.findIndex((item) => item.id === record.id);
-        if (index >= 0) {
-          state.tenantPasswordResets[index] = nextRecord;
-          return;
-        }
-        state.tenantPasswordResets.push(nextRecord);
-      });
-    },
-    async getTenantPasswordResetByCode(email, code) {
-      const state = await ensureState();
-      const normalized = email.trim().toLowerCase();
-      const item = state.tenantPasswordResets.find((reset) => reset.email.toLowerCase() === normalized && reset.code === code);
-      return item ? cloneRecord(item) : void 0;
+        return statePromise;
     }
-  };
+    async function updateState(mutator) {
+        const state = await ensureState();
+        await mutator(state);
+        await persist(state);
+    }
+    return {
+        async saveTenant(tenant) {
+            await updateState((state) => {
+                const nextTenant = cloneRecord(tenant);
+                const index = state.tenants.findIndex((item) => item.id === tenant.id);
+                if (index >= 0) {
+                    state.tenants[index] = nextTenant;
+                    return;
+                }
+                state.tenants.push(nextTenant);
+            });
+        },
+        async getTenantById(tenantId) {
+            const state = await ensureState();
+            const tenant = state.tenants.find((item) => item.id === tenantId);
+            return tenant ? cloneRecord(tenant) : undefined;
+        },
+        async getTenantByEmbedKey(embedKey) {
+            const state = await ensureState();
+            const tenant = state.tenants.find((item) => item.embedKey === embedKey);
+            return tenant ? cloneRecord(tenant) : undefined;
+        },
+        async listTenants() {
+            const state = await ensureState();
+            return state.tenants.map(cloneRecord);
+        },
+        async saveSession(session) {
+            await updateState((state) => {
+                const nextSession = cloneRecord(session);
+                const index = state.sessions.findIndex((item) => item.id === session.id);
+                if (index >= 0) {
+                    state.sessions[index] = nextSession;
+                    return;
+                }
+                state.sessions.push(nextSession);
+            });
+        },
+        async getSessionById(sessionId) {
+            const state = await ensureState();
+            const session = state.sessions.find((item) => item.id === sessionId);
+            return session ? cloneRecord(session) : undefined;
+        },
+        async listSessionsByTenant(tenantId) {
+            const state = await ensureState();
+            return state.sessions.filter((item) => item.tenantId === tenantId).map(cloneRecord);
+        },
+        async saveMessage(message) {
+            await updateState((state) => {
+                state.messages.push(cloneRecord(message));
+            });
+        },
+        async listMessagesBySession(sessionId) {
+            const state = await ensureState();
+            return state.messages.filter((item) => item.sessionId === sessionId).map(cloneRecord);
+        },
+        async saveLead(lead) {
+            await updateState((state) => {
+                state.leads.push(cloneRecord(lead));
+            });
+        },
+        async listLeadsByTenant(tenantId) {
+            const state = await ensureState();
+            return state.leads.filter((item) => item.tenantId === tenantId).map(cloneRecord);
+        },
+        async saveUsageRecord(record) {
+            await updateState((state) => {
+                state.usage.push(cloneRecord(record));
+            });
+        },
+        async listUsageByTenant(tenantId) {
+            const state = await ensureState();
+            return state.usage.filter((item) => item.tenantId === tenantId).map(cloneRecord);
+        },
+        async saveTenantUser(user) {
+            await updateState((state) => {
+                const nextUser = cloneRecord(user);
+                const index = state.tenantUsers.findIndex((item) => item.id === user.id);
+                if (index >= 0) {
+                    state.tenantUsers[index] = nextUser;
+                    return;
+                }
+                state.tenantUsers.push(nextUser);
+            });
+        },
+        async getTenantUserByEmail(email) {
+            const state = await ensureState();
+            const normalized = email.trim().toLowerCase();
+            const user = state.tenantUsers.find((item) => item.email.toLowerCase() === normalized);
+            return user ? cloneRecord(user) : undefined;
+        },
+        async getTenantUserById(userId) {
+            const state = await ensureState();
+            const user = state.tenantUsers.find((item) => item.id === userId);
+            return user ? cloneRecord(user) : undefined;
+        },
+        async listTenantUsersByTenant(tenantId) {
+            const state = await ensureState();
+            return state.tenantUsers.filter((item) => item.tenantId === tenantId).map(cloneRecord);
+        },
+        async saveTenantPasswordReset(record) {
+            await updateState((state) => {
+                const nextRecord = cloneRecord(record);
+                const index = state.tenantPasswordResets.findIndex((item) => item.id === record.id);
+                if (index >= 0) {
+                    state.tenantPasswordResets[index] = nextRecord;
+                    return;
+                }
+                state.tenantPasswordResets.push(nextRecord);
+            });
+        },
+        async getTenantPasswordResetByCode(email, code) {
+            const state = await ensureState();
+            const normalized = email.trim().toLowerCase();
+            const item = state.tenantPasswordResets.find((reset) => reset.email.toLowerCase() === normalized && reset.code === code);
+            return item ? cloneRecord(item) : undefined;
+        }
+    };
 };
 
 let singletonStore;
 const createStorage = () => createFileStore({
-  filePath: getStorageFilePath(),
-  seedTenants: [createDemoTenant()]
+    filePath: getStorageFilePath(),
+    seedTenants: [createDemoTenant()]
 });
 const getStorage = () => {
-  if (!singletonStore) {
-    singletonStore = createStorage();
-  }
-  return singletonStore;
+    if (!singletonStore) {
+        singletonStore = createStorage();
+    }
+    return singletonStore;
 };
 
 async function resolveTenant(identifier, storage = getStorage()) {
-  const normalized = identifier.trim();
-  if (!normalized) {
-    return void 0;
-  }
-  const byId = await storage.getTenantById(normalized);
-  if (byId && !byId.deletedAt) {
-    return byId;
-  }
-  const byEmbedKey = await storage.getTenantByEmbedKey(normalized);
-  if (byEmbedKey && !byEmbedKey.deletedAt) {
-    return byEmbedKey;
-  }
-  return void 0;
+    const normalized = identifier.trim();
+    if (!normalized) {
+        return undefined;
+    }
+    const byId = await storage.getTenantById(normalized);
+    if (byId && !byId.deletedAt) {
+        return byId;
+    }
+    const byEmbedKey = await storage.getTenantByEmbedKey(normalized);
+    if (byEmbedKey && !byEmbedKey.deletedAt) {
+        return byEmbedKey;
+    }
+    return undefined;
 }
 
 const billing_get = defineEventHandler(async (event) => {
-  var _a;
-  requireAdminSession(event);
-  const query = getQuery$1(event);
-  const tenantId = typeof query.tenantId === "string" ? String(query.tenantId) : "";
-  if (!tenantId) {
-    throw createError({
-      statusCode: 400,
-      statusMessage: "tenantId is required"
-    });
-  }
-  const storage = getStorage();
-  const tenant = await resolveTenant(tenantId, storage);
-  const usageRecords = await storage.listUsageByTenant(tenantId);
-  const plan = getBillingPlanById((_a = tenant == null ? void 0 : tenant.billingSubscription) == null ? void 0 : _a.planId);
-  const summaries = buildMonthlyBillingSummary(usageRecords, plan, tenant == null ? void 0 : tenant.billingSubscription);
-  if (query.format === "csv") {
-    setHeader(event, "content-type", "text/csv; charset=utf-8");
-    setHeader(event, "content-disposition", `attachment; filename="${tenantId}-billing.csv"`);
-    return buildBillingCsv(summaries);
-  }
-  return {
-    tenant,
-    plan,
-    usageRecords,
-    summaries
-  };
+    var _a;
+    requireAdminSession(event);
+    const query = getQuery$1(event);
+    const tenantId = typeof query.tenantId === 'string' ? String(query.tenantId) : '';
+    if (!tenantId) {
+        throw createError({
+            statusCode: 400,
+            statusMessage: 'tenantId is required'
+        });
+    }
+    const storage = getStorage();
+    const tenant = await resolveTenant(tenantId, storage);
+    const usageRecords = await storage.listUsageByTenant(tenantId);
+    const plan = getBillingPlanById((_a = tenant === null || tenant === void 0 ? void 0 : tenant.billingSubscription) === null || _a === void 0 ? void 0 : _a.planId);
+    const summaries = buildMonthlyBillingSummary(usageRecords, plan, tenant === null || tenant === void 0 ? void 0 : tenant.billingSubscription);
+    if (query.format === 'csv') {
+        setHeader(event, 'content-type', 'text/csv; charset=utf-8');
+        setHeader(event, 'content-disposition', `attachment; filename="${tenantId}-billing.csv"`);
+        return buildBillingCsv(summaries);
+    }
+    return {
+        tenant,
+        plan,
+        usageRecords,
+        summaries
+    };
 });
 
 const billing_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3504,23 +3487,21 @@ const billing_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePrope
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const chats_get$2 = defineEventHandler(async (event) => {
-  requireAdminSession(event);
-  const tenantId = typeof getQuery$1(event).tenantId === "string" ? String(getQuery$1(event).tenantId) : "";
-  if (!tenantId) {
-    throw createError({
-      statusCode: 400,
-      statusMessage: "tenantId is required"
-    });
-  }
-  const storage = getStorage();
-  const sessions = await storage.listSessionsByTenant(tenantId);
-  const items = await Promise.all(
-    sessions.map(async (session) => ({
-      session,
-      messages: await storage.listMessagesBySession(session.id)
-    }))
-  );
-  return { items };
+    requireAdminSession(event);
+    const tenantId = typeof getQuery$1(event).tenantId === 'string' ? String(getQuery$1(event).tenantId) : '';
+    if (!tenantId) {
+        throw createError({
+            statusCode: 400,
+            statusMessage: 'tenantId is required'
+        });
+    }
+    const storage = getStorage();
+    const sessions = await storage.listSessionsByTenant(tenantId);
+    const items = await Promise.all(sessions.map(async (session) => ({
+        session,
+        messages: await storage.listMessagesBySession(session.id)
+    })));
+    return { items };
 });
 
 const chats_get$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3529,40 +3510,40 @@ const chats_get$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePropert
 }, Symbol.toStringTag, { value: 'Module' }));
 
 function aggregateMatchedContentSourceStats(messages) {
-  var _a;
-  const grouped = /* @__PURE__ */ new Map();
-  for (const message of messages) {
-    for (const source of (_a = message.matchedContentSources) != null ? _a : []) {
-      const existing = grouped.get(source.id);
-      if (existing) {
-        existing.hits += 1;
-        continue;
-      }
-      grouped.set(source.id, {
-        ...source,
-        hits: 1
-      });
+    var _a;
+    const grouped = new Map();
+    for (const message of messages) {
+        for (const source of (_a = message.matchedContentSources) !== null && _a !== void 0 ? _a : []) {
+            const existing = grouped.get(source.id);
+            if (existing) {
+                existing.hits += 1;
+                continue;
+            }
+            grouped.set(source.id, {
+                ...source,
+                hits: 1
+            });
+        }
     }
-  }
-  return Array.from(grouped.values()).sort((left, right) => right.hits - left.hits || left.title.localeCompare(right.title, "zh-CN"));
+    return Array.from(grouped.values()).sort((left, right) => right.hits - left.hits || left.title.localeCompare(right.title, 'zh-CN'));
 }
 
 const contentStats_get = defineEventHandler(async (event) => {
-  requireAdminSession(event);
-  const tenantId = typeof getQuery$1(event).tenantId === "string" ? String(getQuery$1(event).tenantId) : "";
-  if (!tenantId) {
-    throw createError({
-      statusCode: 400,
-      statusMessage: "tenantId is required"
-    });
-  }
-  const storage = getStorage();
-  const sessions = await storage.listSessionsByTenant(tenantId);
-  const messageGroups = await Promise.all(sessions.map((session) => storage.listMessagesBySession(session.id)));
-  const messages = messageGroups.flat();
-  return {
-    items: aggregateMatchedContentSourceStats(messages)
-  };
+    requireAdminSession(event);
+    const tenantId = typeof getQuery$1(event).tenantId === 'string' ? String(getQuery$1(event).tenantId) : '';
+    if (!tenantId) {
+        throw createError({
+            statusCode: 400,
+            statusMessage: 'tenantId is required'
+        });
+    }
+    const storage = getStorage();
+    const sessions = await storage.listSessionsByTenant(tenantId);
+    const messageGroups = await Promise.all(sessions.map((session) => storage.listMessagesBySession(session.id)));
+    const messages = messageGroups.flat();
+    return {
+        items: aggregateMatchedContentSourceStats(messages)
+    };
 });
 
 const contentStats_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3571,17 +3552,17 @@ const contentStats_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.define
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const leads_get$2 = defineEventHandler(async (event) => {
-  requireAdminSession(event);
-  const tenantId = typeof getQuery$1(event).tenantId === "string" ? String(getQuery$1(event).tenantId) : "";
-  if (!tenantId) {
-    throw createError({
-      statusCode: 400,
-      statusMessage: "tenantId is required"
-    });
-  }
-  return {
-    items: await getStorage().listLeadsByTenant(tenantId)
-  };
+    requireAdminSession(event);
+    const tenantId = typeof getQuery$1(event).tenantId === 'string' ? String(getQuery$1(event).tenantId) : '';
+    if (!tenantId) {
+        throw createError({
+            statusCode: 400,
+            statusMessage: 'tenantId is required'
+        });
+    }
+    return {
+        items: await getStorage().listLeadsByTenant(tenantId)
+    };
 });
 
 const leads_get$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3590,20 +3571,20 @@ const leads_get$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePropert
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const login_post$2 = defineEventHandler(async (event) => {
-  var _a;
-  const body = await readBody(event);
-  const email = ((_a = body == null ? void 0 : body.email) == null ? void 0 : _a.trim()) || "";
-  const password = (body == null ? void 0 : body.password) || "";
-  if (!validateAdminCredentials(email, password)) {
-    throw createError({
-      statusCode: 401,
-      statusMessage: "Invalid credentials"
-    });
-  }
-  setAdminSession(event);
-  return {
-    ok: true
-  };
+    var _a;
+    const body = await readBody(event);
+    const email = ((_a = body === null || body === void 0 ? void 0 : body.email) === null || _a === void 0 ? void 0 : _a.trim()) || '';
+    const password = (body === null || body === void 0 ? void 0 : body.password) || '';
+    if (!validateAdminCredentials(email, password)) {
+        throw createError({
+            statusCode: 401,
+            statusMessage: 'Invalid credentials'
+        });
+    }
+    setAdminSession(event);
+    return {
+        ok: true
+    };
 });
 
 const login_post$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3612,72 +3593,75 @@ const login_post$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProper
 }, Symbol.toStringTag, { value: 'Module' }));
 
 function buildAdminOverview(input) {
-  const tenantMap = new Map(input.tenants.map((tenant) => [tenant.id, tenant]));
-  const activeHits = Array.from(input.contentStatsByTenant.values()).flat().reduce((sum, item) => sum + item.hits, 0);
-  const recentlyActive = Array.from(
-    new Map(
-      input.sessions.sort((left, right) => right.lastMessageAt - left.lastMessageAt).map((session) => {
+    const tenantMap = new Map(input.tenants.map((tenant) => [tenant.id, tenant]));
+    const activeHits = Array.from(input.contentStatsByTenant.values()).flat().reduce((sum, item) => sum + item.hits, 0);
+    const recentlyActive = Array.from(new Map(input.sessions
+        .sort((left, right) => right.lastMessageAt - left.lastMessageAt)
+        .map((session) => {
         const tenant = tenantMap.get(session.tenantId);
         return [
-          session.tenantId,
-          {
-            tenantId: session.tenantId,
-            tenantName: (tenant == null ? void 0 : tenant.name) || session.tenantId,
-            lastMessageAt: session.lastMessageAt,
-            status: (tenant == null ? void 0 : tenant.status) || "active"
-          }
+            session.tenantId,
+            {
+                tenantId: session.tenantId,
+                tenantName: (tenant === null || tenant === void 0 ? void 0 : tenant.name) || session.tenantId,
+                lastMessageAt: session.lastMessageAt,
+                status: (tenant === null || tenant === void 0 ? void 0 : tenant.status) || 'active'
+            }
         ];
-      })
-    ).values()
-  ).slice(0, 6);
-  const priorityTenants = input.tenants.map((tenant) => {
-    var _a;
-    const latestBilling = input.billingSummaries.filter((item) => item.tenantId === tenant.id).sort((left, right) => right.month.localeCompare(left.month))[0];
-    const contentStats = (_a = input.contentStatsByTenant.get(tenant.id)) != null ? _a : [];
-    if (tenant.status === "disabled") {
-      return { tenantId: tenant.id, tenantName: tenant.name, reason: "\u79DF\u6237\u5DF2\u505C\u7528", status: tenant.status };
-    }
-    if (((latestBilling == null ? void 0 : latestBilling.billableTokens) || 0) > 0) {
-      return { tenantId: tenant.id, tenantName: tenant.name, reason: "\u5957\u9910\u5DF2\u4EA7\u751F\u8D85\u989D", status: tenant.status };
-    }
-    if (contentStats.length === 0) {
-      return { tenantId: tenant.id, tenantName: tenant.name, reason: "\u6682\u65E0\u8D44\u6599\u547D\u4E2D", status: tenant.status };
-    }
-    return null;
-  }).filter((item) => Boolean(item)).slice(0, 6);
-  return {
-    kpis: {
-      todaySessions: input.sessions.length,
-      todayLeads: input.leads.length,
-      activeContentHits: activeHits,
-      attentionTenants: priorityTenants.length
-    },
-    recentlyActive,
-    priorityTenants
-  };
+    })).values()).slice(0, 6);
+    const priorityTenants = input.tenants
+        .map((tenant) => {
+        var _a;
+        const latestBilling = input.billingSummaries
+            .filter((item) => item.tenantId === tenant.id)
+            .sort((left, right) => right.month.localeCompare(left.month))[0];
+        const contentStats = (_a = input.contentStatsByTenant.get(tenant.id)) !== null && _a !== void 0 ? _a : [];
+        if (tenant.status === 'disabled') {
+            return { tenantId: tenant.id, tenantName: tenant.name, reason: '租户已停用', status: tenant.status };
+        }
+        if (((latestBilling === null || latestBilling === void 0 ? void 0 : latestBilling.billableTokens) || 0) > 0) {
+            return { tenantId: tenant.id, tenantName: tenant.name, reason: '套餐已产生超额', status: tenant.status };
+        }
+        if (contentStats.length === 0) {
+            return { tenantId: tenant.id, tenantName: tenant.name, reason: '暂无资料命中', status: tenant.status };
+        }
+        return null;
+    })
+        .filter((item) => Boolean(item))
+        .slice(0, 6);
+    return {
+        kpis: {
+            todaySessions: input.sessions.length,
+            todayLeads: input.leads.length,
+            activeContentHits: activeHits,
+            attentionTenants: priorityTenants.length
+        },
+        recentlyActive,
+        priorityTenants
+    };
 }
 
 const overview_get$2 = defineEventHandler(async (event) => {
-  requireAdminSession(event);
-  const storage = getStorage();
-  const tenants = await storage.listTenants();
-  const sessions = (await Promise.all(tenants.map((tenant) => storage.listSessionsByTenant(tenant.id)))).flat();
-  const leads = (await Promise.all(tenants.map((tenant) => storage.listLeadsByTenant(tenant.id)))).flat();
-  const usageRecords = (await Promise.all(tenants.map((tenant) => storage.listUsageByTenant(tenant.id)))).flat();
-  const billingSummaries = buildMonthlyBillingSummary(usageRecords);
-  const contentStatsByTenant = /* @__PURE__ */ new Map();
-  for (const tenant of tenants) {
-    const tenantSessions = await storage.listSessionsByTenant(tenant.id);
-    const messageGroups = await Promise.all(tenantSessions.map((session) => storage.listMessagesBySession(session.id)));
-    contentStatsByTenant.set(tenant.id, aggregateMatchedContentSourceStats(messageGroups.flat()));
-  }
-  return buildAdminOverview({
-    tenants,
-    sessions,
-    leads,
-    billingSummaries,
-    contentStatsByTenant
-  });
+    requireAdminSession(event);
+    const storage = getStorage();
+    const tenants = await storage.listTenants();
+    const sessions = (await Promise.all(tenants.map((tenant) => storage.listSessionsByTenant(tenant.id)))).flat();
+    const leads = (await Promise.all(tenants.map((tenant) => storage.listLeadsByTenant(tenant.id)))).flat();
+    const usageRecords = (await Promise.all(tenants.map((tenant) => storage.listUsageByTenant(tenant.id)))).flat();
+    const billingSummaries = buildMonthlyBillingSummary(usageRecords);
+    const contentStatsByTenant = new Map();
+    for (const tenant of tenants) {
+        const tenantSessions = await storage.listSessionsByTenant(tenant.id);
+        const messageGroups = await Promise.all(tenantSessions.map((session) => storage.listMessagesBySession(session.id)));
+        contentStatsByTenant.set(tenant.id, aggregateMatchedContentSourceStats(messageGroups.flat()));
+    }
+    return buildAdminOverview({
+        tenants,
+        sessions,
+        leads,
+        billingSummaries,
+        contentStatsByTenant
+    });
 });
 
 const overview_get$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3686,14 +3670,14 @@ const overview_get$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProp
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const tenants_get = defineEventHandler(async (event) => {
-  requireAdminSession(event);
-  const storage = getStorage();
-  const query = getQuery$1(event);
-  const includeDeleted = String(query.includeDeleted || "") === "1";
-  const items = await storage.listTenants();
-  return {
-    items: includeDeleted ? items : items.filter((item) => !item.deletedAt)
-  };
+    requireAdminSession(event);
+    const storage = getStorage();
+    const query = getQuery$1(event);
+    const includeDeleted = String(query.includeDeleted || '') === '1';
+    const items = await storage.listTenants();
+    return {
+        items: includeDeleted ? items : items.filter((item) => !item.deletedAt)
+    };
 });
 
 const tenants_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3702,158 +3686,158 @@ const tenants_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePrope
 }, Symbol.toStringTag, { value: 'Module' }));
 
 function hashPassword(password) {
-  return createHash("sha256").update(password).digest("hex");
+    return createHash('sha256').update(password).digest('hex');
 }
 function normalizeEmail(email) {
-  return email.trim().toLowerCase();
+    return email.trim().toLowerCase();
 }
 function generateInitialPassword() {
-  const chars = "ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnpqrstuvwxyz23456789";
-  let output = "";
-  for (let index = 0; index < 10; index += 1) {
-    output += chars[randomInt(0, chars.length)];
-  }
-  return output;
+    const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnpqrstuvwxyz23456789';
+    let output = '';
+    for (let index = 0; index < 10; index += 1) {
+        output += chars[randomInt(0, chars.length)];
+    }
+    return output;
 }
 function generateResetCode() {
-  return String(randomInt(0, 1e6)).padStart(6, "0");
+    return String(randomInt(0, 1000000)).padStart(6, '0');
 }
 function buildFallbackEmail(tenant) {
-  return `${tenant.id}@tenant.local`;
+    return `${tenant.id}@tenant.local`;
 }
 async function createTenantLoginForTenant(input) {
-  var _a;
-  const now = (_a = input.now) != null ? _a : Date.now();
-  const email = normalizeEmail(input.tenant.contactEmail || buildFallbackEmail(input.tenant));
-  const existing = await input.storage.getTenantUserByEmail(email);
-  if (existing) {
-    return {
-      user: existing,
-      initialPassword: existing.temporaryPassword || ""
+    var _a;
+    const now = (_a = input.now) !== null && _a !== void 0 ? _a : Date.now();
+    const email = normalizeEmail(input.tenant.contactEmail || buildFallbackEmail(input.tenant));
+    const existing = await input.storage.getTenantUserByEmail(email);
+    if (existing) {
+        return {
+            user: existing,
+            initialPassword: existing.temporaryPassword || ''
+        };
+    }
+    const initialPassword = generateInitialPassword();
+    const user = {
+        id: `tenant-user-${input.tenant.id}`,
+        tenantId: input.tenant.id,
+        email,
+        passwordHash: hashPassword(initialPassword),
+        temporaryPassword: initialPassword,
+        mustChangePassword: true,
+        status: 'active',
+        createdAt: now,
+        updatedAt: now
     };
-  }
-  const initialPassword = generateInitialPassword();
-  const user = {
-    id: `tenant-user-${input.tenant.id}`,
-    tenantId: input.tenant.id,
-    email,
-    passwordHash: hashPassword(initialPassword),
-    temporaryPassword: initialPassword,
-    mustChangePassword: true,
-    status: "active",
-    createdAt: now,
-    updatedAt: now
-  };
-  await input.storage.saveTenantUser(user);
-  return {
-    user,
-    initialPassword
-  };
+    await input.storage.saveTenantUser(user);
+    return {
+        user,
+        initialPassword
+    };
 }
 async function verifyTenantPassword(email, password, storage) {
-  const user = await storage.getTenantUserByEmail(email);
-  if (!user || user.status !== "active") {
-    return null;
-  }
-  return user.passwordHash === hashPassword(password) ? user : null;
+    const user = await storage.getTenantUserByEmail(email);
+    if (!user || user.status !== 'active') {
+        return null;
+    }
+    return user.passwordHash === hashPassword(password) ? user : null;
 }
 async function issueTenantPasswordReset(input) {
-  var _a;
-  const user = await input.storage.getTenantUserByEmail(input.email);
-  if (!user) {
-    throw new Error("\u79DF\u6237\u8D26\u53F7\u4E0D\u5B58\u5728");
-  }
-  const now = (_a = input.now) != null ? _a : Date.now();
-  const record = {
-    id: `tenant-reset-${user.id}-${now}`,
-    tenantUserId: user.id,
-    tenantId: user.tenantId,
-    email: user.email,
-    code: generateResetCode(),
-    expiresAt: now + 15 * 60 * 1e3,
-    usedAt: 0,
-    createdAt: now
-  };
-  await input.storage.saveTenantPasswordReset(record);
-  return record;
+    var _a;
+    const user = await input.storage.getTenantUserByEmail(input.email);
+    if (!user) {
+        throw new Error('租户账号不存在');
+    }
+    const now = (_a = input.now) !== null && _a !== void 0 ? _a : Date.now();
+    const record = {
+        id: `tenant-reset-${user.id}-${now}`,
+        tenantUserId: user.id,
+        tenantId: user.tenantId,
+        email: user.email,
+        code: generateResetCode(),
+        expiresAt: now + 15 * 60 * 1000,
+        usedAt: 0,
+        createdAt: now
+    };
+    await input.storage.saveTenantPasswordReset(record);
+    return record;
 }
 async function resetTenantPassword(input) {
-  var _a;
-  const normalizedEmail = normalizeEmail(input.email);
-  const record = await input.storage.getTenantPasswordResetByCode(normalizedEmail, input.code.trim());
-  const now = (_a = input.now) != null ? _a : Date.now();
-  if (!record || record.usedAt || record.expiresAt < now) {
-    throw new Error("\u9A8C\u8BC1\u7801\u65E0\u6548\u6216\u5DF2\u8FC7\u671F");
-  }
-  const user = await input.storage.getTenantUserById(record.tenantUserId);
-  if (!user) {
-    throw new Error("\u79DF\u6237\u8D26\u53F7\u4E0D\u5B58\u5728");
-  }
-  const updatedUser = {
-    ...user,
-    passwordHash: hashPassword(input.nextPassword),
-    temporaryPassword: "",
-    mustChangePassword: false,
-    updatedAt: now
-  };
-  const updatedReset = {
-    ...record,
-    usedAt: now
-  };
-  await input.storage.saveTenantUser(updatedUser);
-  await input.storage.saveTenantPasswordReset(updatedReset);
-  return updatedUser;
+    var _a;
+    const normalizedEmail = normalizeEmail(input.email);
+    const record = await input.storage.getTenantPasswordResetByCode(normalizedEmail, input.code.trim());
+    const now = (_a = input.now) !== null && _a !== void 0 ? _a : Date.now();
+    if (!record || record.usedAt || record.expiresAt < now) {
+        throw new Error('验证码无效或已过期');
+    }
+    const user = await input.storage.getTenantUserById(record.tenantUserId);
+    if (!user) {
+        throw new Error('租户账号不存在');
+    }
+    const updatedUser = {
+        ...user,
+        passwordHash: hashPassword(input.nextPassword),
+        temporaryPassword: '',
+        mustChangePassword: false,
+        updatedAt: now
+    };
+    const updatedReset = {
+        ...record,
+        usedAt: now
+    };
+    await input.storage.saveTenantUser(updatedUser);
+    await input.storage.saveTenantPasswordReset(updatedReset);
+    return updatedUser;
 }
 
 function nextTenantId() {
-  return `tenant-${Date.now()}`;
+    return `tenant-${Date.now()}`;
 }
 const tenants_post = defineEventHandler(async (event) => {
-  var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n;
-  requireAdminSession(event);
-  const body = await readBody(event);
-  const now = Date.now();
-  const tenant = {
-    id: ((_a = body.id) == null ? void 0 : _a.trim()) || nextTenantId(),
-    name: ((_b = body.name) == null ? void 0 : _b.trim()) || "New Tenant",
-    status: body.status === "disabled" ? "disabled" : "active",
-    brandName: ((_c = body.brandName) == null ? void 0 : _c.trim()) || ((_d = body.name) == null ? void 0 : _d.trim()) || "New Tenant",
-    themeColor: ((_e = body.themeColor) == null ? void 0 : _e.trim()) || "#118ab2",
-    contactPhone: ((_f = body.contactPhone) == null ? void 0 : _f.trim()) || "",
-    contactEmail: ((_g = body.contactEmail) == null ? void 0 : _g.trim()) || "",
-    contactAddress: ((_h = body.contactAddress) == null ? void 0 : _h.trim()) || "",
-    systemPrompt: ((_i = body.systemPrompt) == null ? void 0 : _i.trim()) || "You are the tenant bot.",
-    llmEndpoint: ((_j = body.llmEndpoint) == null ? void 0 : _j.trim()) || "",
-    llmApiKey: ((_k = body.llmApiKey) == null ? void 0 : _k.trim()) || "",
-    llmModel: ((_l = body.llmModel) == null ? void 0 : _l.trim()) || "",
-    reuseAnsweredQuestions: body.reuseAnsweredQuestions !== false,
-    deletedAt: void 0,
-    embedKey: ((_m = body.embedKey) == null ? void 0 : _m.trim()) || `embed-${Math.random().toString(36).slice(2, 10)}`,
-    billingSubscription: (_n = body.billingSubscription) != null ? _n : {
-      planId: "plan-basic",
-      startedAt: now,
-      notes: ""
-    },
-    contentConfig: body.contentConfig,
-    createdAt: now,
-    updatedAt: now
-  };
-  const storage = getStorage();
-  await storage.saveTenant(tenant);
-  const tenantLogin = await createTenantLoginForTenant({
-    tenant,
-    storage,
-    now
-  });
-  return {
-    ok: true,
-    item: tenant,
-    tenantLogin: {
-      email: tenantLogin.user.email,
-      initialPassword: tenantLogin.initialPassword,
-      mustChangePassword: tenantLogin.user.mustChangePassword
-    }
-  };
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p;
+    requireAdminSession(event);
+    const body = await readBody(event);
+    const now = Date.now();
+    const tenant = {
+        id: ((_a = body.id) === null || _a === void 0 ? void 0 : _a.trim()) || nextTenantId(),
+        name: ((_b = body.name) === null || _b === void 0 ? void 0 : _b.trim()) || 'New Tenant',
+        status: body.status === 'disabled' ? 'disabled' : 'active',
+        brandName: ((_c = body.brandName) === null || _c === void 0 ? void 0 : _c.trim()) || ((_d = body.name) === null || _d === void 0 ? void 0 : _d.trim()) || 'New Tenant',
+        themeColor: ((_e = body.themeColor) === null || _e === void 0 ? void 0 : _e.trim()) || '#118ab2',
+        contactPhone: ((_f = body.contactPhone) === null || _f === void 0 ? void 0 : _f.trim()) || '',
+        contactEmail: ((_g = body.contactEmail) === null || _g === void 0 ? void 0 : _g.trim()) || '',
+        contactAddress: ((_h = body.contactAddress) === null || _h === void 0 ? void 0 : _h.trim()) || '',
+        systemPrompt: ((_j = body.systemPrompt) === null || _j === void 0 ? void 0 : _j.trim()) || 'You are the tenant bot.',
+        llmEndpoint: ((_k = body.llmEndpoint) === null || _k === void 0 ? void 0 : _k.trim()) || '',
+        llmApiKey: ((_l = body.llmApiKey) === null || _l === void 0 ? void 0 : _l.trim()) || '',
+        llmModel: ((_m = body.llmModel) === null || _m === void 0 ? void 0 : _m.trim()) || '',
+        reuseAnsweredQuestions: body.reuseAnsweredQuestions !== false,
+        deletedAt: undefined,
+        embedKey: ((_o = body.embedKey) === null || _o === void 0 ? void 0 : _o.trim()) || `embed-${Math.random().toString(36).slice(2, 10)}`,
+        billingSubscription: (_p = body.billingSubscription) !== null && _p !== void 0 ? _p : {
+            planId: 'plan-basic',
+            startedAt: now,
+            notes: ''
+        },
+        contentConfig: body.contentConfig,
+        createdAt: now,
+        updatedAt: now
+    };
+    const storage = getStorage();
+    await storage.saveTenant(tenant);
+    const tenantLogin = await createTenantLoginForTenant({
+        tenant,
+        storage,
+        now
+    });
+    return {
+        ok: true,
+        item: tenant,
+        tenantLogin: {
+            email: tenantLogin.user.email,
+            initialPassword: tenantLogin.initialPassword,
+            mustChangePassword: tenantLogin.user.mustChangePassword
+        }
+    };
 });
 
 const tenants_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3862,24 +3846,24 @@ const tenants_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProp
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const _tenantId__delete = defineEventHandler(async (event) => {
-  requireAdminSession(event);
-  const tenantId = getRouterParam(event, "tenantId") || "";
-  const storage = getStorage();
-  const tenant = await storage.getTenantById(tenantId);
-  if (!tenant || tenant.deletedAt) {
-    throw createError({
-      statusCode: 404,
-      statusMessage: "Tenant not found"
+    requireAdminSession(event);
+    const tenantId = getRouterParam(event, 'tenantId') || '';
+    const storage = getStorage();
+    const tenant = await storage.getTenantById(tenantId);
+    if (!tenant || tenant.deletedAt) {
+        throw createError({
+            statusCode: 404,
+            statusMessage: 'Tenant not found'
+        });
+    }
+    const updatedAt = Date.now();
+    await storage.saveTenant({
+        ...tenant,
+        status: 'disabled',
+        deletedAt: updatedAt,
+        updatedAt
     });
-  }
-  const updatedAt = Date.now();
-  await storage.saveTenant({
-    ...tenant,
-    status: "disabled",
-    deletedAt: updatedAt,
-    updatedAt
-  });
-  return { ok: true };
+    return { ok: true };
 });
 
 const _tenantId__delete$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3888,20 +3872,20 @@ const _tenantId__delete$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defin
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const _tenantId__get = defineEventHandler(async (event) => {
-  requireAdminSession(event);
-  const tenantId = getRouterParam(event, "tenantId") || "";
-  const storage = getStorage();
-  const tenant = await resolveTenant(tenantId, storage);
-  if (!tenant) {
-    throw createError({
-      statusCode: 404,
-      statusMessage: "Tenant not found"
-    });
-  }
-  return {
-    item: tenant,
-    tenantUsers: await storage.listTenantUsersByTenant(tenant.id)
-  };
+    requireAdminSession(event);
+    const tenantId = getRouterParam(event, 'tenantId') || '';
+    const storage = getStorage();
+    const tenant = await resolveTenant(tenantId, storage);
+    if (!tenant) {
+        throw createError({
+            statusCode: 404,
+            statusMessage: 'Tenant not found'
+        });
+    }
+    return {
+        item: tenant,
+        tenantUsers: await storage.listTenantUsersByTenant(tenant.id)
+    };
 });
 
 const _tenantId__get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3910,35 +3894,35 @@ const _tenantId__get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePr
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const _tenantId__put = defineEventHandler(async (event) => {
-  var _a, _b, _c;
-  requireAdminSession(event);
-  const tenantIdentifier = getRouterParam(event, "tenantId") || "";
-  const storage = getStorage();
-  const existing = await resolveTenant(tenantIdentifier, storage);
-  if (!existing) {
-    throw createError({
-      statusCode: 404,
-      statusMessage: "Tenant not found"
-    });
-  }
-  const body = await readBody(event);
-  const updated = {
-    ...existing,
-    ...body,
-    llmEndpoint: body.llmEndpoint !== void 0 ? ((_a = body.llmEndpoint) == null ? void 0 : _a.trim()) || "" : existing.llmEndpoint,
-    llmApiKey: body.llmApiKey !== void 0 ? ((_b = body.llmApiKey) == null ? void 0 : _b.trim()) || "" : existing.llmApiKey,
-    llmModel: body.llmModel !== void 0 ? ((_c = body.llmModel) == null ? void 0 : _c.trim()) || "" : existing.llmModel,
-    reuseAnsweredQuestions: body.reuseAnsweredQuestions !== void 0 ? body.reuseAnsweredQuestions !== false : existing.reuseAnsweredQuestions,
-    id: existing.id,
-    embedKey: existing.embedKey,
-    createdAt: existing.createdAt,
-    updatedAt: Date.now()
-  };
-  await storage.saveTenant(updated);
-  return {
-    ok: true,
-    item: updated
-  };
+    var _a, _b, _c;
+    requireAdminSession(event);
+    const tenantIdentifier = getRouterParam(event, 'tenantId') || '';
+    const storage = getStorage();
+    const existing = await resolveTenant(tenantIdentifier, storage);
+    if (!existing) {
+        throw createError({
+            statusCode: 404,
+            statusMessage: 'Tenant not found'
+        });
+    }
+    const body = await readBody(event);
+    const updated = {
+        ...existing,
+        ...body,
+        llmEndpoint: body.llmEndpoint !== undefined ? ((_a = body.llmEndpoint) === null || _a === void 0 ? void 0 : _a.trim()) || '' : existing.llmEndpoint,
+        llmApiKey: body.llmApiKey !== undefined ? ((_b = body.llmApiKey) === null || _b === void 0 ? void 0 : _b.trim()) || '' : existing.llmApiKey,
+        llmModel: body.llmModel !== undefined ? ((_c = body.llmModel) === null || _c === void 0 ? void 0 : _c.trim()) || '' : existing.llmModel,
+        reuseAnsweredQuestions: body.reuseAnsweredQuestions !== undefined ? body.reuseAnsweredQuestions !== false : existing.reuseAnsweredQuestions,
+        id: existing.id,
+        embedKey: existing.embedKey,
+        createdAt: existing.createdAt,
+        updatedAt: Date.now()
+    };
+    await storage.saveTenant(updated);
+    return {
+        ok: true,
+        item: updated
+    };
 });
 
 const _tenantId__put$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3947,135 +3931,142 @@ const _tenantId__put$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePr
 }, Symbol.toStringTag, { value: 'Module' }));
 
 function getMailOutboxPath() {
-  return process.env.CUSTOMER_BOT_MAIL_OUTBOX_FILE || resolve(process.cwd(), ".data/customer-bot-mail-outbox.json");
+    return process.env.CUSTOMER_BOT_MAIL_OUTBOX_FILE || resolve(process.cwd(), '.data/customer-bot-mail-outbox.json');
 }
 function getBaseUrl() {
-  return (process.env.CUSTOMER_BOT_PUBLIC_BASE_URL || process.env.CUSTOMER_BOT_STAGING_BASE_URL || "https://bot.aifactory.website").replace(/\/+$/, "");
+    return (process.env.CUSTOMER_BOT_PUBLIC_BASE_URL ||
+        process.env.CUSTOMER_BOT_STAGING_BASE_URL ||
+        'https://bot.aifactory.website').replace(/\/+$/, '');
 }
 function createTenantResetEmailPayload(input) {
-  const expiresAt = new Date(input.expiresAt).toLocaleString();
-  const subject = `\u3010${input.tenantName}\u3011\u79DF\u6237\u540E\u53F0\u91CD\u7F6E\u7801`;
-  const text = `\u79DF\u6237\uFF1A${input.tenantName}
-\u4F60\u7684\u79DF\u6237\u540E\u53F0\u91CD\u7F6E\u7801\u662F\uFF1A${input.code}
-\u6709\u6548\u671F\u81F3\uFF1A${expiresAt}
-\u767B\u5F55\u5730\u5740\uFF1A${input.loginUrl}
-\u5982\u679C\u8FD9\u4E0D\u662F\u4F60\u7684\u64CD\u4F5C\uFF0C\u8BF7\u5FFD\u7565\u672C\u90AE\u4EF6\u3002`;
-  const html = `<p>\u79DF\u6237\uFF1A<strong>${input.tenantName}</strong></p><p>\u4F60\u7684\u79DF\u6237\u540E\u53F0\u91CD\u7F6E\u7801\u662F\uFF1A<strong>${input.code}</strong></p><p>\u6709\u6548\u671F\u81F3\uFF1A${expiresAt}</p><p>\u767B\u5F55\u5730\u5740\uFF1A<a href="${input.loginUrl}">${input.loginUrl}</a></p><p>\u5982\u679C\u8FD9\u4E0D\u662F\u4F60\u7684\u64CD\u4F5C\uFF0C\u8BF7\u5FFD\u7565\u672C\u90AE\u4EF6\u3002</p>`;
-  return {
-    to: input.to,
-    subject,
-    text,
-    html
-  };
+    const expiresAt = new Date(input.expiresAt).toLocaleString();
+    const subject = `【${input.tenantName}】租户后台重置码`;
+    const text = `租户：${input.tenantName}\n` +
+        `你的租户后台重置码是：${input.code}\n` +
+        `有效期至：${expiresAt}\n` +
+        `登录地址：${input.loginUrl}\n` +
+        `如果这不是你的操作，请忽略本邮件。`;
+    const html = `<p>租户：<strong>${input.tenantName}</strong></p>` +
+        `<p>你的租户后台重置码是：<strong>${input.code}</strong></p>` +
+        `<p>有效期至：${expiresAt}</p>` +
+        `<p>登录地址：<a href="${input.loginUrl}">${input.loginUrl}</a></p>` +
+        `<p>如果这不是你的操作，请忽略本邮件。</p>`;
+    return {
+        to: input.to,
+        subject,
+        text,
+        html
+    };
 }
 async function appendMailOutbox(filePath, record) {
-  let items = [];
-  try {
-    const raw = await readFile(filePath, "utf8");
-    const parsed = JSON.parse(raw);
-    items = Array.isArray(parsed) ? parsed : [];
-  } catch (error) {
-    const maybe = error;
-    if ((maybe == null ? void 0 : maybe.code) !== "ENOENT") {
-      throw error;
+    let items = [];
+    try {
+        const raw = await readFile(filePath, 'utf8');
+        const parsed = JSON.parse(raw);
+        items = Array.isArray(parsed) ? parsed : [];
     }
-  }
-  items.push(record);
-  await mkdir(dirname(filePath), { recursive: true });
-  await writeFile(filePath, JSON.stringify(items, null, 2), "utf8");
+    catch (error) {
+        const maybe = error;
+        if ((maybe === null || maybe === void 0 ? void 0 : maybe.code) !== 'ENOENT') {
+            throw error;
+        }
+    }
+    items.push(record);
+    await mkdir(dirname(filePath), { recursive: true });
+    await writeFile(filePath, JSON.stringify(items, null, 2), 'utf8');
 }
 async function sendByResend(payload) {
-  var _a, _b;
-  const apiKey = (_a = process.env.CUSTOMER_BOT_RESEND_API_KEY) == null ? void 0 : _a.trim();
-  const from = (_b = process.env.CUSTOMER_BOT_MAIL_FROM) == null ? void 0 : _b.trim();
-  if (!apiKey || !from) {
-    throw new Error("Resend mail is not configured");
-  }
-  const response = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      from,
-      to: [payload.to],
-      subject: payload.subject,
-      html: payload.html,
-      text: payload.text
-    })
-  });
-  if (!response.ok) {
-    throw new Error(`Resend send failed: ${response.status}`);
-  }
+    var _a, _b;
+    const apiKey = (_a = process.env.CUSTOMER_BOT_RESEND_API_KEY) === null || _a === void 0 ? void 0 : _a.trim();
+    const from = (_b = process.env.CUSTOMER_BOT_MAIL_FROM) === null || _b === void 0 ? void 0 : _b.trim();
+    if (!apiKey || !from) {
+        throw new Error('Resend mail is not configured');
+    }
+    const response = await fetch('https://api.resend.com/emails', {
+        method: 'POST',
+        headers: {
+            Authorization: `Bearer ${apiKey}`,
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            from,
+            to: [payload.to],
+            subject: payload.subject,
+            html: payload.html,
+            text: payload.text
+        })
+    });
+    if (!response.ok) {
+        throw new Error(`Resend send failed: ${response.status}`);
+    }
 }
 async function sendTenantResetEmail(input) {
-  var _a;
-  const payload = createTenantResetEmailPayload({
-    ...input,
-    loginUrl: input.loginUrl || `${getBaseUrl()}/tenant/login`
-  });
-  const provider = (_a = process.env.CUSTOMER_BOT_MAIL_PROVIDER) == null ? void 0 : _a.trim().toLowerCase();
-  const createdAt = Date.now();
-  if (provider === "resend") {
-    await sendByResend(payload);
+    var _a;
+    const payload = createTenantResetEmailPayload({
+        ...input,
+        loginUrl: input.loginUrl || `${getBaseUrl()}/tenant/login`
+    });
+    const provider = (_a = process.env.CUSTOMER_BOT_MAIL_PROVIDER) === null || _a === void 0 ? void 0 : _a.trim().toLowerCase();
+    const createdAt = Date.now();
+    if (provider === 'resend') {
+        await sendByResend(payload);
+        return {
+            delivered: true,
+            provider: 'resend',
+            previewCode: ''
+        };
+    }
+    await appendMailOutbox(getMailOutboxPath(), {
+        ...payload,
+        provider: 'outbox',
+        createdAt
+    });
     return {
-      delivered: true,
-      provider: "resend",
-      previewCode: ""
+        delivered: false,
+        provider: 'outbox',
+        previewCode: input.code
     };
-  }
-  await appendMailOutbox(getMailOutboxPath(), {
-    ...payload,
-    provider: "outbox",
-    createdAt
-  });
-  return {
-    delivered: false,
-    provider: "outbox",
-    previewCode: input.code
-  };
 }
 
 const resetCode_post$2 = defineEventHandler(async (event) => {
-  var _a, _b;
-  requireAdminSession(event);
-  const tenantId = ((_a = getRouterParam(event, "tenantId")) == null ? void 0 : _a.trim()) || "";
-  const storage = getStorage();
-  const tenant = await resolveTenant(tenantId, storage);
-  if (!tenant) {
-    throw createError({
-      statusCode: 404,
-      statusMessage: "Tenant not found"
-    });
-  }
-  const email = (_b = tenant.contactEmail) == null ? void 0 : _b.trim();
-  if (!email) {
-    throw createError({
-      statusCode: 400,
-      statusMessage: "Tenant contact email is required"
-    });
-  }
-  const reset = await issueTenantPasswordReset({
-    email,
-    storage
-  });
-  const sent = await sendTenantResetEmail({
-    to: reset.email,
-    code: reset.code,
-    expiresAt: reset.expiresAt,
-    tenantName: tenant.name,
-    loginUrl: `${(process.env.CUSTOMER_BOT_PUBLIC_BASE_URL || "https://bot.aifactory.website").replace(/\/+$/, "")}/tenant/login`
-  });
-  return {
-    ok: true,
-    item: {
-      email: reset.email,
-      expiresAt: reset.expiresAt,
-      provider: sent.provider,
-      previewCode: sent.previewCode
+    var _a, _b;
+    requireAdminSession(event);
+    const tenantId = ((_a = getRouterParam(event, 'tenantId')) === null || _a === void 0 ? void 0 : _a.trim()) || '';
+    const storage = getStorage();
+    const tenant = await resolveTenant(tenantId, storage);
+    if (!tenant) {
+        throw createError({
+            statusCode: 404,
+            statusMessage: 'Tenant not found'
+        });
     }
-  };
+    const email = (_b = tenant.contactEmail) === null || _b === void 0 ? void 0 : _b.trim();
+    if (!email) {
+        throw createError({
+            statusCode: 400,
+            statusMessage: 'Tenant contact email is required'
+        });
+    }
+    const reset = await issueTenantPasswordReset({
+        email,
+        storage
+    });
+    const sent = await sendTenantResetEmail({
+        to: reset.email,
+        code: reset.code,
+        expiresAt: reset.expiresAt,
+        tenantName: tenant.name,
+        loginUrl: `${(process.env.CUSTOMER_BOT_PUBLIC_BASE_URL || 'https://bot.aifactory.website').replace(/\/+$/, '')}/tenant/login`
+    });
+    return {
+        ok: true,
+        item: {
+            email: reset.email,
+            expiresAt: reset.expiresAt,
+            provider: sent.provider,
+            previewCode: sent.previewCode
+        }
+    };
 });
 
 const resetCode_post$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -4084,23 +4075,23 @@ const resetCode_post$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePr
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const restore_post = defineEventHandler(async (event) => {
-  requireAdminSession(event);
-  const tenantId = getRouterParam(event, "tenantId") || "";
-  const storage = getStorage();
-  const tenant = await storage.getTenantById(tenantId);
-  if (!tenant) {
-    throw createError({
-      statusCode: 404,
-      statusMessage: "Tenant not found"
+    requireAdminSession(event);
+    const tenantId = getRouterParam(event, 'tenantId') || '';
+    const storage = getStorage();
+    const tenant = await storage.getTenantById(tenantId);
+    if (!tenant) {
+        throw createError({
+            statusCode: 404,
+            statusMessage: 'Tenant not found'
+        });
+    }
+    await storage.saveTenant({
+        ...tenant,
+        status: 'active',
+        deletedAt: undefined,
+        updatedAt: Date.now()
     });
-  }
-  await storage.saveTenant({
-    ...tenant,
-    status: "active",
-    deletedAt: void 0,
-    updatedAt: Date.now()
-  });
-  return { ok: true };
+    return { ok: true };
 });
 
 const restore_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -4108,142 +4099,143 @@ const restore_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProp
   default: restore_post
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const TRAINING_PROVIDER = "training-simulator";
+const TRAINING_PROVIDER = 'training-simulator';
 function listTrainingRuns(records) {
-  return records.filter((item) => item.provider === TRAINING_PROVIDER).sort((left, right) => right.createdAt - left.createdAt).map((item) => ({
-    id: item.id,
-    sessionId: item.sessionId,
-    provider: item.provider,
-    model: item.model,
-    inputTokens: item.inputTokens,
-    outputTokens: item.outputTokens,
-    totalTokens: item.totalTokens,
-    amount: item.amount,
-    status: item.status,
-    createdAt: item.createdAt
-  }));
+    return records
+        .filter((item) => item.provider === TRAINING_PROVIDER)
+        .sort((left, right) => right.createdAt - left.createdAt)
+        .map((item) => ({
+        id: item.id,
+        sessionId: item.sessionId,
+        provider: item.provider,
+        model: item.model,
+        inputTokens: item.inputTokens,
+        outputTokens: item.outputTokens,
+        totalTokens: item.totalTokens,
+        amount: item.amount,
+        status: item.status,
+        createdAt: item.createdAt
+    }));
 }
 
 const TRAINING_COST_PER_THOUSAND_TOKENS = 0.12;
-const TRAINING_MODEL = "training-indexer-v1";
+const TRAINING_MODEL = 'training-indexer-v1';
 function buildTrainingCorpus(tenant) {
-  var _a, _b, _c, _d, _e;
-  const content = tenant.contentConfig;
-  if (!content) {
-    return [];
-  }
-  const enabledSources = ((_a = content.contentSources) != null ? _a : []).filter((item) => item.enabled !== false);
-  const sourceTexts = enabledSources.map(
-    (item) => {
-      var _a2;
-      return [item.title, item.summary, item.content, item.sourceLabel, item.sourceUrl, ...(_a2 = item.tags) != null ? _a2 : []].filter(Boolean).join("\n");
+    var _a, _b, _c, _d, _e;
+    const content = tenant.contentConfig;
+    if (!content) {
+        return [];
     }
-  );
-  const knowledgeTexts = ((_b = content.knowledgeEntries) != null ? _b : []).map(
-    (item) => [
-      item.title,
-      item.oneLiner,
-      item.whatIs,
-      item.source,
-      ...item.keywords,
-      ...item.problems,
-      ...item.workflow,
-      ...item.scenarios,
-      ...item.outcomes
-    ].filter(Boolean).join("\n")
-  );
-  const articleTexts = ((_c = content.articles) != null ? _c : []).map((item) => [item.title, item.category, item.summary].filter(Boolean).join("\n"));
-  const productTexts = ((_d = content.products) != null ? _d : []).map(
-    (item) => {
-      var _a2;
-      return [item.name, item.category, item.summary, item.priceText, ...((_a2 = item.parameters) != null ? _a2 : []).map((param) => `${param.label}:${param.value}`)].filter(Boolean).join("\n");
-    }
-  );
-  const serviceTexts = ((_e = content.consultingServices) != null ? _e : []).map(
-    (item) => [item.name, item.category, item.introduction, item.price, item.negotiable ? "negotiable" : "fixed"].filter(Boolean).join("\n")
-  );
-  return [...sourceTexts, ...knowledgeTexts, ...articleTexts, ...productTexts, ...serviceTexts].map((item) => item.trim()).filter(Boolean);
+    const enabledSources = ((_a = content.contentSources) !== null && _a !== void 0 ? _a : []).filter((item) => item.enabled !== false);
+    const sourceTexts = enabledSources.map((item) => { var _a; return [item.title, item.summary, item.content, item.sourceLabel, item.sourceUrl, ...((_a = item.tags) !== null && _a !== void 0 ? _a : [])].filter(Boolean).join('\n'); });
+    const knowledgeTexts = ((_b = content.knowledgeEntries) !== null && _b !== void 0 ? _b : []).map((item) => [
+        item.title,
+        item.oneLiner,
+        item.whatIs,
+        item.source,
+        ...item.keywords,
+        ...item.problems,
+        ...item.workflow,
+        ...item.scenarios,
+        ...item.outcomes
+    ]
+        .filter(Boolean)
+        .join('\n'));
+    const articleTexts = ((_c = content.articles) !== null && _c !== void 0 ? _c : []).map((item) => [item.title, item.category, item.summary].filter(Boolean).join('\n'));
+    const productTexts = ((_d = content.products) !== null && _d !== void 0 ? _d : []).map((item) => {
+        var _a;
+        return [item.name, item.category, item.summary, item.priceText, ...((_a = item.parameters) !== null && _a !== void 0 ? _a : []).map((param) => `${param.label}:${param.value}`)]
+            .filter(Boolean)
+            .join('\n');
+    });
+    const serviceTexts = ((_e = content.consultingServices) !== null && _e !== void 0 ? _e : []).map((item) => [item.name, item.category, item.introduction, item.price, item.negotiable ? 'negotiable' : 'fixed']
+        .filter(Boolean)
+        .join('\n'));
+    return [...sourceTexts, ...knowledgeTexts, ...articleTexts, ...productTexts, ...serviceTexts]
+        .map((item) => item.trim())
+        .filter(Boolean);
 }
 function toMoney(value) {
-  return value.toFixed(2);
+    return value.toFixed(2);
 }
 function estimateTrainingRun(tenant) {
-  var _a, _b, _c;
-  const corpus = buildTrainingCorpus(tenant);
-  const sourceCount = (_c = (_b = (_a = tenant.contentConfig) == null ? void 0 : _a.contentSources) == null ? void 0 : _b.filter((item) => item.enabled !== false).length) != null ? _c : 0;
-  if (!corpus.length) {
-    throw new Error("\u5F53\u524D\u79DF\u6237\u6CA1\u6709\u53EF\u8BAD\u7EC3\u5185\u5BB9\uFF0C\u8BF7\u5148\u6DFB\u52A0\u8D44\u6599\u6E90\u6216\u5185\u5BB9\u914D\u7F6E");
-  }
-  const characterCount = corpus.reduce((sum, item) => sum + item.length, 0);
-  const assetCount = corpus.length;
-  const inputTokens = Math.max(256, Math.ceil(characterCount / 4) + assetCount * 48);
-  const outputTokens = Math.max(96, Math.ceil(inputTokens * 0.08));
-  const totalTokens = inputTokens + outputTokens;
-  const amount = toMoney(totalTokens / 1e3 * TRAINING_COST_PER_THOUSAND_TOKENS);
-  return {
-    sourceCount,
-    assetCount,
-    characterCount,
-    inputTokens,
-    outputTokens,
-    totalTokens,
-    amount
-  };
+    var _a, _b, _c;
+    const corpus = buildTrainingCorpus(tenant);
+    const sourceCount = (_c = (_b = (_a = tenant.contentConfig) === null || _a === void 0 ? void 0 : _a.contentSources) === null || _b === void 0 ? void 0 : _b.filter((item) => item.enabled !== false).length) !== null && _c !== void 0 ? _c : 0;
+    if (!corpus.length) {
+        throw new Error('当前租户没有可训练内容，请先添加资料源或内容配置');
+    }
+    const characterCount = corpus.reduce((sum, item) => sum + item.length, 0);
+    const assetCount = corpus.length;
+    const inputTokens = Math.max(256, Math.ceil(characterCount / 4) + assetCount * 48);
+    const outputTokens = Math.max(96, Math.ceil(inputTokens * 0.08));
+    const totalTokens = inputTokens + outputTokens;
+    const amount = toMoney((totalTokens / 1000) * TRAINING_COST_PER_THOUSAND_TOKENS);
+    return {
+        sourceCount,
+        assetCount,
+        characterCount,
+        inputTokens,
+        outputTokens,
+        totalTokens,
+        amount
+    };
 }
 async function simulateTenantTraining(input) {
-  var _a;
-  const createdAt = (_a = input.now) != null ? _a : Date.now();
-  const estimate = estimateTrainingRun(input.tenant);
-  const record = {
-    id: `usage-training-${createdAt}`,
-    tenantId: input.tenant.id,
-    sessionId: `training-${input.tenant.id}-${createdAt}`,
-    provider: TRAINING_PROVIDER,
-    model: TRAINING_MODEL,
-    inputTokens: estimate.inputTokens,
-    outputTokens: estimate.outputTokens,
-    totalTokens: estimate.totalTokens,
-    amount: estimate.amount,
-    status: "success",
-    createdAt
-  };
-  await input.storage.saveUsageRecord(record);
-  return {
-    ...estimate,
-    record
-  };
+    var _a;
+    const createdAt = (_a = input.now) !== null && _a !== void 0 ? _a : Date.now();
+    const estimate = estimateTrainingRun(input.tenant);
+    const record = {
+        id: `usage-training-${createdAt}`,
+        tenantId: input.tenant.id,
+        sessionId: `training-${input.tenant.id}-${createdAt}`,
+        provider: TRAINING_PROVIDER,
+        model: TRAINING_MODEL,
+        inputTokens: estimate.inputTokens,
+        outputTokens: estimate.outputTokens,
+        totalTokens: estimate.totalTokens,
+        amount: estimate.amount,
+        status: 'success',
+        createdAt
+    };
+    await input.storage.saveUsageRecord(record);
+    return {
+        ...estimate,
+        record
+    };
 }
 
 const training_post = defineEventHandler(async (event) => {
-  var _a;
-  requireAdminSession(event);
-  const tenantId = (_a = getRouterParam(event, "tenantId")) == null ? void 0 : _a.trim();
-  if (!tenantId) {
-    throw createError({
-      statusCode: 400,
-      statusMessage: "tenantId is required"
-    });
-  }
-  const storage = getStorage();
-  const tenant = await resolveTenant(tenantId, storage);
-  if (!tenant) {
-    throw createError({
-      statusCode: 404,
-      statusMessage: "Tenant not found"
-    });
-  }
-  try {
-    return await simulateTenantTraining({
-      tenant,
-      storage
-    });
-  } catch (error) {
-    const message = error instanceof Error ? error.message : "\u8BAD\u7EC3\u6A21\u62DF\u5931\u8D25";
-    throw createError({
-      statusCode: 400,
-      statusMessage: message
-    });
-  }
+    var _a;
+    requireAdminSession(event);
+    const tenantId = (_a = getRouterParam(event, 'tenantId')) === null || _a === void 0 ? void 0 : _a.trim();
+    if (!tenantId) {
+        throw createError({
+            statusCode: 400,
+            statusMessage: 'tenantId is required'
+        });
+    }
+    const storage = getStorage();
+    const tenant = await resolveTenant(tenantId, storage);
+    if (!tenant) {
+        throw createError({
+            statusCode: 404,
+            statusMessage: 'Tenant not found'
+        });
+    }
+    try {
+        return await simulateTenantTraining({
+            tenant,
+            storage
+        });
+    }
+    catch (error) {
+        const message = error instanceof Error ? error.message : '训练模拟失败';
+        throw createError({
+            statusCode: 400,
+            statusMessage: message
+        });
+    }
 });
 
 const training_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -4252,841 +4244,879 @@ const training_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePro
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const assistantKnowledgeEntries = [
-  {
-    id: "wms-rfid",
-    title: "WMS + RFID \u667A\u80FD\u4ED3\u50A8",
-    keywords: ["wms", "rfid", "\u4ED3\u50A8", "\u4ED3\u5E93", "\u5165\u5E93", "\u51FA\u5E93", "\u76D8\u70B9", "\u5E93\u4F4D", "\u6279\u6B21\u8FFD\u6EAF", "fifo", "\u4ED3\u50A8\u7BA1\u7406"],
-    oneLiner: "WMS + RFID \u662F\u628A\u4ED3\u5E93\u7BA1\u7406\u7CFB\u7EDF\u4E0E\u5C04\u9891\u8BC6\u522B\u7ED3\u5408\uFF0C\u5B9E\u73B0\u5165\u5E93\u3001\u5B9A\u4F4D\u3001\u76D8\u70B9\u3001\u51FA\u5E93\u5168\u6D41\u7A0B\u81EA\u52A8\u5316\u3002",
-    whatIs: "\u7CFB\u7EDF\u901A\u8FC7 RFID \u81EA\u52A8\u8BC6\u522B\u8D27\u7269\u4FE1\u606F\uFF0C\u5E76\u7531 WMS \u5728\u6BEB\u79D2\u7EA7\u505A\u5E93\u4F4D\u4E0E\u4F5C\u4E1A\u51B3\u7B56\uFF0C\u51CF\u5C11\u4EBA\u5DE5\u626B\u7801\u3001\u4EBA\u5DE5\u5206\u914D\u548C\u4EBA\u5DE5\u6838\u5BF9\u73AF\u8282\u3002",
-    problems: [
-      "\u5165\u5E93/\u51FA\u5E93\u6548\u7387\u4F4E\uFF0C\u4EBA\u5DE5\u626B\u7801\u6162\u4E14\u5BB9\u6613\u6F0F\u626B\u9519\u626B",
-      "\u5E93\u4F4D\u5206\u914D\u4F9D\u8D56\u7ECF\u9A8C\uFF0C\u5229\u7528\u7387\u4E0D\u9AD8\u4E14\u8C03\u5EA6\u4E0D\u7A33\u5B9A",
-      "\u76D8\u70B9\u5468\u671F\u957F\u3001\u505C\u5DE5\u6210\u672C\u9AD8\u3001\u8D26\u5B9E\u4E0D\u4E00\u81F4",
-      "\u6279\u6B21\u8FFD\u6EAF\u6162\uFF0C\u5F02\u5E38\u5B9A\u4F4D\u548C\u53EC\u56DE\u54CD\u5E94\u6162"
-    ],
-    workflow: [
-      "RFID \u8BFB\u53D6\uFF1A0.1 \u79D2\u5B8C\u6210\u8D27\u7269\u8BC6\u522B",
-      "\u81EA\u52A8\u5206\u914D\u4ED3\u5E93\uFF1A\u6309\u5E93\u5B58\u6C34\u4F4D\u3001\u5468\u8F6C\u7387\u3001\u5E93\u4F4D\u5229\u7528\u7387\u5339\u914D\u6700\u4F18\u533A\u57DF",
-      "\u5E93\u4F4D\u5B9A\u4F4D\uFF1A\u5B9A\u4F4D\u5230\u8D27\u67B6\u533A/\u5217/\u5C42\uFF0C\u652F\u6301\u7EC8\u7AEF\u5BFC\u822A",
-      "\u5165\u5E93\u5355\u751F\u6210\uFF1A\u81EA\u52A8\u540C\u6B65 ERP/MES/TMS\uFF0C\u4FDD\u7559\u5B8C\u6574\u8FFD\u6EAF\u8BB0\u5F55"
-    ],
-    scenarios: ["\u6C7D\u8F66\u96F6\u90E8\u4EF6\u4ED3\uFF0CSKU \u591A\u4E14\u6279\u6B21\u590D\u6742", "\u7535\u5B50\u5143\u5668\u4EF6\u4ED3\uFF0C\u9700\u8981\u6279\u6B21\u7EA7\u8FFD\u6EAF", "\u6210\u54C1\u4ED3\uFF0C\u591A\u8BA2\u5355\u5E76\u884C\u4E14\u53D1\u8D27\u51C6\u786E\u7387\u8981\u6C42\u9AD8"],
-    outcomes: ["\u51FA\u5165\u5E93\u6548\u7387\u63D0\u5347\u7EA6 80%", "\u5E93\u5B58\u51C6\u786E\u7387\u53EF\u8FBE 99.5%", "\u76D8\u70B9\u65F6\u95F4\u53EF\u4ECE\u5929\u7EA7\u7F29\u77ED\u5230\u5C0F\u65F6\u7EA7", "\u9519\u53D1\u6F0F\u53D1\u663E\u8457\u4E0B\u964D"],
-    source: "migrated from ai-manufacturing-trade-site"
-  },
-  {
-    id: "procurement-ai",
-    title: "\u91C7\u8D2D AI \u52A9\u624B",
-    keywords: ["\u91C7\u8D2D", "\u7F3A\u6599", "\u4F9B\u5E94\u5546", "\u8BE2\u4EF7", "\u8865\u8D27", "\u5728\u9014", "\u5B89\u5168\u5E93\u5B58", "procurement"],
-    oneLiner: "\u91C7\u8D2D AI \u52A9\u624B\u7528\u4E8E\u56DE\u7B54\u201C\u4E70\u4EC0\u4E48\u3001\u4E70\u591A\u5C11\u3001\u5411\u8C01\u4E70\u201D\uFF0C\u628A\u7F3A\u6599\u8BC6\u522B\u548C\u4F9B\u5E94\u5546\u9009\u62E9\u81EA\u52A8\u5316\u3002",
-    whatIs: "\u7CFB\u7EDF\u7ED3\u5408\u5E93\u5B58\u3001\u5728\u9014\u91CF\u548C\u751F\u4EA7\u8BA1\u5212\uFF0C\u81EA\u52A8\u751F\u6210\u91C7\u8D2D\u5EFA\u8BAE\u5E76\u56DE\u5199\u5230\u4E1A\u52A1\u7CFB\u7EDF\u3002",
-    problems: ["\u7F3A\u6599\u53D1\u73B0\u6EDE\u540E", "\u8BE2\u4EF7\u94FE\u8DEF\u957F", "\u4F9B\u5E94\u5546\u9009\u62E9\u7F3A\u5C11\u91CF\u5316\u4F9D\u636E"],
-    workflow: ["\u8BC6\u522B\u7F3A\u6599", "\u751F\u6210\u5EFA\u8BAE\u91C7\u8D2D\u91CF", "\u6BD4\u9009\u4F9B\u5E94\u5546", "\u56DE\u5199\u4E0E\u590D\u76D8"],
-    scenarios: ["\u591A\u54C1\u7C7B\u539F\u6599\u91C7\u8D2D", "\u4EA4\u671F\u654F\u611F\u8BA2\u5355", "\u6210\u672C\u4E0E\u7A33\u5B9A\u6027\u540C\u65F6\u8981\u6C42\u9AD8\u7684\u5236\u9020\u573A\u666F"],
-    outcomes: ["\u51CF\u5C11\u505C\u7EBF\u98CE\u9669", "\u7F29\u77ED\u91C7\u8D2D\u54CD\u5E94\u65F6\u95F4", "\u63D0\u9AD8\u91C7\u8D2D\u51B3\u7B56\u4E00\u81F4\u6027"],
-    source: "migrated from ai-manufacturing-trade-site"
-  },
-  {
-    id: "finance-ocr",
-    title: "\u8D22\u7A0E OCR \u81EA\u52A8\u5316",
-    keywords: ["\u8D22\u7A0E", "\u53D1\u7968", "ocr", "\u7968\u636E", "\u5408\u89C4", "\u62A5\u9500"],
-    oneLiner: "\u8D22\u7A0E OCR \u628A\u7968\u636E\u8BC6\u522B\u3001\u67E5\u9A8C\u3001\u5F52\u6863\u505A\u6210\u81EA\u52A8\u5316\u95ED\u73AF\uFF0C\u964D\u4F4E\u4EBA\u5DE5\u5F55\u5165\u548C\u5408\u89C4\u98CE\u9669\u3002",
-    whatIs: "\u7CFB\u7EDF\u81EA\u52A8\u63D0\u53D6\u7968\u636E\u5B57\u6BB5\u5E76\u505A\u89C4\u5219\u6821\u9A8C\uFF0C\u5F02\u5E38\u5B9E\u65F6\u9884\u8B66\uFF0C\u6240\u6709\u5904\u7406\u8FC7\u7A0B\u53EF\u8FFD\u6EAF\u3002",
-    problems: ["\u4EBA\u5DE5\u5F55\u7968\u6162\u4E14\u6613\u9519", "\u7968\u636E\u6838\u9A8C\u8D1F\u62C5\u91CD", "\u5BA1\u8BA1\u8FFD\u6EAF\u6210\u672C\u9AD8"],
-    workflow: ["\u7968\u636E\u91C7\u96C6", "OCR \u8BC6\u522B", "\u89C4\u5219\u6821\u9A8C", "\u7ED3\u679C\u5F52\u6863\u8FFD\u6EAF"],
-    scenarios: ["\u6708\u5EA6\u96C6\u4E2D\u5F00\u7968", "\u591A\u4E3B\u4F53\u62A5\u9500", "\u8D22\u7A0E\u5408\u89C4\u68C0\u67E5"],
-    outcomes: ["\u63D0\u5347\u5904\u7406\u901F\u5EA6", "\u51CF\u5C11\u9519\u5F55\u6F0F\u5F55", "\u63D0\u9AD8\u5BA1\u8BA1\u53EF\u8FFD\u6EAF\u6027"],
-    source: "migrated from ai-manufacturing-trade-site"
-  }
+    {
+        id: 'wms-rfid',
+        title: 'WMS + RFID 智能仓储',
+        keywords: ['wms', 'rfid', '仓储', '仓库', '入库', '出库', '盘点', '库位', '批次追溯', 'fifo', '仓储管理'],
+        oneLiner: 'WMS + RFID 是把仓库管理系统与射频识别结合，实现入库、定位、盘点、出库全流程自动化。',
+        whatIs: '系统通过 RFID 自动识别货物信息，并由 WMS 在毫秒级做库位与作业决策，减少人工扫码、人工分配和人工核对环节。',
+        problems: [
+            '入库/出库效率低，人工扫码慢且容易漏扫错扫',
+            '库位分配依赖经验，利用率不高且调度不稳定',
+            '盘点周期长、停工成本高、账实不一致',
+            '批次追溯慢，异常定位和召回响应慢'
+        ],
+        workflow: [
+            'RFID 读取：0.1 秒完成货物识别',
+            '自动分配仓库：按库存水位、周转率、库位利用率匹配最优区域',
+            '库位定位：定位到货架区/列/层，支持终端导航',
+            '入库单生成：自动同步 ERP/MES/TMS，保留完整追溯记录'
+        ],
+        scenarios: ['汽车零部件仓，SKU 多且批次复杂', '电子元器件仓，需要批次级追溯', '成品仓，多订单并行且发货准确率要求高'],
+        outcomes: ['出入库效率提升约 80%', '库存准确率可达 99.5%', '盘点时间可从天级缩短到小时级', '错发漏发显著下降'],
+        source: 'migrated from ai-manufacturing-trade-site'
+    },
+    {
+        id: 'procurement-ai',
+        title: '采购 AI 助手',
+        keywords: ['采购', '缺料', '供应商', '询价', '补货', '在途', '安全库存', 'procurement'],
+        oneLiner: '采购 AI 助手用于回答“买什么、买多少、向谁买”，把缺料识别和供应商选择自动化。',
+        whatIs: '系统结合库存、在途量和生产计划，自动生成采购建议并回写到业务系统。',
+        problems: ['缺料发现滞后', '询价链路长', '供应商选择缺少量化依据'],
+        workflow: ['识别缺料', '生成建议采购量', '比选供应商', '回写与复盘'],
+        scenarios: ['多品类原料采购', '交期敏感订单', '成本与稳定性同时要求高的制造场景'],
+        outcomes: ['减少停线风险', '缩短采购响应时间', '提高采购决策一致性'],
+        source: 'migrated from ai-manufacturing-trade-site'
+    },
+    {
+        id: 'finance-ocr',
+        title: '财税 OCR 自动化',
+        keywords: ['财税', '发票', 'ocr', '票据', '合规', '报销'],
+        oneLiner: '财税 OCR 把票据识别、查验、归档做成自动化闭环，降低人工录入和合规风险。',
+        whatIs: '系统自动提取票据字段并做规则校验，异常实时预警，所有处理过程可追溯。',
+        problems: ['人工录票慢且易错', '票据核验负担重', '审计追溯成本高'],
+        workflow: ['票据采集', 'OCR 识别', '规则校验', '结果归档追溯'],
+        scenarios: ['月度集中开票', '多主体报销', '财税合规检查'],
+        outcomes: ['提升处理速度', '减少错录漏录', '提高审计可追溯性'],
+        source: 'migrated from ai-manufacturing-trade-site'
+    }
 ];
 
 const demoSiteConfig = {
-  brandName: "AI Factory Customer Bot Demo",
-  heroTitle: "\u5236\u9020\u4E1A AI \u89E3\u51B3\u65B9\u6848\u4E0E\u4F9B\u5E94\u94FE\u670D\u52A1",
-  about: "\u8FD9\u4E2A\u6F14\u793A\u7AD9\u70B9\u63D0\u4F9B\u667A\u80FD\u4ED3\u50A8\u3001\u91C7\u8D2D AI\u3001\u8D22\u7A0E\u81EA\u52A8\u5316\u548C\u9879\u76EE\u54A8\u8BE2\u80FD\u529B\u3002",
-  phone: "+86 138-0000-0000",
-  email: "hello@example.com",
-  address: "Shanghai, China"
+    brandName: 'AI Factory Customer Bot Demo',
+    heroTitle: '制造业 AI 解决方案与供应链服务',
+    about: '这个演示站点提供智能仓储、采购 AI、财税自动化和项目咨询能力。',
+    phone: '+86 138-0000-0000',
+    email: 'hello@example.com',
+    address: 'Shanghai, China'
 };
 const demoArticles = [
-  {
-    id: "article-wms",
-    title: "WMS \u4E0E RFID \u5982\u4F55\u6539\u5584\u4ED3\u50A8\u6267\u884C",
-    summary: "\u4ECB\u7ECD\u5165\u5E93\u3001\u51FA\u5E93\u3001\u76D8\u70B9\u4E0E\u6279\u6B21\u8FFD\u6EAF\u7684\u81EA\u52A8\u5316\u6539\u9020\u601D\u8DEF\u3002",
-    category: "\u4ED3\u50A8"
-  },
-  {
-    id: "article-ai",
-    title: "\u91C7\u8D2D AI \u52A9\u624B\u7684\u843D\u5730\u65B9\u5F0F",
-    summary: "\u56F4\u7ED5\u7F3A\u6599\u8BC6\u522B\u3001\u4F9B\u5E94\u5546\u6BD4\u9009\u548C\u8865\u8D27\u5EFA\u8BAE\u6784\u5EFA\u81EA\u52A8\u5316\u95ED\u73AF\u3002",
-    category: "\u91C7\u8D2D"
-  }
+    {
+        id: 'article-wms',
+        title: 'WMS 与 RFID 如何改善仓储执行',
+        summary: '介绍入库、出库、盘点与批次追溯的自动化改造思路。',
+        category: '仓储'
+    },
+    {
+        id: 'article-ai',
+        title: '采购 AI 助手的落地方式',
+        summary: '围绕缺料识别、供应商比选和补货建议构建自动化闭环。',
+        category: '采购'
+    }
 ];
 const demoProducts = [
-  {
-    id: "product-bolt",
-    name: "\u516D\u89D2\u5934\u87BA\u6813",
-    category: "\u6807\u51C6\u4EF6",
-    summary: "\u9002\u7528\u4E8E\u591A\u79CD\u5DE5\u4E1A\u88C5\u914D\u573A\u666F\u7684\u5E38\u7528\u7D27\u56FA\u4EF6\u3002",
-    priceText: "\xA50.80 / \u4E2A",
-    parameters: [
-      { label: "\u89C4\u683C", value: "M8 x 30" },
-      { label: "\u6750\u8D28", value: "8.8 \u7EA7\u78B3\u94A2" },
-      { label: "\u8868\u9762\u5904\u7406", value: "\u9540\u950C" },
-      { label: "\u8D77\u8BA2\u91CF", value: "5000 \u4E2A" }
-    ]
-  },
-  {
-    id: "product-screw-machine",
-    name: "\u9AD8\u901F\u87BA\u4E1D\u673A",
-    category: "\u8BBE\u5907",
-    summary: "\u9002\u5408\u6D41\u6C34\u7EBF\u81EA\u52A8\u9501\u9644\u7684\u9AD8\u901F\u88C5\u914D\u8BBE\u5907\u3002",
-    priceText: "\xA528,000 / \u53F0",
-    parameters: [
-      { label: "\u8282\u62CD", value: "\u6BCF\u5206\u949F 45-60 \u9897" },
-      { label: "\u9002\u914D\u87BA\u4E1D", value: "M2-M6" },
-      { label: "\u4F9B\u7535", value: "220V / 50Hz" },
-      { label: "\u4EA4\u671F", value: "15 \u4E2A\u5DE5\u4F5C\u65E5" }
-    ]
-  }
+    {
+        id: 'product-bolt',
+        name: '六角头螺栓',
+        category: '标准件',
+        summary: '适用于多种工业装配场景的常用紧固件。',
+        priceText: '¥0.80 / 个',
+        parameters: [
+            { label: '规格', value: 'M8 x 30' },
+            { label: '材质', value: '8.8 级碳钢' },
+            { label: '表面处理', value: '镀锌' },
+            { label: '起订量', value: '5000 个' }
+        ]
+    },
+    {
+        id: 'product-screw-machine',
+        name: '高速螺丝机',
+        category: '设备',
+        summary: '适合流水线自动锁附的高速装配设备。',
+        priceText: '¥28,000 / 台',
+        parameters: [
+            { label: '节拍', value: '每分钟 45-60 颗' },
+            { label: '适配螺丝', value: 'M2-M6' },
+            { label: '供电', value: '220V / 50Hz' },
+            { label: '交期', value: '15 个工作日' }
+        ]
+    }
 ];
 const demoConsultingServices = [
-  {
-    id: "consulting-diagnosis",
-    name: "\u667A\u80FD\u5DE5\u5382\u8BCA\u65AD\u54A8\u8BE2",
-    category: "\u54A8\u8BE2",
-    introduction: "\u68B3\u7406\u73B0\u72B6\u3001\u8BC6\u522B\u74F6\u9888\u5E76\u8F93\u51FA\u8DEF\u7EBF\u56FE\u3002",
-    price: "6800",
-    negotiable: false
-  },
-  {
-    id: "consulting-qc",
-    name: "AI \u8D28\u68C0\u65B9\u6848\u54A8\u8BE2",
-    category: "\u54A8\u8BE2",
-    introduction: "\u56F4\u7ED5\u89C6\u89C9\u68C0\u6D4B\u4E0E\u8D28\u63A7\u6D41\u7A0B\u63D0\u4F9B\u65B9\u6848\u8BBE\u8BA1\u3002",
-    price: "",
-    negotiable: true
-  }
+    {
+        id: 'consulting-diagnosis',
+        name: '智能工厂诊断咨询',
+        category: '咨询',
+        introduction: '梳理现状、识别瓶颈并输出路线图。',
+        price: '6800',
+        negotiable: false
+    },
+    {
+        id: 'consulting-qc',
+        name: 'AI 质检方案咨询',
+        category: '咨询',
+        introduction: '围绕视觉检测与质控流程提供方案设计。',
+        price: '',
+        negotiable: true
+    }
 ];
 
 function normalizeText(value) {
-  return Array.from(value.toLowerCase()).filter((char) => /[a-z0-9\u4e00-\u9fa5]/.test(char)).join("");
+    return Array.from(value.toLowerCase())
+        .filter((char) => /[a-z0-9\u4e00-\u9fa5]/.test(char))
+        .join('');
 }
 function extractKeywords(value) {
-  var _a;
-  const words = value.toLowerCase().split(/[^a-z0-9\u4e00-\u9fa5]+/).map((word) => word.trim()).filter((word) => word.length >= 2);
-  const chineseSegments = (_a = value.match(/[\u4e00-\u9fa5]{2,}/g)) != null ? _a : [];
-  const chineseTokens = [];
-  for (const segment of chineseSegments) {
-    if (segment.length <= 4) {
-      chineseTokens.push(segment);
-      continue;
+    var _a;
+    const words = value
+        .toLowerCase()
+        .split(/[^a-z0-9\u4e00-\u9fa5]+/)
+        .map((word) => word.trim())
+        .filter((word) => word.length >= 2);
+    const chineseSegments = (_a = value.match(/[\u4e00-\u9fa5]{2,}/g)) !== null && _a !== void 0 ? _a : [];
+    const chineseTokens = [];
+    for (const segment of chineseSegments) {
+        if (segment.length <= 4) {
+            chineseTokens.push(segment);
+            continue;
+        }
+        for (let index = 0; index < segment.length - 1; index += 1) {
+            chineseTokens.push(segment.slice(index, index + 2));
+        }
     }
-    for (let index = 0; index < segment.length - 1; index += 1) {
-      chineseTokens.push(segment.slice(index, index + 2));
-    }
-  }
-  return Array.from(/* @__PURE__ */ new Set([...words, ...chineseTokens])).filter((word) => word.length >= 2);
+    return Array.from(new Set([...words, ...chineseTokens])).filter((word) => word.length >= 2);
 }
 function scoreSource(source, query, keywords) {
-  const normalizedSource = normalizeText(source);
-  if (!normalizedSource) {
-    return 0;
-  }
-  let score = 0;
-  const normalizedQuery = normalizeText(query);
-  if (normalizedQuery && normalizedSource.includes(normalizedQuery)) {
-    score += 10;
-  }
-  for (const keyword of keywords) {
-    const normalizedKeyword = normalizeText(keyword);
-    if (normalizedKeyword && normalizedSource.includes(normalizedKeyword)) {
-      score += 2;
+    const normalizedSource = normalizeText(source);
+    if (!normalizedSource) {
+        return 0;
     }
-  }
-  return score;
+    let score = 0;
+    const normalizedQuery = normalizeText(query);
+    if (normalizedQuery && normalizedSource.includes(normalizedQuery)) {
+        score += 10;
+    }
+    for (const keyword of keywords) {
+        const normalizedKeyword = normalizeText(keyword);
+        if (normalizedKeyword && normalizedSource.includes(normalizedKeyword)) {
+            score += 2;
+        }
+    }
+    return score;
 }
 function rankByQuery(items, query, resolveText) {
-  const keywords = extractKeywords(query);
-  return [...items].map((item) => ({
-    item,
-    score: scoreSource(resolveText(item), query, keywords)
-  })).filter((item) => item.score > 0).sort((left, right) => right.score - left.score).map((item) => item.item);
+    const keywords = extractKeywords(query);
+    return [...items]
+        .map((item) => ({
+        item,
+        score: scoreSource(resolveText(item), query, keywords)
+    }))
+        .filter((item) => item.score > 0)
+        .sort((left, right) => right.score - left.score)
+        .map((item) => item.item);
 }
 function formatContentSourceType(type) {
-  if (type === "webpage") return "\u7F51\u9875";
-  if (type === "email") return "\u90AE\u4EF6";
-  if (type === "excel") return "\u8868\u683C";
-  return "\u6587\u6863";
+    if (type === 'webpage')
+        return '网页';
+    if (type === 'email')
+        return '邮件';
+    if (type === 'excel')
+        return '表格';
+    return '文档';
 }
 function buildContentSourceCorpus(item) {
-  var _a, _b, _c;
-  return [
-    item.title,
-    item.category,
-    item.summary,
-    item.content,
-    item.sourceLabel,
-    item.sourceUrl,
-    ...(_a = item.tags) != null ? _a : [],
-    ...(_b = item.faqQuestions) != null ? _b : [],
-    ...(_c = item.answerHints) != null ? _c : []
-  ].filter(Boolean).join(" ");
+    var _a, _b, _c;
+    return [
+        item.title,
+        item.category,
+        item.summary,
+        item.content,
+        item.sourceLabel,
+        item.sourceUrl,
+        ...((_a = item.tags) !== null && _a !== void 0 ? _a : []),
+        ...((_b = item.faqQuestions) !== null && _b !== void 0 ? _b : []),
+        ...((_c = item.answerHints) !== null && _c !== void 0 ? _c : [])
+    ]
+        .filter(Boolean)
+        .join(' ');
 }
 function getEnabledContentSources(items) {
-  return items.filter((item) => item.enabled !== false);
+    return items.filter((item) => item.enabled !== false);
 }
 function splitContentIntoSegments(content) {
-  const compact = content.replace(/\r/g, "\n").trim();
-  if (!compact) {
-    return [];
-  }
-  const paragraphSegments = compact.split(/\n{2,}/).map((segment) => segment.replace(/\s+/g, " ").trim()).filter(Boolean);
-  const rawSegments = paragraphSegments.length ? paragraphSegments : compact.split(/[。！？!?；;\n]+/).map((segment) => segment.replace(/\s+/g, " ").trim());
-  const limitedSegments = [];
-  for (const segment of rawSegments.filter(Boolean)) {
-    if (segment.length <= 140) {
-      limitedSegments.push(segment);
-      continue;
+    const compact = content.replace(/\r/g, '\n').trim();
+    if (!compact) {
+        return [];
     }
-    for (let index = 0; index < segment.length; index += 120) {
-      const slice = segment.slice(index, index + 120).trim();
-      if (slice) {
-        limitedSegments.push(slice);
-      }
+    const paragraphSegments = compact
+        .split(/\n{2,}/)
+        .map((segment) => segment.replace(/\s+/g, ' ').trim())
+        .filter(Boolean);
+    const rawSegments = paragraphSegments.length ? paragraphSegments : compact.split(/[。！？!?；;\n]+/).map((segment) => segment.replace(/\s+/g, ' ').trim());
+    const limitedSegments = [];
+    for (const segment of rawSegments.filter(Boolean)) {
+        if (segment.length <= 140) {
+            limitedSegments.push(segment);
+            continue;
+        }
+        for (let index = 0; index < segment.length; index += 120) {
+            const slice = segment.slice(index, index + 120).trim();
+            if (slice) {
+                limitedSegments.push(slice);
+            }
+        }
     }
-  }
-  return limitedSegments.slice(0, 24);
+    return limitedSegments.slice(0, 24);
 }
 function pickBestContentSegment(item, query) {
-  var _a;
-  const segments = splitContentIntoSegments(item.content);
-  if (!segments.length) {
-    return item.summary.trim();
-  }
-  const keywords = extractKeywords(query);
-  const rankedSegments = segments.map((segment) => ({
-    segment,
-    score: scoreSource(segment, query, keywords)
-  })).sort((left, right) => right.score - left.score);
-  return ((_a = rankedSegments[0]) == null ? void 0 : _a.score) ? rankedSegments[0].segment : segments[0];
+    var _a;
+    const segments = splitContentIntoSegments(item.content);
+    if (!segments.length) {
+        return item.summary.trim();
+    }
+    const keywords = extractKeywords(query);
+    const rankedSegments = segments
+        .map((segment) => ({
+        segment,
+        score: scoreSource(segment, query, keywords)
+    }))
+        .sort((left, right) => right.score - left.score);
+    return ((_a = rankedSegments[0]) === null || _a === void 0 ? void 0 : _a.score) ? rankedSegments[0].segment : segments[0];
 }
 function pickMatchedContentSources(query, contentSources) {
-  const keywords = extractKeywords(query);
-  return [...getEnabledContentSources(contentSources)].map((item) => {
-    var _a, _b;
-    const corpusScore = scoreSource(buildContentSourceCorpus(item), query, keywords);
-    const segmentScore = splitContentIntoSegments(item.content).reduce((max, segment) => Math.max(max, scoreSource(segment, query, keywords)), 0);
-    const faqScore = ((_a = item.faqQuestions) != null ? _a : []).reduce((sum, question) => sum + scoreSource(question, query, keywords) * 2, 0);
-    const hintScore = ((_b = item.answerHints) != null ? _b : []).reduce((sum, hint) => sum + scoreSource(hint, query, keywords), 0);
-    return {
-      item,
-      score: corpusScore + segmentScore * 2 + faqScore + hintScore
-    };
-  }).filter((item) => item.score > 0).sort((left, right) => right.score - left.score).slice(0, 3).map((item) => item.item);
+    const keywords = extractKeywords(query);
+    return [...getEnabledContentSources(contentSources)]
+        .map((item) => {
+        var _a, _b;
+        const corpusScore = scoreSource(buildContentSourceCorpus(item), query, keywords);
+        const segmentScore = splitContentIntoSegments(item.content).reduce((max, segment) => Math.max(max, scoreSource(segment, query, keywords)), 0);
+        const faqScore = ((_a = item.faqQuestions) !== null && _a !== void 0 ? _a : []).reduce((sum, question) => sum + scoreSource(question, query, keywords) * 2, 0);
+        const hintScore = ((_b = item.answerHints) !== null && _b !== void 0 ? _b : []).reduce((sum, hint) => sum + scoreSource(hint, query, keywords), 0);
+        return {
+            item,
+            score: corpusScore + segmentScore * 2 + faqScore + hintScore
+        };
+    })
+        .filter((item) => item.score > 0)
+        .sort((left, right) => right.score - left.score)
+        .slice(0, 3)
+        .map((item) => item.item);
 }
 function toMatchedContentSourceReferences(items, query) {
-  return items.map((item) => {
-    var _a, _b;
-    return {
-      id: item.id,
-      title: item.title,
-      type: item.type,
-      category: item.category,
-      snippet: pickContentSourceSnippet(item, query),
-      answerHints: (_b = (_a = item.answerHints) == null ? void 0 : _a.slice(0, 4)) != null ? _b : []
-    };
-  });
+    return items.map((item) => {
+        var _a, _b;
+        return ({
+            id: item.id,
+            title: item.title,
+            type: item.type,
+            category: item.category,
+            snippet: pickContentSourceSnippet(item, query),
+            answerHints: (_b = (_a = item.answerHints) === null || _a === void 0 ? void 0 : _a.slice(0, 4)) !== null && _b !== void 0 ? _b : []
+        });
+    });
 }
 function pickContentSourceSnippet(item, query) {
-  const compact = pickBestContentSegment(item, query).replace(/\s+/g, " ").trim();
-  if (!compact) {
-    return item.summary.trim();
-  }
-  const keywords = [query, ...extractKeywords(query)].map((value) => value.trim()).filter(Boolean);
-  const matchedKeyword = keywords.find((keyword) => compact.toLowerCase().includes(keyword.toLowerCase()));
-  if (!matchedKeyword) {
-    return compact.slice(0, 120);
-  }
-  const index = compact.toLowerCase().indexOf(matchedKeyword.toLowerCase());
-  const start = Math.max(0, index - 24);
-  const end = Math.min(compact.length, index + matchedKeyword.length + 48);
-  return compact.slice(start, end);
+    const compact = pickBestContentSegment(item, query).replace(/\s+/g, ' ').trim();
+    if (!compact) {
+        return item.summary.trim();
+    }
+    const keywords = [query, ...extractKeywords(query)].map((value) => value.trim()).filter(Boolean);
+    const matchedKeyword = keywords.find((keyword) => compact.toLowerCase().includes(keyword.toLowerCase()));
+    if (!matchedKeyword) {
+        return compact.slice(0, 120);
+    }
+    const index = compact.toLowerCase().indexOf(matchedKeyword.toLowerCase());
+    const start = Math.max(0, index - 24);
+    const end = Math.min(compact.length, index + matchedKeyword.length + 48);
+    return compact.slice(start, end);
 }
 function scoreKnowledgeEntry(entry, query) {
-  const keywords = extractKeywords(query);
-  const normalizedQuery = normalizeText(query);
-  const corpus = [entry.title, entry.oneLiner, entry.whatIs, ...entry.problems, ...entry.workflow, ...entry.scenarios, ...entry.outcomes].join(
-    " "
-  );
-  let score = scoreSource(corpus, query, keywords);
-  for (const keyword of entry.keywords) {
-    const normalizedKeyword = normalizeText(keyword);
-    if (normalizedKeyword && normalizedQuery.includes(normalizedKeyword)) {
-      score += 8;
+    const keywords = extractKeywords(query);
+    const normalizedQuery = normalizeText(query);
+    const corpus = [entry.title, entry.oneLiner, entry.whatIs, ...entry.problems, ...entry.workflow, ...entry.scenarios, ...entry.outcomes].join(' ');
+    let score = scoreSource(corpus, query, keywords);
+    for (const keyword of entry.keywords) {
+        const normalizedKeyword = normalizeText(keyword);
+        if (normalizedKeyword && normalizedQuery.includes(normalizedKeyword)) {
+            score += 8;
+        }
     }
-  }
-  return score;
+    return score;
 }
 function hasDirectKeywordHit(entry, query) {
-  const normalizedQuery = normalizeText(query);
-  if (!normalizedQuery) {
-    return false;
-  }
-  return entry.keywords.some((keyword) => {
-    const normalizedKeyword = normalizeText(keyword);
-    return normalizedKeyword.length >= 2 && normalizedQuery.includes(normalizedKeyword);
-  });
+    const normalizedQuery = normalizeText(query);
+    if (!normalizedQuery) {
+        return false;
+    }
+    return entry.keywords.some((keyword) => {
+        const normalizedKeyword = normalizeText(keyword);
+        return normalizedKeyword.length >= 2 && normalizedQuery.includes(normalizedKeyword);
+    });
 }
 function pickKnowledgeEntry(query, knowledgeEntries) {
-  const ranked = knowledgeEntries.map((entry) => {
-    const baseScore = scoreKnowledgeEntry(entry, query);
-    const priorityBoost = entry.source === "faq-standard-reply" && hasDirectKeywordHit(entry, query) ? 24 : 0;
-    return { entry, score: baseScore + priorityBoost };
-  }).sort((left, right) => right.score - left.score);
-  const top = ranked[0];
-  if (!top || top.score < 8) {
-    return null;
-  }
-  return top.entry;
+    const ranked = knowledgeEntries
+        .map((entry) => {
+        const baseScore = scoreKnowledgeEntry(entry, query);
+        const priorityBoost = entry.source === 'faq-standard-reply' && hasDirectKeywordHit(entry, query) ? 24 : 0;
+        return { entry, score: baseScore + priorityBoost };
+    })
+        .sort((left, right) => right.score - left.score);
+    const top = ranked[0];
+    if (!top || top.score < 8) {
+        return null;
+    }
+    return top.entry;
 }
 function buildKnowledgeAnswer(entry, question) {
-  const lines = [
-    "\u57FA\u4E8E\u5F53\u524D\u8D44\u6599\uFF0C\u7ED3\u6784\u5316\u7B54\u590D\u5982\u4E0B\uFF1A",
-    `\u3010\u4F60\u7684\u95EE\u9898\u3011${question}`,
-    `\u3010\u4E3B\u9898\u3011${entry.title}`,
-    `\u3010\u4E00\u53E5\u8BDD\u3011${entry.oneLiner}`,
-    `\u3010\u5B83\u662F\u4EC0\u4E48\u3011${entry.whatIs}`,
-    "\u3010\u4E3B\u8981\u89E3\u51B3\u3011"
-  ];
-  entry.problems.forEach((item) => {
-    lines.push(`- ${item}`);
-  });
-  lines.push("\u3010\u843D\u5730\u6D41\u7A0B\u3011");
-  entry.workflow.forEach((item, index) => {
-    lines.push(`${index + 1}. ${item}`);
-  });
-  lines.push("\u3010\u9002\u7528\u573A\u666F\u3011");
-  entry.scenarios.forEach((item) => {
-    lines.push(`- ${item}`);
-  });
-  lines.push("\u3010\u9884\u671F\u6548\u679C\u3011");
-  entry.outcomes.forEach((item) => {
-    lines.push(`- ${item}`);
-  });
-  lines.push("\u3010\u53C2\u8003\u8D44\u6599\u3011");
-  lines.push(`- \u77E5\u8BC6\u6761\u76EE\uFF1A${entry.title}`);
-  lines.push(`- \u6765\u6E90\uFF1A${entry.source}`);
-  return lines.join("\n");
+    const lines = [
+        '基于当前资料，结构化答复如下：',
+        `【你的问题】${question}`,
+        `【主题】${entry.title}`,
+        `【一句话】${entry.oneLiner}`,
+        `【它是什么】${entry.whatIs}`,
+        '【主要解决】'
+    ];
+    entry.problems.forEach((item) => {
+        lines.push(`- ${item}`);
+    });
+    lines.push('【落地流程】');
+    entry.workflow.forEach((item, index) => {
+        lines.push(`${index + 1}. ${item}`);
+    });
+    lines.push('【适用场景】');
+    entry.scenarios.forEach((item) => {
+        lines.push(`- ${item}`);
+    });
+    lines.push('【预期效果】');
+    entry.outcomes.forEach((item) => {
+        lines.push(`- ${item}`);
+    });
+    lines.push('【参考资料】');
+    lines.push(`- 知识条目：${entry.title}`);
+    lines.push(`- 来源：${entry.source}`);
+    return lines.join('\n');
 }
 function formatConsultingPrice(item) {
-  if (item.negotiable) {
-    return "\u9762\u8BAE";
-  }
-  if (!item.price.trim()) {
-    return "\u9762\u8BAE";
-  }
-  if (item.price.startsWith("\xA5") || item.price.startsWith("\uFFE5")) {
-    return item.price;
-  }
-  return `\xA5${item.price}`;
+    if (item.negotiable) {
+        return '面议';
+    }
+    if (!item.price.trim()) {
+        return '面议';
+    }
+    if (item.price.startsWith('¥') || item.price.startsWith('￥')) {
+        return item.price;
+    }
+    return `¥${item.price}`;
 }
 function buildPriceAnswer(input) {
-  const { query, products, consultingServices } = input;
-  const matchedProducts = rankByQuery(products, query, (item) => `${item.name} ${item.category} ${item.summary}`).slice(0, 8);
-  const matchedConsulting = rankByQuery(
-    consultingServices,
-    query,
-    (item) => `${item.name} ${item.category} ${item.introduction}`
-  ).slice(0, 5);
-  if (matchedProducts.length === 0 && matchedConsulting.length === 0) {
-    const examples = products.slice(0, 3).map((item) => item.name).join("\u3001");
-    return `\u6682\u65E0\u7CBE\u786E\u5339\u914D\u3002\u4F60\u53EF\u4EE5\u8BD5\u8BD5\u8FD9\u4E9B\u793A\u4F8B\uFF1A${examples || "\u516D\u89D2\u5934\u87BA\u6813\u3001\u9AD8\u901F\u87BA\u4E1D\u673A"}\u3002`;
-  }
-  const lines = ["\u5DF2\u68C0\u7D22\u5230\u4EE5\u4E0B\u4EF7\u683C\u4FE1\u606F\uFF1A"];
-  matchedProducts.forEach((item) => {
-    var _a;
-    lines.push(`- [${item.category}] ${item.name}\uFF1A${item.priceText}`);
-    if ((_a = item.parameters) == null ? void 0 : _a.length) {
-      lines.push(`  \u53C2\u6570\uFF1A${item.parameters.map((parameter) => `${parameter.label}=${parameter.value}`).join("\uFF1B")}`);
+    const { query, products, consultingServices } = input;
+    const matchedProducts = rankByQuery(products, query, (item) => `${item.name} ${item.category} ${item.summary}`).slice(0, 8);
+    const matchedConsulting = rankByQuery(consultingServices, query, (item) => `${item.name} ${item.category} ${item.introduction}`).slice(0, 5);
+    if (matchedProducts.length === 0 && matchedConsulting.length === 0) {
+        const examples = products
+            .slice(0, 3)
+            .map((item) => item.name)
+            .join('、');
+        return `暂无精确匹配。你可以试试这些示例：${examples || '六角头螺栓、高速螺丝机'}。`;
     }
-  });
-  matchedConsulting.forEach((item) => {
-    lines.push(`- [\u54A8\u8BE2] ${item.name}\uFF1A${formatConsultingPrice(item)}`);
-  });
-  lines.push("\u3010\u53C2\u8003\u8D44\u6599\u3011");
-  matchedProducts.forEach((item) => {
-    lines.push(`- \u4EA7\u54C1\uFF1A${item.name}`);
-  });
-  matchedConsulting.forEach((item) => {
-    lines.push(`- \u54A8\u8BE2\u670D\u52A1\uFF1A${item.name}`);
-  });
-  lines.push("\u5982\u9700\u6B63\u5F0F\u62A5\u4EF7\uFF0C\u8BF7\u63D0\u4EA4\u8054\u7CFB\u9700\u6C42\u3002");
-  return lines.join("\n");
+    const lines = ['已检索到以下价格信息：'];
+    matchedProducts.forEach((item) => {
+        var _a;
+        lines.push(`- [${item.category}] ${item.name}：${item.priceText}`);
+        if ((_a = item.parameters) === null || _a === void 0 ? void 0 : _a.length) {
+            lines.push(`  参数：${item.parameters.map((parameter) => `${parameter.label}=${parameter.value}`).join('；')}`);
+        }
+    });
+    matchedConsulting.forEach((item) => {
+        lines.push(`- [咨询] ${item.name}：${formatConsultingPrice(item)}`);
+    });
+    lines.push('【参考资料】');
+    matchedProducts.forEach((item) => {
+        lines.push(`- 产品：${item.name}`);
+    });
+    matchedConsulting.forEach((item) => {
+        lines.push(`- 咨询服务：${item.name}`);
+    });
+    lines.push('如需正式报价，请提交联系需求。');
+    return lines.join('\n');
 }
 function buildDocumentAnswer(input) {
-  const { query, knowledgeEntries, articles, products, consultingServices, contentSources, siteConfig } = input;
-  const question = query.trim() || "\u8BF7\u4ECB\u7ECD\u4F60\u4EEC\u7684\u5E73\u53F0\u80FD\u529B";
-  const matchedKnowledge = pickKnowledgeEntry(question, knowledgeEntries);
-  if (matchedKnowledge) {
-    const content2 = buildKnowledgeAnswer(matchedKnowledge, question);
-    return { content: content2, meta: { strategy: "knowledge", matchedKnowledgeEntry: matchedKnowledge, matchedContentSources: [] } } ;
-  }
-  const matchedArticles = rankByQuery(articles, question, (item) => `${item.title} ${item.summary} ${item.category}`).slice(0, 3);
-  const matchedProducts = rankByQuery(products, question, (item) => `${item.name} ${item.category} ${item.summary}`).slice(0, 3);
-  const matchedConsulting = rankByQuery(
-    consultingServices,
-    question,
-    (item) => `${item.name} ${item.category} ${item.introduction}`
-  ).slice(0, 2);
-  const matchedSources = pickMatchedContentSources(question, contentSources);
-  const lines = [
-    "\u57FA\u4E8E\u5F53\u524D\u8D44\u6599\uFF0C\u7ED3\u6784\u5316\u7B54\u590D\u5982\u4E0B\uFF1A",
-    `\u3010\u4F60\u7684\u95EE\u9898\u3011${question}`,
-    `\u3010\u5E73\u53F0\u5B9A\u4F4D\u3011${siteConfig.heroTitle}`,
-    `\u3010\u670D\u52A1\u7B80\u4ECB\u3011${siteConfig.about}`
-  ];
-  if (matchedArticles.length === 0 && matchedProducts.length === 0 && matchedConsulting.length === 0 && matchedSources.length === 0) {
-    lines.push("\u3010\u8BF4\u660E\u3011\u5F53\u524D\u8D44\u6599\u6CA1\u6709\u76F4\u63A5\u547D\u4E2D\u8BE5\u95EE\u9898\u3002\u53EF\u4EE5\u8865\u5145\u77E5\u8BC6\u6761\u76EE\u540E\u518D\u56DE\u7B54\u3002");
-    const content2 = lines.join("\n");
-    return { content: content2, meta: { strategy: "document", matchedKnowledgeEntry: null, matchedContentSources: [] } } ;
-  }
-  if (matchedArticles.length > 0) {
-    lines.push("\u3010\u76F8\u5173\u6587\u6863\u6458\u8981\u3011");
+    const { query, knowledgeEntries, articles, products, consultingServices, contentSources, siteConfig } = input;
+    const question = query.trim() || '请介绍你们的平台能力';
+    const matchedKnowledge = pickKnowledgeEntry(question, knowledgeEntries);
+    if (matchedKnowledge) {
+        const content = buildKnowledgeAnswer(matchedKnowledge, question);
+        return { content, meta: { strategy: 'knowledge', matchedKnowledgeEntry: matchedKnowledge, matchedContentSources: [] } } ;
+    }
+    const matchedArticles = rankByQuery(articles, question, (item) => `${item.title} ${item.summary} ${item.category}`).slice(0, 3);
+    const matchedProducts = rankByQuery(products, question, (item) => `${item.name} ${item.category} ${item.summary}`).slice(0, 3);
+    const matchedConsulting = rankByQuery(consultingServices, question, (item) => `${item.name} ${item.category} ${item.introduction}`).slice(0, 2);
+    const matchedSources = pickMatchedContentSources(question, contentSources);
+    const lines = [
+        '基于当前资料，结构化答复如下：',
+        `【你的问题】${question}`,
+        `【平台定位】${siteConfig.heroTitle}`,
+        `【服务简介】${siteConfig.about}`
+    ];
+    if (matchedArticles.length === 0 && matchedProducts.length === 0 && matchedConsulting.length === 0 && matchedSources.length === 0) {
+        lines.push('【说明】当前资料没有直接命中该问题。可以补充知识条目后再回答。');
+        const content = lines.join('\n');
+        return { content, meta: { strategy: 'document', matchedKnowledgeEntry: null, matchedContentSources: [] } } ;
+    }
+    if (matchedArticles.length > 0) {
+        lines.push('【相关文档摘要】');
+        matchedArticles.forEach((item) => {
+            lines.push(`- ${item.title}：${item.summary}`);
+        });
+    }
+    if (matchedProducts.length > 0) {
+        lines.push('【相关产品线索】');
+        matchedProducts.forEach((item) => {
+            var _a;
+            lines.push(`- ${item.name}（${item.category}）：${item.summary}`);
+            if ((_a = item.parameters) === null || _a === void 0 ? void 0 : _a.length) {
+                lines.push(`  参数：${item.parameters.map((parameter) => `${parameter.label}=${parameter.value}`).join('；')}`);
+            }
+        });
+    }
+    if (matchedConsulting.length > 0) {
+        lines.push('【相关咨询线索】');
+        matchedConsulting.forEach((item) => {
+            lines.push(`- ${item.name}：${item.introduction}`);
+        });
+    }
+    if (matchedSources.length > 0) {
+        lines.push('【相关资料源】');
+        matchedSources.forEach((item) => {
+            var _a, _b;
+            lines.push(`- [${formatContentSourceType(item.type)}] ${item.title}：${item.summary}`);
+            if ((_a = item.category) === null || _a === void 0 ? void 0 : _a.trim()) {
+                lines.push(`  分类：${item.category.trim()}`);
+            }
+            if ((_b = item.answerHints) === null || _b === void 0 ? void 0 : _b.length) {
+                lines.push(`  回答要点：${item.answerHints.join('；')}`);
+            }
+            const snippet = pickContentSourceSnippet(item, question);
+            if (snippet) {
+                lines.push(`  摘录：${snippet}`);
+            }
+        });
+    }
+    lines.push('【参考资料】');
     matchedArticles.forEach((item) => {
-      lines.push(`- ${item.title}\uFF1A${item.summary}`);
+        lines.push(`- 文档：${item.title}`);
     });
-  }
-  if (matchedProducts.length > 0) {
-    lines.push("\u3010\u76F8\u5173\u4EA7\u54C1\u7EBF\u7D22\u3011");
     matchedProducts.forEach((item) => {
-      var _a;
-      lines.push(`- ${item.name}\uFF08${item.category}\uFF09\uFF1A${item.summary}`);
-      if ((_a = item.parameters) == null ? void 0 : _a.length) {
-        lines.push(`  \u53C2\u6570\uFF1A${item.parameters.map((parameter) => `${parameter.label}=${parameter.value}`).join("\uFF1B")}`);
-      }
+        lines.push(`- 产品：${item.name}`);
     });
-  }
-  if (matchedConsulting.length > 0) {
-    lines.push("\u3010\u76F8\u5173\u54A8\u8BE2\u7EBF\u7D22\u3011");
     matchedConsulting.forEach((item) => {
-      lines.push(`- ${item.name}\uFF1A${item.introduction}`);
+        lines.push(`- 咨询服务：${item.name}`);
     });
-  }
-  if (matchedSources.length > 0) {
-    lines.push("\u3010\u76F8\u5173\u8D44\u6599\u6E90\u3011");
     matchedSources.forEach((item) => {
-      var _a, _b;
-      lines.push(`- [${formatContentSourceType(item.type)}] ${item.title}\uFF1A${item.summary}`);
-      if ((_a = item.category) == null ? void 0 : _a.trim()) {
-        lines.push(`  \u5206\u7C7B\uFF1A${item.category.trim()}`);
-      }
-      if ((_b = item.answerHints) == null ? void 0 : _b.length) {
-        lines.push(`  \u56DE\u7B54\u8981\u70B9\uFF1A${item.answerHints.join("\uFF1B")}`);
-      }
-      const snippet = pickContentSourceSnippet(item, question);
-      if (snippet) {
-        lines.push(`  \u6458\u5F55\uFF1A${snippet}`);
-      }
+        const sourceRef = item.sourceUrl || item.sourceLabel || item.id;
+        lines.push(`- ${formatContentSourceType(item.type)}：${item.title} (${sourceRef})`);
     });
-  }
-  lines.push("\u3010\u53C2\u8003\u8D44\u6599\u3011");
-  matchedArticles.forEach((item) => {
-    lines.push(`- \u6587\u6863\uFF1A${item.title}`);
-  });
-  matchedProducts.forEach((item) => {
-    lines.push(`- \u4EA7\u54C1\uFF1A${item.name}`);
-  });
-  matchedConsulting.forEach((item) => {
-    lines.push(`- \u54A8\u8BE2\u670D\u52A1\uFF1A${item.name}`);
-  });
-  matchedSources.forEach((item) => {
-    const sourceRef = item.sourceUrl || item.sourceLabel || item.id;
-    lines.push(`- ${formatContentSourceType(item.type)}\uFF1A${item.title} (${sourceRef})`);
-  });
-  const content = lines.join("\n");
-  return { content, meta: { strategy: "document", matchedKnowledgeEntry: null, matchedContentSources: matchedSources } } ;
+    const content = lines.join('\n');
+    return { content, meta: { strategy: 'document', matchedKnowledgeEntry: null, matchedContentSources: matchedSources } } ;
 }
 function looksLikePriceQuestion(query) {
-  return /价格|报价|多少钱|费用|预算|采购价|单价/.test(query);
+    return /价格|报价|多少钱|费用|预算|采购价|单价/.test(query);
 }
 function buildAttachmentNotice(attachments) {
-  if (!(attachments == null ? void 0 : attachments.length)) {
-    return "";
-  }
-  const lines = ["\u3010\u5DF2\u6536\u5230\u9644\u4EF6\u3011"];
-  attachments.forEach((attachment) => {
-    lines.push(`- ${attachment.name}\uFF08${Math.max(1, Math.round(attachment.size / 1024))} KB\uFF09`);
-  });
-  lines.push("\u5F53\u524D MVP \u5DF2\u652F\u6301\u622A\u56FE\u968F\u4F1A\u8BDD\u7559\u5B58\uFF1B\u82E5\u9700\u56FE\u50CF\u8BC6\u522B\u7ED3\u8BBA\uFF0C\u8BF7\u7531\u5BA2\u670D\u8FDB\u4E00\u6B65\u5904\u7406\u6216\u63A5\u5165\u89C6\u89C9\u6A21\u578B\u3002");
-  return lines.join("\n");
+    if (!(attachments === null || attachments === void 0 ? void 0 : attachments.length)) {
+        return '';
+    }
+    const lines = ['【已收到附件】'];
+    attachments.forEach((attachment) => {
+        lines.push(`- ${attachment.name}（${Math.max(1, Math.round(attachment.size / 1024))} KB）`);
+    });
+    lines.push('当前 MVP 已支持截图随会话留存；若需图像识别结论，请由客服进一步处理或接入视觉模型。');
+    return lines.join('\n');
 }
 function buildAssistantReply(input) {
-  let baseAnswer;
-  let meta;
-  if (looksLikePriceQuestion(input.query)) {
-    baseAnswer = buildPriceAnswer({
-      query: input.query,
-      products: input.products,
-      consultingServices: input.consultingServices
-    });
-    meta = { strategy: "price", matchedKnowledgeEntry: null, matchedContentSources: [] };
-  } else {
-    const documentResult = buildDocumentAnswer({ ...input});
-    baseAnswer = documentResult.content;
-    meta = documentResult.meta;
-  }
-  const attachmentNotice = buildAttachmentNotice(input.attachments);
-  const content = [baseAnswer, attachmentNotice].filter(Boolean).join("\n\n");
-  return input.returnMeta ? { content, meta } : content;
+    let baseAnswer;
+    let meta;
+    if (looksLikePriceQuestion(input.query)) {
+        baseAnswer = buildPriceAnswer({
+            query: input.query,
+            products: input.products,
+            consultingServices: input.consultingServices
+        });
+        meta = { strategy: 'price', matchedKnowledgeEntry: null, matchedContentSources: [] };
+    }
+    else {
+        const documentResult = buildDocumentAnswer({ ...input});
+        baseAnswer = documentResult.content;
+        meta = documentResult.meta;
+    }
+    const attachmentNotice = buildAttachmentNotice(input.attachments);
+    const content = [baseAnswer, attachmentNotice].filter(Boolean).join('\n\n');
+    return input.returnMeta ? { content, meta } : content;
 }
 
 function createLlmAdapter(options) {
-  return {
-    async reply(input) {
-      var _a, _b, _c, _d, _e, _f, _g, _h;
-      async function fallbackResult() {
-        return {
-          content: await options.fallback(input),
-          model: options.model || "",
-          inputTokens: 0,
-          outputTokens: 0,
-          totalTokens: 0,
-          status: "fallback"
-        };
-      }
-      if (!options.endpoint || !options.apiKey || !options.model) {
-        return fallbackResult();
-      }
-      try {
-        const fetcher = options.fetcher || fetch;
-        const soul = options.soulProfile ? [
-          options.soulProfile.role ? `\u89D2\u8272\uFF1A${options.soulProfile.role}` : "",
-          options.soulProfile.tone ? `\u8BED\u6C14\uFF1A${options.soulProfile.tone}` : "",
-          ((_a = options.soulProfile.goals) == null ? void 0 : _a.length) ? `\u76EE\u6807\uFF1A${options.soulProfile.goals.join("\uFF1B")}` : ""
-        ].filter(Boolean).join("\n") : "";
-        const messages = [
-          {
-            role: "system",
-            content: [options.systemPrompt || "", soul].filter(Boolean).join("\n\n")
-          },
-          ...(input.history || []).map((item) => ({
-            role: item.role,
-            content: item.content
-          })),
-          {
-            role: "user",
-            content: [input.context || "", input.message].filter(Boolean).join("\n\n")
-          }
-        ];
-        const response = await fetcher(options.endpoint, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${options.apiKey}`
-          },
-          body: JSON.stringify({
-            model: options.model,
-            messages
-          })
-        });
-        if (!response.ok) {
-          return fallbackResult();
+    return {
+        async reply(input) {
+            var _a, _b, _c, _d, _e, _f, _g, _h;
+            async function fallbackResult() {
+                return {
+                    content: await options.fallback(input),
+                    model: options.model || '',
+                    inputTokens: 0,
+                    outputTokens: 0,
+                    totalTokens: 0,
+                    status: 'fallback'
+                };
+            }
+            if (!options.endpoint || !options.apiKey || !options.model) {
+                return fallbackResult();
+            }
+            try {
+                const fetcher = options.fetcher || fetch;
+                const soul = options.soulProfile
+                    ? [
+                        options.soulProfile.role ? `角色：${options.soulProfile.role}` : '',
+                        options.soulProfile.tone ? `语气：${options.soulProfile.tone}` : '',
+                        ((_a = options.soulProfile.goals) === null || _a === void 0 ? void 0 : _a.length) ? `目标：${options.soulProfile.goals.join('；')}` : ''
+                    ]
+                        .filter(Boolean)
+                        .join('\n')
+                    : '';
+                const messages = [
+                    {
+                        role: 'system',
+                        content: [options.systemPrompt || '', soul].filter(Boolean).join('\n\n')
+                    },
+                    ...(input.history || []).map((item) => ({
+                        role: item.role,
+                        content: item.content
+                    })),
+                    {
+                        role: 'user',
+                        content: [input.context || '', input.message].filter(Boolean).join('\n\n')
+                    }
+                ];
+                const response = await fetcher(options.endpoint, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        Authorization: `Bearer ${options.apiKey}`
+                    },
+                    body: JSON.stringify({
+                        model: options.model,
+                        messages
+                    })
+                });
+                if (!response.ok) {
+                    return fallbackResult();
+                }
+                const data = (await response.json());
+                const content = (_e = (_d = (_c = (_b = data.choices) === null || _b === void 0 ? void 0 : _b[0]) === null || _c === void 0 ? void 0 : _c.message) === null || _d === void 0 ? void 0 : _d.content) === null || _e === void 0 ? void 0 : _e.trim();
+                if (!content) {
+                    return fallbackResult();
+                }
+                return {
+                    content,
+                    model: options.model,
+                    inputTokens: ((_f = data.usage) === null || _f === void 0 ? void 0 : _f.prompt_tokens) || 0,
+                    outputTokens: ((_g = data.usage) === null || _g === void 0 ? void 0 : _g.completion_tokens) || 0,
+                    totalTokens: ((_h = data.usage) === null || _h === void 0 ? void 0 : _h.total_tokens) || 0,
+                    status: 'success'
+                };
+            }
+            catch {
+                return fallbackResult();
+            }
         }
-        const data = await response.json();
-        const content = (_e = (_d = (_c = (_b = data.choices) == null ? void 0 : _b[0]) == null ? void 0 : _c.message) == null ? void 0 : _d.content) == null ? void 0 : _e.trim();
-        if (!content) {
-          return fallbackResult();
-        }
-        return {
-          content,
-          model: options.model,
-          inputTokens: ((_f = data.usage) == null ? void 0 : _f.prompt_tokens) || 0,
-          outputTokens: ((_g = data.usage) == null ? void 0 : _g.completion_tokens) || 0,
-          totalTokens: ((_h = data.usage) == null ? void 0 : _h.total_tokens) || 0,
-          status: "success"
-        };
-      } catch {
-        return fallbackResult();
-      }
-    }
-  };
+    };
 }
 
-var __defProp$1 = Object.defineProperty;
-var __defNormalProp$1 = (obj, key, value) => key in obj ? __defProp$1(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var __publicField$1 = (obj, key, value) => __defNormalProp$1(obj, key + "" , value);
 class TenantNotFoundError extends Error {
-  constructor(tenantId) {
-    super(`Tenant not found: ${tenantId}`);
-    __publicField$1(this, "code", "TENANT_NOT_FOUND");
-    this.name = "TenantNotFoundError";
-    Object.setPrototypeOf(this, TenantNotFoundError.prototype);
-  }
+    constructor(tenantId) {
+        super(`Tenant not found: ${tenantId}`);
+        this.code = 'TENANT_NOT_FOUND';
+        this.name = 'TenantNotFoundError';
+        Object.setPrototypeOf(this, TenantNotFoundError.prototype);
+    }
 }
 async function getRuntimeConfigForTenant(tenantId, storage = getStorage()) {
-  const tenant = await resolveTenant(tenantId, storage);
-  if (!tenant) {
-    throw new TenantNotFoundError(tenantId);
-  }
-  return {
-    tenantId: tenant.id,
-    status: tenant.status,
-    brandName: tenant.brandName,
-    themeColor: tenant.themeColor,
-    contactPhone: tenant.contactPhone,
-    contactEmail: tenant.contactEmail,
-    contactAddress: tenant.contactAddress,
-    systemPrompt: tenant.systemPrompt
-  };
+    const tenant = await resolveTenant(tenantId, storage);
+    if (!tenant) {
+        throw new TenantNotFoundError(tenantId);
+    }
+    return {
+        tenantId: tenant.id,
+        status: tenant.status,
+        brandName: tenant.brandName,
+        themeColor: tenant.themeColor,
+        contactPhone: tenant.contactPhone,
+        contactEmail: tenant.contactEmail,
+        contactAddress: tenant.contactAddress,
+        systemPrompt: tenant.systemPrompt
+    };
 }
 
-var __defProp = Object.defineProperty;
-var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var __publicField = (obj, key, value) => __defNormalProp(obj, key + "" , value);
 class SessionNotFoundError extends Error {
-  constructor(sessionId) {
-    super(`Session not found: ${sessionId}`);
-    __publicField(this, "code", "SESSION_NOT_FOUND");
-    this.name = "SessionNotFoundError";
-    Object.setPrototypeOf(this, SessionNotFoundError.prototype);
-  }
+    constructor(sessionId) {
+        super(`Session not found: ${sessionId}`);
+        this.code = 'SESSION_NOT_FOUND';
+        this.name = 'SessionNotFoundError';
+        Object.setPrototypeOf(this, SessionNotFoundError.prototype);
+    }
 }
 function nextId(prefix) {
-  return `${prefix}-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+    return `${prefix}-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
 }
 function normalizeQuestion(value) {
-  return value.trim().toLowerCase().replace(/\s+/g, " ");
+    return value
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, ' ');
 }
 function buildRetrievalSystemPrompt(basePrompt, strategy) {
-  const rules = [
-    "\u4F60\u662F\u4F01\u4E1A\u5BA2\u670D\u95EE\u7B54\u52A9\u624B\u3002",
-    "\u4F60\u5FC5\u987B\u4F18\u5148\u4F9D\u636E\u5DF2\u63D0\u4F9B\u7684\u547D\u4E2D\u8D44\u6599\u56DE\u7B54\uFF0C\u4E0D\u5F97\u8131\u79BB\u8D44\u6599\u81EA\u884C\u7F16\u9020\u4E8B\u5B9E\u3001\u53C2\u6570\u3001\u4EF7\u683C\u3001\u6D41\u7A0B\u6216\u627F\u8BFA\u3002",
-    "\u82E5\u8D44\u6599\u5DF2\u7ECF\u7ED9\u51FA\u7ED3\u6784\u5316\u7ED3\u679C\uFF0C\u4F18\u5148\u4FDD\u7559\u8BE5\u7ED3\u6784\u5E76\u505A\u8F7B\u5EA6\u6DA6\u8272\uFF0C\u4E0D\u8981\u6539\u5199\u6210\u6563\u4E71\u957F\u6587\u3002",
-    "\u82E5\u8D44\u6599\u672A\u76F4\u63A5\u547D\u4E2D\uFF0C\u53EA\u80FD\u660E\u786E\u8BF4\u660E\u201C\u5F53\u524D\u8D44\u6599\u672A\u76F4\u63A5\u547D\u4E2D\u201D\uFF0C\u5E76\u63D0\u793A\u53EF\u8865\u5145\u6587\u6863\u6216\u8F6C\u4EBA\u5DE5\uFF0C\u4E0D\u5F97\u81EA\u884C\u8111\u8865\u3002",
-    "\u82E5\u95EE\u9898\u6D89\u53CA\u4EF7\u683C\uFF0C\u53EA\u80FD\u4F7F\u7528\u8D44\u6599\u4E2D\u5DF2\u6709\u4EF7\u683C\uFF1B\u6CA1\u6709\u7CBE\u786E\u4EF7\u683C\u65F6\u8981\u660E\u786E\u8BF4\u660E\u6682\u65E0\u7CBE\u786E\u5339\u914D\u3002",
-    "\u56DE\u7B54\u4FDD\u6301\u7B80\u6D01\u3001\u4E13\u4E1A\u3001\u53EF\u6267\u884C\uFF0C\u907F\u514D\u7A7A\u6CDB\u5957\u8BDD\u3002"
-  ];
-  if (strategy === "knowledge") {
-    rules.push("\u5F53\u524D\u95EE\u9898\u5DF2\u547D\u4E2D\u77E5\u8BC6\u6761\u76EE\u6216\u6807\u51C6\u56DE\u590D\uFF0C\u4F18\u5148\u6CBF\u7528\u8BE5\u53E3\u5F84\u3002");
-  } else if (strategy === "price") {
-    rules.push("\u5F53\u524D\u95EE\u9898\u662F\u4EF7\u683C/\u62A5\u4EF7\u95EE\u9898\uFF0C\u7981\u6B62\u8F93\u51FA\u8D44\u6599\u4E4B\u5916\u7684\u4EF7\u683C\u533A\u95F4\u6216\u4F30\u7B97\u3002");
-  } else {
-    rules.push("\u5F53\u524D\u95EE\u9898\u4F7F\u7528\u6587\u6863\u68C0\u7D22\u7ED3\u679C\u56DE\u7B54\uFF0C\u8BF7\u4F18\u5148\u5F15\u7528\u8D44\u6599\u6458\u8981\u3001\u4EA7\u54C1\u53C2\u6570\u548C\u8D44\u6599\u6458\u5F55\u3002");
-  }
-  return [(basePrompt == null ? void 0 : basePrompt.trim()) || "", rules.join("\n")].filter(Boolean).join("\n\n");
+    const rules = [
+        '你是企业客服问答助手。',
+        '你必须优先依据已提供的命中资料回答，不得脱离资料自行编造事实、参数、价格、流程或承诺。',
+        '若资料已经给出结构化结果，优先保留该结构并做轻度润色，不要改写成散乱长文。',
+        '若资料未直接命中，只能明确说明“当前资料未直接命中”，并提示可补充文档或转人工，不得自行脑补。',
+        '若问题涉及价格，只能使用资料中已有价格；没有精确价格时要明确说明暂无精确匹配。',
+        '回答保持简洁、专业、可执行，避免空泛套话。'
+    ];
+    if (strategy === 'knowledge') {
+        rules.push('当前问题已命中知识条目或标准回复，优先沿用该口径。');
+    }
+    else if (strategy === 'price') {
+        rules.push('当前问题是价格/报价问题，禁止输出资料之外的价格区间或估算。');
+    }
+    else {
+        rules.push('当前问题使用文档检索结果回答，请优先引用资料摘要、产品参数和资料摘录。');
+    }
+    return [(basePrompt === null || basePrompt === void 0 ? void 0 : basePrompt.trim()) || '', rules.join('\n')].filter(Boolean).join('\n\n');
 }
 async function processChatMessage(input, options = {}) {
-  var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k;
-  const storage = options.storage || getStorage();
-  const tenant = await resolveTenant(input.tenantId, storage);
-  if (!tenant) {
-    throw new TenantNotFoundError(input.tenantId);
-  }
-  const now = Date.now();
-  let sessionId = input.sessionId;
-  let history = [];
-  const attachments = (_b = (_a = input.attachments) == null ? void 0 : _a.map((item) => structuredClone(item))) != null ? _b : [];
-  if (sessionId) {
-    const existingSession = await storage.getSessionById(sessionId);
-    if (!existingSession || existingSession.tenantId !== tenant.id) {
-      throw new SessionNotFoundError(sessionId);
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l;
+    const storage = options.storage || getStorage();
+    const tenant = await resolveTenant(input.tenantId, storage);
+    if (!tenant) {
+        throw new TenantNotFoundError(input.tenantId);
     }
-    const previousMessages = await storage.listMessagesBySession(sessionId);
-    history = previousMessages.map((message) => {
-      var _a2;
-      return {
-        role: message.role,
-        content: ((_a2 = message.attachments) == null ? void 0 : _a2.length) ? `${message.content}
-[\u9644\u4EF6: ${message.attachments.map((item) => item.name).join("\u3001")}]` : message.content
-      };
-    });
-    await storage.saveSession({
-      ...existingSession,
-      lastMessageAt: now
-    });
-  } else {
-    sessionId = nextId("session");
-    await storage.saveSession({
-      id: sessionId,
-      tenantId: tenant.id,
-      visitorId: "anonymous",
-      startedAt: now,
-      lastMessageAt: now
-    });
-  }
-  const normalizedQuestion = normalizeQuestion(input.message);
-  if (tenant.reuseAnsweredQuestions !== false) {
-    const tenantSessions = await storage.listSessionsByTenant(tenant.id);
-    for (const session of tenantSessions) {
-      const sessionMessages = await storage.listMessagesBySession(session.id);
-      for (let index = 0; index < sessionMessages.length - 1; index += 1) {
-        const current = sessionMessages[index];
-        const next = sessionMessages[index + 1];
-        if (current.role === "user" && (next == null ? void 0 : next.role) === "assistant" && normalizeQuestion(current.content) === normalizedQuestion) {
-          await storage.saveMessage({
-            id: nextId("message"),
-            sessionId,
-            tenantId: tenant.id,
-            role: "user",
-            content: input.message,
-            createdAt: now,
-            attachments
-          });
-          await storage.saveMessage({
-            id: nextId("message"),
-            sessionId,
-            tenantId: tenant.id,
-            role: "assistant",
-            content: next.content,
-            createdAt: Date.now(),
-            matchedContentSources: next.matchedContentSources
-          });
-          return {
-            reply: next.content,
-            sessionId,
-            usage: {
-              inputTokens: 0,
-              outputTokens: 0,
-              totalTokens: 0
-            }
-          };
+    const now = Date.now();
+    let sessionId = input.sessionId;
+    let history = [];
+    const attachments = (_b = (_a = input.attachments) === null || _a === void 0 ? void 0 : _a.map((item) => structuredClone(item))) !== null && _b !== void 0 ? _b : [];
+    if (sessionId) {
+        const existingSession = await storage.getSessionById(sessionId);
+        if (!existingSession || existingSession.tenantId !== tenant.id) {
+            throw new SessionNotFoundError(sessionId);
         }
-      }
+        const previousMessages = await storage.listMessagesBySession(sessionId);
+        history = previousMessages.map((message) => {
+            var _a;
+            return ({
+                role: message.role,
+                content: ((_a = message.attachments) === null || _a === void 0 ? void 0 : _a.length)
+                    ? `${message.content}\n[附件: ${message.attachments.map((item) => item.name).join('、')}]`
+                    : message.content
+            });
+        });
+        await storage.saveSession({
+            ...existingSession,
+            lastMessageAt: now
+        });
     }
-  }
-  await storage.saveMessage({
-    id: nextId("message"),
-    sessionId,
-    tenantId: tenant.id,
-    role: "user",
-    content: input.message,
-    createdAt: now,
-    attachments
-  });
-  const attachmentContext = attachments.length ? `\u7528\u6237\u672C\u8F6E\u4E0A\u4F20\u4E86\u9644\u4EF6\uFF1A${attachments.map((item) => `${item.name}(${item.mimeType}, ${Math.max(1, Math.round(item.size / 1024))}KB)`).join("\uFF1B")}` : "";
-  const tenantContent = tenant.contentConfig;
-  const activeContentSources = ((_c = tenantContent == null ? void 0 : tenantContent.contentSources) == null ? void 0 : _c.length) ? tenantContent.contentSources : [];
-  const rawReplyContext = buildAssistantReply({
-    query: input.message,
-    knowledgeEntries: ((_d = tenantContent == null ? void 0 : tenantContent.knowledgeEntries) == null ? void 0 : _d.length) ? tenantContent.knowledgeEntries : assistantKnowledgeEntries,
-    articles: ((_e = tenantContent == null ? void 0 : tenantContent.articles) == null ? void 0 : _e.length) ? tenantContent.articles : demoArticles,
-    products: ((_f = tenantContent == null ? void 0 : tenantContent.products) == null ? void 0 : _f.length) ? tenantContent.products : demoProducts,
-    consultingServices: ((_g = tenantContent == null ? void 0 : tenantContent.consultingServices) == null ? void 0 : _g.length) ? tenantContent.consultingServices : demoConsultingServices,
-    contentSources: activeContentSources,
-    siteConfig: {
-      ...demoSiteConfig,
-      brandName: tenant.brandName,
-      phone: tenant.contactPhone || demoSiteConfig.phone,
-      email: tenant.contactEmail || demoSiteConfig.email,
-      address: tenant.contactAddress || demoSiteConfig.address
-    },
-    attachments,
-    returnMeta: true
-  });
-  const replyContext = typeof rawReplyContext === "string" ? {
-    content: rawReplyContext,
-    meta: {
-      strategy: "document",
-      matchedKnowledgeEntry: null,
-      matchedContentSources: []
+    else {
+        sessionId = nextId('session');
+        await storage.saveSession({
+            id: sessionId,
+            tenantId: tenant.id,
+            visitorId: 'anonymous',
+            startedAt: now,
+            lastMessageAt: now
+        });
     }
-  } : {
-    content: rawReplyContext.content,
-    meta: {
-      strategy: ((_h = rawReplyContext.meta) == null ? void 0 : _h.strategy) || "document",
-      matchedKnowledgeEntry: ((_i = rawReplyContext.meta) == null ? void 0 : _i.matchedKnowledgeEntry) || null,
-      matchedContentSources: ((_j = rawReplyContext.meta) == null ? void 0 : _j.matchedContentSources) || []
+    const normalizedQuestion = normalizeQuestion(input.message);
+    if (tenant.reuseAnsweredQuestions !== false) {
+        const tenantSessions = await storage.listSessionsByTenant(tenant.id);
+        for (const session of tenantSessions) {
+            const sessionMessages = await storage.listMessagesBySession(session.id);
+            for (let index = 0; index < sessionMessages.length - 1; index += 1) {
+                const current = sessionMessages[index];
+                const next = sessionMessages[index + 1];
+                if (current.role === 'user' &&
+                    (next === null || next === void 0 ? void 0 : next.role) === 'assistant' &&
+                    normalizeQuestion(current.content) === normalizedQuestion) {
+                    await storage.saveMessage({
+                        id: nextId('message'),
+                        sessionId: sessionId,
+                        tenantId: tenant.id,
+                        role: 'user',
+                        content: input.message,
+                        createdAt: now,
+                        attachments
+                    });
+                    await storage.saveMessage({
+                        id: nextId('message'),
+                        sessionId: sessionId,
+                        tenantId: tenant.id,
+                        role: 'assistant',
+                        content: next.content,
+                        createdAt: Date.now(),
+                        matchedContentSources: next.matchedContentSources
+                    });
+                    return {
+                        reply: next.content,
+                        sessionId: sessionId,
+                        usage: {
+                            inputTokens: 0,
+                            outputTokens: 0,
+                            totalTokens: 0
+                        }
+                    };
+                }
+            }
+        }
     }
-  };
-  const matchedContentSources = [
-    ...((_k = replyContext.meta.matchedContentSources) == null ? void 0 : _k.length) ? toMatchedContentSourceReferences(replyContext.meta.matchedContentSources, input.message) : [],
-    ...replyContext.meta.matchedKnowledgeEntry ? [{ id: `knowledge:${replyContext.meta.matchedKnowledgeEntry.title}`, title: replyContext.meta.matchedKnowledgeEntry.title, type: "document", category: replyContext.meta.strategy === "knowledge" ? "\u6807\u51C6\u56DE\u590D/\u77E5\u8BC6\u5E93" : "\u77E5\u8BC6\u547D\u4E2D" }] : []
-  ];
-  const adapter = createLlmAdapter({
-    endpoint: tenant.llmEndpoint || options.endpoint,
-    apiKey: tenant.llmApiKey || options.apiKey,
-    model: tenant.llmModel || options.model,
-    systemPrompt: buildRetrievalSystemPrompt(tenant.systemPrompt, replyContext.meta.strategy),
-    fetcher: options.fetcher,
-    fallback: async () => replyContext.content
-  });
-  const reply = await adapter.reply({
-    message: input.message,
-    history,
-    context: [replyContext.content, attachmentContext].filter(Boolean).join("\n\n")
-  });
-  await storage.saveMessage({
-    id: nextId("message"),
-    sessionId,
-    tenantId: tenant.id,
-    role: "assistant",
-    content: reply.content,
-    createdAt: Date.now(),
-    matchedContentSources
-  });
-  await storage.saveUsageRecord({
-    id: nextId("usage"),
-    tenantId: tenant.id,
-    sessionId,
-    provider: "openai-compatible",
-    model: reply.model,
-    inputTokens: reply.inputTokens,
-    outputTokens: reply.outputTokens,
-    totalTokens: reply.totalTokens,
-    amount: "0",
-    status: reply.status === "success" ? "success" : "unknown",
-    createdAt: Date.now()
-  });
-  return {
-    reply: reply.content,
-    sessionId,
-    usage: {
-      inputTokens: reply.inputTokens,
-      outputTokens: reply.outputTokens,
-      totalTokens: reply.totalTokens
-    }
-  };
+    await storage.saveMessage({
+        id: nextId('message'),
+        sessionId: sessionId,
+        tenantId: tenant.id,
+        role: 'user',
+        content: input.message,
+        createdAt: now,
+        attachments
+    });
+    const attachmentContext = attachments.length
+        ? `用户本轮上传了附件：${attachments.map((item) => `${item.name}(${item.mimeType}, ${Math.max(1, Math.round(item.size / 1024))}KB)`).join('；')}`
+        : '';
+    const tenantContent = tenant.contentConfig;
+    const activeContentSources = ((_c = tenantContent === null || tenantContent === void 0 ? void 0 : tenantContent.contentSources) === null || _c === void 0 ? void 0 : _c.length) ? tenantContent.contentSources : [];
+    const rawReplyContext = buildAssistantReply({
+        query: input.message,
+        knowledgeEntries: ((_d = tenantContent === null || tenantContent === void 0 ? void 0 : tenantContent.knowledgeEntries) === null || _d === void 0 ? void 0 : _d.length) ? tenantContent.knowledgeEntries : assistantKnowledgeEntries,
+        articles: ((_e = tenantContent === null || tenantContent === void 0 ? void 0 : tenantContent.articles) === null || _e === void 0 ? void 0 : _e.length) ? tenantContent.articles : demoArticles,
+        products: ((_f = tenantContent === null || tenantContent === void 0 ? void 0 : tenantContent.products) === null || _f === void 0 ? void 0 : _f.length) ? tenantContent.products : demoProducts,
+        consultingServices: ((_g = tenantContent === null || tenantContent === void 0 ? void 0 : tenantContent.consultingServices) === null || _g === void 0 ? void 0 : _g.length) ? tenantContent.consultingServices : demoConsultingServices,
+        contentSources: activeContentSources,
+        siteConfig: {
+            ...demoSiteConfig,
+            brandName: tenant.brandName,
+            phone: tenant.contactPhone || demoSiteConfig.phone,
+            email: tenant.contactEmail || demoSiteConfig.email,
+            address: tenant.contactAddress || demoSiteConfig.address
+        },
+        attachments,
+        returnMeta: true
+    });
+    const replyContext = typeof rawReplyContext === 'string'
+        ? {
+            content: rawReplyContext,
+            meta: {
+                strategy: 'document',
+                matchedKnowledgeEntry: null,
+                matchedContentSources: []
+            }
+        }
+        : {
+            content: rawReplyContext.content,
+            meta: {
+                strategy: ((_h = rawReplyContext.meta) === null || _h === void 0 ? void 0 : _h.strategy) || 'document',
+                matchedKnowledgeEntry: ((_j = rawReplyContext.meta) === null || _j === void 0 ? void 0 : _j.matchedKnowledgeEntry) || null,
+                matchedContentSources: ((_k = rawReplyContext.meta) === null || _k === void 0 ? void 0 : _k.matchedContentSources) || []
+            }
+        };
+    const matchedContentSources = [
+        ...(((_l = replyContext.meta.matchedContentSources) === null || _l === void 0 ? void 0 : _l.length)
+            ? toMatchedContentSourceReferences(replyContext.meta.matchedContentSources, input.message)
+            : []),
+        ...(replyContext.meta.matchedKnowledgeEntry
+            ? [{ id: `knowledge:${replyContext.meta.matchedKnowledgeEntry.title}`, title: replyContext.meta.matchedKnowledgeEntry.title, type: 'document', category: replyContext.meta.strategy === 'knowledge' ? '标准回复/知识库' : '知识命中' }]
+            : [])
+    ];
+    const adapter = createLlmAdapter({
+        endpoint: tenant.llmEndpoint || options.endpoint,
+        apiKey: tenant.llmApiKey || options.apiKey,
+        model: tenant.llmModel || options.model,
+        systemPrompt: buildRetrievalSystemPrompt(tenant.systemPrompt, replyContext.meta.strategy),
+        fetcher: options.fetcher,
+        fallback: async () => replyContext.content
+    });
+    const reply = await adapter.reply({
+        message: input.message,
+        history,
+        context: [replyContext.content, attachmentContext].filter(Boolean).join('\n\n')
+    });
+    await storage.saveMessage({
+        id: nextId('message'),
+        sessionId: sessionId,
+        tenantId: tenant.id,
+        role: 'assistant',
+        content: reply.content,
+        createdAt: Date.now(),
+        matchedContentSources
+    });
+    await storage.saveUsageRecord({
+        id: nextId('usage'),
+        tenantId: tenant.id,
+        sessionId: sessionId,
+        provider: 'openai-compatible',
+        model: reply.model,
+        inputTokens: reply.inputTokens,
+        outputTokens: reply.outputTokens,
+        totalTokens: reply.totalTokens,
+        amount: '0',
+        status: reply.status === 'success' ? 'success' : 'unknown',
+        createdAt: Date.now()
+    });
+    return {
+        reply: reply.content,
+        sessionId: sessionId,
+        usage: {
+            inputTokens: reply.inputTokens,
+            outputTokens: reply.outputTokens,
+            totalTokens: reply.totalTokens
+        }
+    };
 }
 
 const chat_post = defineEventHandler(async (event) => {
-  var _a, _b, _c;
-  const runtimeConfig = useRuntimeConfig();
-  const body = await readBody(event);
-  const tenantId = (_a = body == null ? void 0 : body.tenantId) == null ? void 0 : _a.trim();
-  const message = (_b = body == null ? void 0 : body.message) == null ? void 0 : _b.trim();
-  if (!tenantId || !message) {
-    throw createError({
-      statusCode: 400,
-      statusMessage: "tenantId and message are required"
-    });
-  }
-  try {
-    return await processChatMessage({
-      tenantId,
-      message,
-      sessionId: (_c = body == null ? void 0 : body.sessionId) == null ? void 0 : _c.trim(),
-      attachments: Array.isArray(body == null ? void 0 : body.attachments) ? body.attachments : []
-    }, {
-      endpoint: runtimeConfig.customerBotLlmEndpoint,
-      apiKey: runtimeConfig.customerBotLlmApiKey,
-      model: runtimeConfig.customerBotLlmModel
-    });
-  } catch (error) {
-    if (error instanceof TenantNotFoundError) {
-      throw createError({
-        statusCode: 404,
-        statusMessage: "Tenant not found"
-      });
+    var _a, _b, _c;
+    const runtimeConfig = useRuntimeConfig();
+    const body = await readBody(event);
+    const tenantId = (_a = body === null || body === void 0 ? void 0 : body.tenantId) === null || _a === void 0 ? void 0 : _a.trim();
+    const message = (_b = body === null || body === void 0 ? void 0 : body.message) === null || _b === void 0 ? void 0 : _b.trim();
+    if (!tenantId || !message) {
+        throw createError({
+            statusCode: 400,
+            statusMessage: 'tenantId and message are required'
+        });
     }
-    if (error instanceof SessionNotFoundError) {
-      throw createError({
-        statusCode: 404,
-        statusMessage: "Session not found"
-      });
+    try {
+        return await processChatMessage({
+            tenantId,
+            message,
+            sessionId: (_c = body === null || body === void 0 ? void 0 : body.sessionId) === null || _c === void 0 ? void 0 : _c.trim(),
+            attachments: Array.isArray(body === null || body === void 0 ? void 0 : body.attachments) ? body.attachments : []
+        }, {
+            endpoint: runtimeConfig.customerBotLlmEndpoint,
+            apiKey: runtimeConfig.customerBotLlmApiKey,
+            model: runtimeConfig.customerBotLlmModel
+        });
     }
-    throw error;
-  }
+    catch (error) {
+        if (error instanceof TenantNotFoundError) {
+            throw createError({
+                statusCode: 404,
+                statusMessage: 'Tenant not found'
+            });
+        }
+        if (error instanceof SessionNotFoundError) {
+            throw createError({
+                statusCode: 404,
+                statusMessage: 'Session not found'
+            });
+        }
+        throw error;
+    }
 });
 
 const chat_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -5095,38 +5125,38 @@ const chat_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePropert
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const contact_post = defineEventHandler(async (event) => {
-  const body = await readBody(event);
-  if (!(body == null ? void 0 : body.tenantId) || !(body == null ? void 0 : body.name) || !body.company || !body.contact || !body.demandType) {
-    throw createError({
-      statusCode: 400,
-      statusMessage: "\u7F3A\u5C11\u5FC5\u586B\u5B57\u6BB5"
+    const body = await readBody(event);
+    if (!(body === null || body === void 0 ? void 0 : body.tenantId) || !(body === null || body === void 0 ? void 0 : body.name) || !body.company || !body.contact || !body.demandType) {
+        throw createError({
+            statusCode: 400,
+            statusMessage: '缺少必填字段'
+        });
+    }
+    const storage = getStorage();
+    const tenant = await resolveTenant(body.tenantId, storage);
+    if (!tenant) {
+        throw createError({
+            statusCode: 404,
+            statusMessage: 'Tenant not found'
+        });
+    }
+    const leadId = `lead-${Date.now()}`;
+    await storage.saveLead({
+        id: leadId,
+        tenantId: tenant.id,
+        sessionId: body.sessionId || '',
+        name: body.name,
+        company: body.company,
+        contact: body.contact,
+        demandType: body.demandType,
+        message: body.message || '',
+        createdAt: Date.now()
     });
-  }
-  const storage = getStorage();
-  const tenant = await resolveTenant(body.tenantId, storage);
-  if (!tenant) {
-    throw createError({
-      statusCode: 404,
-      statusMessage: "Tenant not found"
-    });
-  }
-  const leadId = `lead-${Date.now()}`;
-  await storage.saveLead({
-    id: leadId,
-    tenantId: tenant.id,
-    sessionId: body.sessionId || "",
-    name: body.name,
-    company: body.company,
-    contact: body.contact,
-    demandType: body.demandType,
-    message: body.message || "",
-    createdAt: Date.now()
-  });
-  return {
-    ok: true,
-    id: leadId,
-    message: "\u63D0\u4EA4\u6210\u529F\uFF0C\u6211\u4EEC\u4F1A\u5728 1 \u4E2A\u5DE5\u4F5C\u65E5\u5185\u8054\u7CFB\u4F60\u3002"
-  };
+    return {
+        ok: true,
+        id: leadId,
+        message: '提交成功，我们会在 1 个工作日内联系你。'
+    };
 });
 
 const contact_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -5135,25 +5165,26 @@ const contact_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProp
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const config_get = defineEventHandler(async (event) => {
-  const query = getQuery$1(event);
-  const tenantId = typeof query.tenantId === "string" ? query.tenantId.trim() : "";
-  if (!tenantId) {
-    throw createError({
-      statusCode: 400,
-      statusMessage: "tenantId is required"
-    });
-  }
-  try {
-    return await getRuntimeConfigForTenant(tenantId);
-  } catch (error) {
-    if (error instanceof TenantNotFoundError) {
-      throw createError({
-        statusCode: 404,
-        statusMessage: "Tenant not found"
-      });
+    const query = getQuery$1(event);
+    const tenantId = typeof query.tenantId === 'string' ? query.tenantId.trim() : '';
+    if (!tenantId) {
+        throw createError({
+            statusCode: 400,
+            statusMessage: 'tenantId is required'
+        });
     }
-    throw error;
-  }
+    try {
+        return await getRuntimeConfigForTenant(tenantId);
+    }
+    catch (error) {
+        if (error instanceof TenantNotFoundError) {
+            throw createError({
+                statusCode: 404,
+                statusMessage: 'Tenant not found'
+            });
+        }
+        throw error;
+    }
 });
 
 const config_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -5162,37 +5193,37 @@ const config_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProper
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const changePassword_post = defineEventHandler(async (event) => {
-  const session = requireTenantSession(event);
-  const body = await readBody(event);
-  const currentPassword = (body == null ? void 0 : body.currentPassword) || "";
-  const nextPassword = (body == null ? void 0 : body.nextPassword) || "";
-  if (!currentPassword || !nextPassword) {
-    throw createError({
-      statusCode: 400,
-      statusMessage: "currentPassword and nextPassword are required"
-    });
-  }
-  const storage = getStorage();
-  const user = await verifyTenantPassword(session.email, currentPassword, storage);
-  if (!user || user.id !== session.tenantUserId) {
-    throw createError({
-      statusCode: 401,
-      statusMessage: "Invalid credentials"
-    });
-  }
-  const updatedUser = {
-    ...user,
-    passwordHash: user.passwordHash,
-    temporaryPassword: "",
-    mustChangePassword: false,
-    updatedAt: Date.now()
-  };
-  const { createHash } = await import('node:crypto');
-  updatedUser.passwordHash = createHash("sha256").update(nextPassword).digest("hex");
-  await storage.saveTenantUser(updatedUser);
-  return {
-    ok: true
-  };
+    const session = requireTenantSession(event);
+    const body = await readBody(event);
+    const currentPassword = (body === null || body === void 0 ? void 0 : body.currentPassword) || '';
+    const nextPassword = (body === null || body === void 0 ? void 0 : body.nextPassword) || '';
+    if (!currentPassword || !nextPassword) {
+        throw createError({
+            statusCode: 400,
+            statusMessage: 'currentPassword and nextPassword are required'
+        });
+    }
+    const storage = getStorage();
+    const user = await verifyTenantPassword(session.email, currentPassword, storage);
+    if (!user || user.id !== session.tenantUserId) {
+        throw createError({
+            statusCode: 401,
+            statusMessage: 'Invalid credentials'
+        });
+    }
+    const updatedUser = {
+        ...user,
+        passwordHash: user.passwordHash,
+        temporaryPassword: '',
+        mustChangePassword: false,
+        updatedAt: Date.now()
+    };
+    const { createHash } = await import('node:crypto');
+    updatedUser.passwordHash = createHash('sha256').update(nextPassword).digest('hex');
+    await storage.saveTenantUser(updatedUser);
+    return {
+        ok: true
+    };
 });
 
 const changePassword_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -5201,37 +5232,35 @@ const changePassword_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.def
 }, Symbol.toStringTag, { value: 'Module' }));
 
 function buildTenantChatItems(sessions, messagesBySession) {
-  return [...sessions].sort((left, right) => right.lastMessageAt - left.lastMessageAt).map((session) => {
-    var _a;
-    return {
-      session,
-      messages: [...(_a = messagesBySession.get(session.id)) != null ? _a : []].sort((left, right) => left.createdAt - right.createdAt)
-    };
-  });
+    return [...sessions]
+        .sort((left, right) => right.lastMessageAt - left.lastMessageAt)
+        .map((session) => {
+        var _a;
+        return ({
+            session,
+            messages: [...((_a = messagesBySession.get(session.id)) !== null && _a !== void 0 ? _a : [])].sort((left, right) => left.createdAt - right.createdAt)
+        });
+    });
 }
 function sortTenantLeads(leads) {
-  return [...leads].sort((left, right) => right.createdAt - left.createdAt);
+    return [...leads].sort((left, right) => right.createdAt - left.createdAt);
 }
 
 const chats_get = defineEventHandler(async (event) => {
-  const session = requireTenantSession(event);
-  const storage = getStorage();
-  const user = await storage.getTenantUserById(session.tenantUserId);
-  if (!user || user.status !== "active" || user.tenantId !== session.tenantId) {
-    throw createError({
-      statusCode: 401,
-      statusMessage: "Unauthorized"
-    });
-  }
-  const sessions = await storage.listSessionsByTenant(session.tenantId);
-  const messagesBySession = new Map(
-    await Promise.all(
-      sessions.map(async (chatSession) => [chatSession.id, await storage.listMessagesBySession(chatSession.id)])
-    )
-  );
-  return {
-    items: buildTenantChatItems(sessions, messagesBySession)
-  };
+    const session = requireTenantSession(event);
+    const storage = getStorage();
+    const user = await storage.getTenantUserById(session.tenantUserId);
+    if (!user || user.status !== 'active' || user.tenantId !== session.tenantId) {
+        throw createError({
+            statusCode: 401,
+            statusMessage: 'Unauthorized'
+        });
+    }
+    const sessions = await storage.listSessionsByTenant(session.tenantId);
+    const messagesBySession = new Map(await Promise.all(sessions.map(async (chatSession) => [chatSession.id, await storage.listMessagesBySession(chatSession.id)])));
+    return {
+        items: buildTenantChatItems(sessions, messagesBySession)
+    };
 });
 
 const chats_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -5240,18 +5269,18 @@ const chats_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePropert
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const leads_get = defineEventHandler(async (event) => {
-  const session = requireTenantSession(event);
-  const storage = getStorage();
-  const user = await storage.getTenantUserById(session.tenantUserId);
-  if (!user || user.status !== "active" || user.tenantId !== session.tenantId) {
-    throw createError({
-      statusCode: 401,
-      statusMessage: "Unauthorized"
-    });
-  }
-  return {
-    items: sortTenantLeads(await storage.listLeadsByTenant(session.tenantId))
-  };
+    const session = requireTenantSession(event);
+    const storage = getStorage();
+    const user = await storage.getTenantUserById(session.tenantUserId);
+    if (!user || user.status !== 'active' || user.tenantId !== session.tenantId) {
+        throw createError({
+            statusCode: 401,
+            statusMessage: 'Unauthorized'
+        });
+    }
+    return {
+        items: sortTenantLeads(await storage.listLeadsByTenant(session.tenantId))
+    };
 });
 
 const leads_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -5260,30 +5289,30 @@ const leads_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePropert
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const login_post = defineEventHandler(async (event) => {
-  var _a;
-  const body = await readBody(event);
-  const email = ((_a = body == null ? void 0 : body.email) == null ? void 0 : _a.trim()) || "";
-  const password = (body == null ? void 0 : body.password) || "";
-  const user = await verifyTenantPassword(email, password, getStorage());
-  if (!user) {
-    throw createError({
-      statusCode: 401,
-      statusMessage: "Invalid credentials"
-    });
-  }
-  setTenantSession(event, {
-    tenantUserId: user.id,
-    tenantId: user.tenantId,
-    email: user.email
-  });
-  return {
-    ok: true,
-    user: {
-      email: user.email,
-      tenantId: user.tenantId,
-      mustChangePassword: user.mustChangePassword
+    var _a;
+    const body = await readBody(event);
+    const email = ((_a = body === null || body === void 0 ? void 0 : body.email) === null || _a === void 0 ? void 0 : _a.trim()) || '';
+    const password = (body === null || body === void 0 ? void 0 : body.password) || '';
+    const user = await verifyTenantPassword(email, password, getStorage());
+    if (!user) {
+        throw createError({
+            statusCode: 401,
+            statusMessage: 'Invalid credentials'
+        });
     }
-  };
+    setTenantSession(event, {
+        tenantUserId: user.id,
+        tenantId: user.tenantId,
+        email: user.email
+    });
+    return {
+        ok: true,
+        user: {
+            email: user.email,
+            tenantId: user.tenantId,
+            mustChangePassword: user.mustChangePassword
+        }
+    };
 });
 
 const login_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -5292,10 +5321,10 @@ const login_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProper
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const logout_post = defineEventHandler(async (event) => {
-  clearTenantSession(event);
-  return {
-    ok: true
-  };
+    clearTenantSession(event);
+    return {
+        ok: true
+    };
 });
 
 const logout_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -5304,25 +5333,25 @@ const logout_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePrope
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const me_get = defineEventHandler(async (event) => {
-  const session = requireTenantSession(event);
-  const storage = getStorage();
-  const user = await storage.getTenantUserById(session.tenantUserId);
-  const tenant = await storage.getTenantById(session.tenantId);
-  if (!user || !tenant || user.status !== "active") {
-    throw createError({
-      statusCode: 401,
-      statusMessage: "Unauthorized"
-    });
-  }
-  return {
-    user: {
-      id: user.id,
-      email: user.email,
-      tenantId: user.tenantId,
-      mustChangePassword: user.mustChangePassword
-    },
-    tenant
-  };
+    const session = requireTenantSession(event);
+    const storage = getStorage();
+    const user = await storage.getTenantUserById(session.tenantUserId);
+    const tenant = await storage.getTenantById(session.tenantId);
+    if (!user || !tenant || user.status !== 'active') {
+        throw createError({
+            statusCode: 401,
+            statusMessage: 'Unauthorized'
+        });
+    }
+    return {
+        user: {
+            id: user.id,
+            email: user.email,
+            tenantId: user.tenantId,
+            mustChangePassword: user.mustChangePassword
+        },
+        tenant
+    };
 });
 
 const me_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -5331,43 +5360,43 @@ const me_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const overview_get = defineEventHandler(async (event) => {
-  var _a, _b, _c, _d;
-  const session = requireTenantSession(event);
-  const storage = getStorage();
-  const tenant = await storage.getTenantById(session.tenantId);
-  const user = await storage.getTenantUserById(session.tenantUserId);
-  if (!tenant || !user || user.status !== "active") {
-    throw createError({
-      statusCode: 401,
-      statusMessage: "Unauthorized"
-    });
-  }
-  const [sessions, leads, usageRecords] = await Promise.all([
-    storage.listSessionsByTenant(tenant.id),
-    storage.listLeadsByTenant(tenant.id),
-    storage.listUsageByTenant(tenant.id)
-  ]);
-  const plan = getBillingPlanById((_a = tenant.billingSubscription) == null ? void 0 : _a.planId);
-  const summaries = buildMonthlyBillingSummary(usageRecords, plan, tenant.billingSubscription);
-  return {
-    tenant: {
-      id: tenant.id,
-      name: tenant.name,
-      brandName: tenant.brandName,
-      contactEmail: tenant.contactEmail
-    },
-    user: {
-      email: user.email,
-      mustChangePassword: user.mustChangePassword
-    },
-    kpis: {
-      sessionCount: sessions.length,
-      leadCount: leads.length,
-      contentSourceCount: (_d = (_c = (_b = tenant.contentConfig) == null ? void 0 : _b.contentSources) == null ? void 0 : _c.length) != null ? _d : 0
-    },
-    trainingRuns: listTrainingRuns(usageRecords).slice(0, 10),
-    latestBillingSummary: summaries[summaries.length - 1] || null
-  };
+    var _a, _b, _c, _d;
+    const session = requireTenantSession(event);
+    const storage = getStorage();
+    const tenant = await storage.getTenantById(session.tenantId);
+    const user = await storage.getTenantUserById(session.tenantUserId);
+    if (!tenant || !user || user.status !== 'active') {
+        throw createError({
+            statusCode: 401,
+            statusMessage: 'Unauthorized'
+        });
+    }
+    const [sessions, leads, usageRecords] = await Promise.all([
+        storage.listSessionsByTenant(tenant.id),
+        storage.listLeadsByTenant(tenant.id),
+        storage.listUsageByTenant(tenant.id)
+    ]);
+    const plan = getBillingPlanById((_a = tenant.billingSubscription) === null || _a === void 0 ? void 0 : _a.planId);
+    const summaries = buildMonthlyBillingSummary(usageRecords, plan, tenant.billingSubscription);
+    return {
+        tenant: {
+            id: tenant.id,
+            name: tenant.name,
+            brandName: tenant.brandName,
+            contactEmail: tenant.contactEmail
+        },
+        user: {
+            email: user.email,
+            mustChangePassword: user.mustChangePassword
+        },
+        kpis: {
+            sessionCount: sessions.length,
+            leadCount: leads.length,
+            contentSourceCount: (_d = (_c = (_b = tenant.contentConfig) === null || _b === void 0 ? void 0 : _b.contentSources) === null || _c === void 0 ? void 0 : _c.length) !== null && _d !== void 0 ? _d : 0
+        },
+        trainingRuns: listTrainingRuns(usageRecords).slice(0, 10),
+        latestBillingSummary: summaries[summaries.length - 1] || null
+    };
 });
 
 const overview_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -5376,35 +5405,35 @@ const overview_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProp
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const resetCode_post = defineEventHandler(async (event) => {
-  var _a;
-  const body = await readBody(event);
-  const email = ((_a = body == null ? void 0 : body.email) == null ? void 0 : _a.trim()) || "";
-  if (!email) {
-    throw createError({
-      statusCode: 400,
-      statusMessage: "email is required"
-    });
-  }
-  const reset = await issueTenantPasswordReset({
-    email,
-    storage: getStorage()
-  });
-  const sent = await sendTenantResetEmail({
-    to: reset.email,
-    code: reset.code,
-    expiresAt: reset.expiresAt,
-    tenantName: reset.tenantId,
-    loginUrl: `${(process.env.CUSTOMER_BOT_PUBLIC_BASE_URL || "https://bot.aifactory.website").replace(/\/+$/, "")}/tenant/login`
-  });
-  return {
-    ok: true,
-    item: {
-      email: reset.email,
-      expiresAt: reset.expiresAt,
-      provider: sent.provider,
-      previewCode: sent.previewCode
+    var _a;
+    const body = await readBody(event);
+    const email = ((_a = body === null || body === void 0 ? void 0 : body.email) === null || _a === void 0 ? void 0 : _a.trim()) || '';
+    if (!email) {
+        throw createError({
+            statusCode: 400,
+            statusMessage: 'email is required'
+        });
     }
-  };
+    const reset = await issueTenantPasswordReset({
+        email,
+        storage: getStorage()
+    });
+    const sent = await sendTenantResetEmail({
+        to: reset.email,
+        code: reset.code,
+        expiresAt: reset.expiresAt,
+        tenantName: reset.tenantId,
+        loginUrl: `${(process.env.CUSTOMER_BOT_PUBLIC_BASE_URL || 'https://bot.aifactory.website').replace(/\/+$/, '')}/tenant/login`
+    });
+    return {
+        ok: true,
+        item: {
+            email: reset.email,
+            expiresAt: reset.expiresAt,
+            provider: sent.provider,
+            previewCode: sent.previewCode
+        }
+    };
 });
 
 const resetCode_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -5413,36 +5442,36 @@ const resetCode_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePr
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const resetPassword_post = defineEventHandler(async (event) => {
-  var _a, _b;
-  const body = await readBody(event);
-  const email = ((_a = body == null ? void 0 : body.email) == null ? void 0 : _a.trim()) || "";
-  const code = ((_b = body == null ? void 0 : body.code) == null ? void 0 : _b.trim()) || "";
-  const nextPassword = (body == null ? void 0 : body.nextPassword) || "";
-  if (!email || !code || !nextPassword) {
-    throw createError({
-      statusCode: 400,
-      statusMessage: "email, code and nextPassword are required"
-    });
-  }
-  const user = await resetTenantPassword({
-    email,
-    code,
-    nextPassword,
-    storage: getStorage()
-  });
-  setTenantSession(event, {
-    tenantUserId: user.id,
-    tenantId: user.tenantId,
-    email: user.email
-  });
-  return {
-    ok: true,
-    user: {
-      email: user.email,
-      tenantId: user.tenantId,
-      mustChangePassword: user.mustChangePassword
+    var _a, _b;
+    const body = await readBody(event);
+    const email = ((_a = body === null || body === void 0 ? void 0 : body.email) === null || _a === void 0 ? void 0 : _a.trim()) || '';
+    const code = ((_b = body === null || body === void 0 ? void 0 : body.code) === null || _b === void 0 ? void 0 : _b.trim()) || '';
+    const nextPassword = (body === null || body === void 0 ? void 0 : body.nextPassword) || '';
+    if (!email || !code || !nextPassword) {
+        throw createError({
+            statusCode: 400,
+            statusMessage: 'email, code and nextPassword are required'
+        });
     }
-  };
+    const user = await resetTenantPassword({
+        email,
+        code,
+        nextPassword,
+        storage: getStorage()
+    });
+    setTenantSession(event, {
+        tenantUserId: user.id,
+        tenantId: user.tenantId,
+        email: user.email
+    });
+    return {
+        ok: true,
+        user: {
+            email: user.email,
+            tenantId: user.tenantId,
+            mustChangePassword: user.mustChangePassword
+        }
+    };
 });
 
 const resetPassword_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -5451,27 +5480,28 @@ const resetPassword_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defi
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const customerBot_js_get = defineEventHandler(async (event) => {
-  const candidatePaths = [
-    resolve(process.cwd(), "dist/customer-bot.js"),
-    resolve(process.cwd(), ".output/public/customer-bot.js")
-  ];
-  try {
-    for (const filePath of candidatePaths) {
-      try {
-        const code = await readFile(filePath, "utf8");
-        setHeader(event, "Content-Type", "application/javascript; charset=utf-8");
-        setHeader(event, "Cache-Control", "public, max-age=60, stale-while-revalidate=300");
-        return code;
-      } catch {
-      }
+    const candidatePaths = [
+        resolve(process.cwd(), 'dist/customer-bot.js'),
+        resolve(process.cwd(), '.output/public/customer-bot.js')
+    ];
+    try {
+        for (const filePath of candidatePaths) {
+            try {
+                const code = await readFile(filePath, 'utf8');
+                setHeader(event, 'Content-Type', 'application/javascript; charset=utf-8');
+                setHeader(event, 'Cache-Control', 'public, max-age=60, stale-while-revalidate=300');
+                return code;
+            }
+            catch { }
+        }
+        throw createError({
+            statusCode: 503,
+            statusMessage: 'customer-bot.js not found. Ensure dist/customer-bot.js is deployed.'
+        });
     }
-    throw createError({
-      statusCode: 503,
-      statusMessage: "customer-bot.js not found. Ensure dist/customer-bot.js is deployed."
-    });
-  } catch (error) {
-    throw error;
-  }
+    catch (error) {
+        throw error;
+    }
 });
 
 const customerBot_js_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
