@@ -1,0 +1,10 @@
+[
+  {
+    "to": "877201213@qq.com",
+    "subject": "【太仓英明】租户后台重置码",
+    "text": "租户：太仓英明\n你的租户后台重置码是：285396\n有效期至：2026/4/14 15:15:27\n登录地址：https://bot.aifactory.website/tenant/login\n如果这不是你的操作，请忽略本邮件。",
+    "html": "<p>租户：<strong>太仓英明</strong></p><p>你的租户后台重置码是：<strong>285396</strong></p><p>有效期至：2026/4/14 15:15:27</p><p>登录地址：<a href=\"https://bot.aifactory.website/tenant/login\">https://bot.aifactory.website/tenant/login</a></p><p>如果这不是你的操作，请忽略本邮件。</p>",
+    "provider": "outbox",
+    "createdAt": 1776150027676
+  }
+]

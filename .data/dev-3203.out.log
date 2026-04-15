@@ -1,0 +1,15 @@
+
+> dev
+> nuxt dev --host 127.0.0.1 --port 3203
+
+│
+●  [32mNuxt [1m4.4.2[22m[39m[90m (with [39m[90mNitro [1m2.13.1[22m[39m[90m, Vite [1m7.3.1[22m[39m[90m and Vue [1m3.5.30[22m[39m[90m)[39m
+
+[32m  ➜ Local:   [39m [36m[4mhttp://127.0.0.1:[1m3203[22m/[24m[39m
+[90m  ➜ Network:  use [37m--host[90m to expose[39m
+
+[32m✔[39m Vite client built in 47ms
+[32m✔[39m Vite server built in 163ms
+[90m[[90mnitro[90m][39m [32m✔[39m Nuxt Nitro server built in 3080ms
+[36mℹ[39m Vite server warmed up in 2ms
+[36mℹ[39m Vite client warmed up in 4ms

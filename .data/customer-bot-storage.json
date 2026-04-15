@@ -1,0 +1,645 @@
+{
+  "tenants": [
+    {
+      "id": "tenant-demo",
+      "name": "Demo Tenant",
+      "status": "active",
+      "brandName": "AIFactory Demo Bot",
+      "themeColor": "#118ab2",
+      "contactPhone": "+86 138-0000-0000",
+      "contactEmail": "demo@example.com",
+      "contactAddress": "Shanghai",
+      "systemPrompt": "你是 AIFactory 的 AI 客服演示助手。请优先回答产品能力、部署方式、报价流程，并主动引导用户留资。",
+      "embedKey": "embed-demo-tenant",
+      "billingSubscription": {
+        "planId": "plan-standard",
+        "startedAt": 1775720875806,
+        "notes": "demo tenant default plan"
+      },
+      "createdAt": 1775720875806,
+      "updatedAt": 1775720875806
+    },
+    {
+      "id": "tenant-1775896663336",
+      "name": "太仓英明",
+      "status": "active",
+      "brandName": "英明",
+      "themeColor": "#118ab2",
+      "contactPhone": "",
+      "contactEmail": "877201213@qq.com",
+      "contactAddress": "",
+      "systemPrompt": "You are the tenant bot.",
+      "llmEndpoint": "",
+      "llmApiKey": "admin123456",
+      "llmModel": "admin@example.com",
+      "reuseAnsweredQuestions": true,
+      "embedKey": "embed-hq07mw7r",
+      "ragSettings": {
+        "enabled": false,
+        "industryPreset": "fastener",
+        "chunkSize": 640,
+        "chunkOverlap": 96,
+        "retrievalTopK": 5,
+        "ingestionStructureTemplate": "产品名称\n品类\n标准（GB/DIN/ISO/ANSI）\n材质\n强度等级\n规格尺寸\n表面处理\n包装/交期\n应用场景\n来源",
+        "answerStructureTemplate": "结论\n适用规格/标准\n材质/等级\n注意事项\n来源",
+        "retrievalPromptTemplate": "你正在回答紧固件行业知识问题。\n优先识别标准、材质、强度等级、规格尺寸、表面处理等字段。\n请严格基于命中资料回答：{{query}}。",
+        "fallbackPromptTemplate": "当前紧固件资料未直接命中。\n请针对问题“{{query}}”给出通用但谨慎的行业说明。\n不得编造报价、库存、交期或认证信息。"
+      },
+      "billingSubscription": {
+        "planId": "plan-basic",
+        "startedAt": 1775896663336,
+        "notes": ""
+      },
+      "contentConfig": {
+        "knowledgeEntries": [
+          {
+            "id": "fastener-knowledge-standards",
+            "title": "紧固件标准体系速览",
+            "keywords": [
+              "紧固件",
+              "标准",
+              "GB",
+              "DIN",
+              "ISO",
+              "ANSI",
+              "国标",
+              "德标",
+              "国际标准"
+            ],
+            "oneLiner": "紧固件常见标准体系包括 GB、DIN、ISO、ANSI，不同标准的头型、尺寸、公差和标记方式可能不同。",
+            "whatIs": "客服回复时需要先确认客户要的是哪套标准，再确认规格、材质、等级和表面处理。DIN 常见于外贸与欧洲项目，GB 常见于国内客户，ISO 常作为国际通用参考。",
+            "problems": [
+              "客户只说要六角螺栓，但没有说明对应标准",
+              "不同标准下头部尺寸和长度定义可能不同，容易报价或备货错误",
+              "图纸标注和客户口头描述不一致时，需要先确认标准版本"
+            ],
+            "workflow": [
+              "先确认产品类别，例如螺栓、螺母、螺钉、垫圈",
+              "再确认标准体系，例如 GB 5783、DIN 933、ISO 4017",
+              "继续确认规格、材质、等级、表面处理和数量",
+              "最后再进入库存、交期和报价环节"
+            ],
+            "scenarios": [
+              "外贸客户按 DIN/ISO 询盘",
+              "国内工厂按 GB 标准采购",
+              "客户提供图纸但没有写清标准"
+            ],
+            "outcomes": [
+              "减少规格理解偏差",
+              "提高报价和备货准确率",
+              "让客服能快速判断是否需要技术人员二次确认"
+            ],
+            "source": "fastener-industry-pack"
+          },
+          {
+            "id": "fastener-knowledge-materials",
+            "title": "304 与 316 不锈钢区别",
+            "keywords": [
+              "304",
+              "316",
+              "不锈钢",
+              "材质",
+              "耐腐蚀",
+              "海边",
+              "化工"
+            ],
+            "oneLiner": "304 不锈钢通用性强、性价比高，316 不锈钢耐腐蚀能力更强，适合更严苛环境。",
+            "whatIs": "304 适用于一般户外、室内、机械设备和普通防腐场景；316 通常用于海边、高盐雾、化工、潮湿腐蚀性更强的环境。客户如果强调耐腐蚀等级，应优先确认实际使用环境。",
+            "problems": [
+              "客户只说要不锈钢，没有说明 304 还是 316",
+              "海工或化工场景直接用 304 可能存在耐腐蚀风险",
+              "316 价格通常高于 304，需要先明确预算和应用环境"
+            ],
+            "workflow": [
+              "先确认客户使用场景是否存在盐雾、酸碱、潮湿腐蚀环境",
+              "常规场景优先推荐 304",
+              "高腐蚀场景建议 316 或要求客户确认技术规范",
+              "如有图纸或 BOM，需以图纸要求为准"
+            ],
+            "scenarios": [
+              "普通设备装配",
+              "户外光伏支架",
+              "海边工程项目",
+              "化工或食品设备"
+            ],
+            "outcomes": [
+              "帮助客户快速做材质筛选",
+              "减少误选材质导致的售后问题",
+              "让客服回答更贴近真实工况"
+            ],
+            "source": "fastener-industry-pack"
+          },
+          {
+            "id": "fastener-knowledge-strength-grade",
+            "title": "8.8级、10.9级、12.9级强度等级说明",
+            "keywords": [
+              "8.8级",
+              "10.9级",
+              "12.9级",
+              "强度等级",
+              "高强度",
+              "机械性能"
+            ],
+            "oneLiner": "8.8级适合常规机械连接，10.9级和12.9级适合更高强度要求，但需同时考虑脆性、工况和表面处理。",
+            "whatIs": "强度等级越高，并不代表所有场景都更合适。客服在回答时应提示客户结合使用载荷、装配方式、锁紧需求和图纸要求来选择。12.9 级通常见于高强度内六角螺钉等场景。",
+            "problems": [
+              "客户只说要高强度，但没有给图纸或使用工况",
+              "高强度等级与电镀、氢脆风险相关，不能只看等级不看工艺",
+              "部分客户会把 8.8、10.9、12.9 当成可随意替换，实际并不建议"
+            ],
+            "workflow": [
+              "确认客户是否有图纸或标准要求",
+              "确认载荷、振动、锁紧和安全要求",
+              "说明常见等级适用范围",
+              "如涉及高强度电镀件，提醒评估氢脆和工艺要求"
+            ],
+            "scenarios": [
+              "机械设备装配",
+              "汽车零部件",
+              "模具和治具",
+              "高振动工况"
+            ],
+            "outcomes": [
+              "让客服能解释等级差异而不是只会报型号",
+              "减少错误替代带来的质量风险",
+              "提升专业可信度"
+            ],
+            "source": "fastener-industry-pack"
+          },
+          {
+            "id": "fastener-knowledge-surface-treatment",
+            "title": "常见表面处理与适用场景",
+            "keywords": [
+              "表面处理",
+              "镀锌",
+              "发黑",
+              "达克罗",
+              "热镀锌",
+              "防锈",
+              "盐雾"
+            ],
+            "oneLiner": "紧固件常见表面处理包括镀锌、发黑、达克罗和热镀锌，主要用于防腐、外观和耐盐雾要求。",
+            "whatIs": "白锌和彩锌适合普通防锈需求，发黑常用于室内或机械内部件，达克罗适合较高盐雾要求，热镀锌多用于户外和结构件。客服需先确认客户是看防腐等级、外观颜色还是使用环境。",
+            "problems": [
+              "客户要求防锈，但没有明确盐雾或户外环境等级",
+              "不同表面处理会影响尺寸公差和成本",
+              "高强度件表面处理还要考虑工艺风险"
+            ],
+            "workflow": [
+              "先问使用环境和防腐目标",
+              "确认是否有颜色或认证要求",
+              "说明不同处理方式的成本和交期差异",
+              "高强度产品建议同步确认工艺适配性"
+            ],
+            "scenarios": [
+              "普通机械装配",
+              "户外设备",
+              "电力塔架",
+              "汽车零部件"
+            ],
+            "outcomes": [
+              "帮助客服快速区分常见表面处理方案",
+              "减少客户用词模糊导致的误报价",
+              "让技术沟通更标准化"
+            ],
+            "source": "fastener-industry-pack"
+          },
+          {
+            "id": "fastener-knowledge-selection",
+            "title": "紧固件选型时必须确认的信息",
+            "keywords": [
+              "选型",
+              "规格",
+              "长度",
+              "牙距",
+              "材质",
+              "等级",
+              "表面处理",
+              "定制"
+            ],
+            "oneLiner": "客服在处理紧固件询盘时，至少要确认品类、标准、规格、材质、等级、表面处理、数量和使用场景。",
+            "whatIs": "很多询盘不完整，客户只给一个名称或者一张模糊照片。此时客服应按固定模板补全关键信息，避免把沟通推进到报价阶段后再返工。",
+            "problems": [
+              "客户信息不完整，无法准确报价",
+              "品名相同但标准、长度、牙距不同会导致完全不同的产品",
+              "图纸、样品、口头描述三者不一致时容易造成误判"
+            ],
+            "workflow": [
+              "确认产品类别和标准",
+              "确认规格尺寸，如 M8x30、牙距、全牙/半牙",
+              "确认材质、等级、表面处理",
+              "确认数量、包装、交期和非标要求"
+            ],
+            "scenarios": [
+              "首次询盘",
+              "客户只发图片",
+              "客户要求替代现有供应商"
+            ],
+            "outcomes": [
+              "提升客服一次性收集信息的完整度",
+              "让后续报价和技术确认更顺畅",
+              "减少内部往返沟通"
+            ],
+            "source": "fastener-industry-pack"
+          },
+          {
+            "id": "fastener-knowledge-delivery",
+            "title": "交期、包装与非标定制沟通口径",
+            "keywords": [
+              "交期",
+              "包装",
+              "定制",
+              "非标",
+              "MOQ",
+              "起订量",
+              "样品"
+            ],
+            "oneLiner": "标准件一般按现货或常规排产回复，非标件要先确认图纸、模具、工艺和起订量。",
+            "whatIs": "客服不能直接对非标定制件承诺固定交期或价格。应先确认客户是否有图纸、样品、材质和性能要求，再由技术或业务确认可行性。",
+            "problems": [
+              "客户直接问非标件交期和价格，但资料不全",
+              "包装方式影响物流和报价",
+              "小批量非标件可能不适合直接接单"
+            ],
+            "workflow": [
+              "标准件先确认是否有现货或常规规格",
+              "非标件先收图纸、样品、材质和数量",
+              "确认包装方式，如散装、小盒、外箱、托盘",
+              "再回复交期范围和下一步动作"
+            ],
+            "scenarios": [
+              "客户试单",
+              "客户有图纸开发新件",
+              "客户要求特殊包装出海"
+            ],
+            "outcomes": [
+              "避免客服过早承诺",
+              "让标准件和非标件沟通口径更统一",
+              "提高询盘转化效率"
+            ],
+            "source": "fastener-industry-pack"
+          }
+        ],
+        "articles": [
+          {
+            "id": "fastener-article-standards",
+            "title": "紧固件标准体系与常见对照关系",
+            "summary": "介绍 GB、DIN、ISO 等标准体系在螺栓、螺母、螺钉中的常见对应关系。",
+            "category": "标准"
+          },
+          {
+            "id": "fastener-article-materials",
+            "title": "紧固件材质选择：碳钢、304、316 如何判断",
+            "summary": "针对常见使用环境说明碳钢和不锈钢材质的选择逻辑。",
+            "category": "材质"
+          },
+          {
+            "id": "fastener-article-strength",
+            "title": "8.8级、10.9级、12.9级常见应用区别",
+            "summary": "帮助客户理解不同强度等级的适用场景与注意事项。",
+            "category": "等级"
+          },
+          {
+            "id": "fastener-article-surface",
+            "title": "镀锌、发黑、达克罗、热镀锌适用场景对比",
+            "summary": "从防腐等级、成本和外观角度比较常见表面处理方案。",
+            "category": "表面处理"
+          },
+          {
+            "id": "fastener-article-custom",
+            "title": "非标紧固件询盘时客服需要先确认哪些信息",
+            "summary": "整理非标件沟通时必须先收集的图纸、样品、材质、数量和交期信息。",
+            "category": "非标定制"
+          }
+        ],
+        "products": [
+          {
+            "id": "fastener-product-din933-304-m8x30",
+            "name": "DIN 933 六角头螺栓 M8x30",
+            "category": "螺栓",
+            "summary": "全牙外六角螺栓，适用于设备装配和通用连接。",
+            "priceText": "¥0.95 / 个",
+            "parameters": [
+              {
+                "label": "标准",
+                "value": "DIN 933"
+              },
+              {
+                "label": "规格",
+                "value": "M8 x 30"
+              },
+              {
+                "label": "材质",
+                "value": "304 不锈钢"
+              },
+              {
+                "label": "表面处理",
+                "value": "本色"
+              },
+              {
+                "label": "起订量",
+                "value": "3000 个"
+              }
+            ]
+          },
+          {
+            "id": "fastener-product-gb5783-88-m10x40",
+            "name": "GB 5783 外六角螺栓 M10x40",
+            "category": "螺栓",
+            "summary": "8.8级碳钢外六角螺栓，适用于常规机械装配。",
+            "priceText": "¥1.10 / 个",
+            "parameters": [
+              {
+                "label": "标准",
+                "value": "GB 5783"
+              },
+              {
+                "label": "规格",
+                "value": "M10 x 40"
+              },
+              {
+                "label": "材质",
+                "value": "8.8级碳钢"
+              },
+              {
+                "label": "表面处理",
+                "value": "镀锌"
+              },
+              {
+                "label": "起订量",
+                "value": "2000 个"
+              }
+            ]
+          },
+          {
+            "id": "fastener-product-din912-129-m6x25",
+            "name": "DIN 912 内六角圆柱头螺钉 M6x25",
+            "category": "螺钉",
+            "summary": "12.9级内六角螺钉，适用于模具、治具和高强度连接场景。",
+            "priceText": "¥0.72 / 个",
+            "parameters": [
+              {
+                "label": "标准",
+                "value": "DIN 912"
+              },
+              {
+                "label": "规格",
+                "value": "M6 x 25"
+              },
+              {
+                "label": "材质",
+                "value": "12.9级合金钢"
+              },
+              {
+                "label": "表面处理",
+                "value": "发黑"
+              },
+              {
+                "label": "起订量",
+                "value": "5000 个"
+              }
+            ]
+          },
+          {
+            "id": "fastener-product-din934-304-m8",
+            "name": "DIN 934 六角螺母 M8",
+            "category": "螺母",
+            "summary": "304 不锈钢六角螺母，适合与 DIN 933 / ISO 4017 配套使用。",
+            "priceText": "¥0.18 / 个",
+            "parameters": [
+              {
+                "label": "标准",
+                "value": "DIN 934"
+              },
+              {
+                "label": "规格",
+                "value": "M8"
+              },
+              {
+                "label": "材质",
+                "value": "304 不锈钢"
+              },
+              {
+                "label": "表面处理",
+                "value": "本色"
+              },
+              {
+                "label": "起订量",
+                "value": "10000 个"
+              }
+            ]
+          },
+          {
+            "id": "fastener-product-iso7089-washer-m8",
+            "name": "ISO 7089 平垫 M8",
+            "category": "垫圈",
+            "summary": "标准平垫圈，用于增加受力面积和保护接触面。",
+            "priceText": "¥0.06 / 个",
+            "parameters": [
+              {
+                "label": "标准",
+                "value": "ISO 7089"
+              },
+              {
+                "label": "规格",
+                "value": "M8"
+              },
+              {
+                "label": "材质",
+                "value": "304 不锈钢"
+              },
+              {
+                "label": "表面处理",
+                "value": "本色"
+              },
+              {
+                "label": "起订量",
+                "value": "20000 个"
+              }
+            ]
+          },
+          {
+            "id": "fastener-product-din975-thread-rod-m12",
+            "name": "DIN 975 牙条 M12",
+            "category": "牙条",
+            "summary": "通牙牙条，常用于吊装、支架和机电安装。",
+            "priceText": "¥8.50 / 米",
+            "parameters": [
+              {
+                "label": "标准",
+                "value": "DIN 975"
+              },
+              {
+                "label": "规格",
+                "value": "M12"
+              },
+              {
+                "label": "材质",
+                "value": "碳钢"
+              },
+              {
+                "label": "表面处理",
+                "value": "热镀锌"
+              },
+              {
+                "label": "供货方式",
+                "value": "1 米 / 2 米 / 3 米切段"
+              }
+            ]
+          }
+        ],
+        "consultingServices": [],
+        "contentSources": [
+          {
+            "id": "fastener-source-standards",
+            "type": "document",
+            "enabled": true,
+            "category": "标准",
+            "title": "紧固件标准体系与常用品类",
+            "sourceUrl": "",
+            "sourceLabel": "01-standards-and-product-family.md",
+            "summary": "- GB：国内常用国标体系，适用于多数本土制造业客户。",
+            "content": "# 紧固件标准体系与常用品类\n\n## 常见标准体系\n\n- GB：国内常用国标体系，适用于多数本土制造业客户。\n- DIN：德标体系，外贸和欧洲项目中较常见。\n- ISO：国际标准体系，常作为通用技术沟通依据。\n- ANSI / ASME：北美项目中较常见。\n\n## 常用品类\n\n### 螺栓\n\n- 外六角螺栓：常见标准有 GB 5783、DIN 933、ISO 4017。\n- 内六角螺钉：常见标准有 DIN 912。\n- 马车螺栓、法兰螺栓、地脚螺栓：多用于特殊结构连接。\n\n### 螺母\n\n- 六角螺母：常见标准有 DIN 934。\n- 法兰螺母、尼龙锁紧螺母：用于防松或特殊安装场景。\n\n### 垫圈\n\n- 平垫：用于增加受力面积。\n- 弹垫：用于辅助防松。\n\n### 牙条与特殊件\n\n- 牙条常见标准为 DIN 975 / DIN 976。\n- 非标件需要根据图纸或样品确认头型、牙型、尺寸和公差。\n\n## 客服沟通要点\n\n当客户只说“要六角螺栓”时，客服至少还要确认：\n\n1. 标准\n2. 规格尺寸\n3. 材质\n4. 强度等级\n5. 表面处理\n6. 数量\n7. 应用场景",
+            "tags": [
+              "标准",
+              "紧固件"
+            ],
+            "faqQuestions": [],
+            "answerHints": [],
+            "updatedAt": 1775909202148
+          },
+          {
+            "id": "fastener-source-materials",
+            "type": "document",
+            "enabled": true,
+            "category": "材质与等级",
+            "title": "紧固件材质与强度等级说明",
+            "sourceUrl": "",
+            "sourceLabel": "02-material-and-strength.md",
+            "summary": "- 性价比较高，常见于机械装配、结构连接和一般工业场景。",
+            "content": "# 紧固件材质与强度等级说明\n\n## 常见材质\n\n### 碳钢\n\n- 性价比较高，常见于机械装配、结构连接和一般工业场景。\n- 常与 4.8、6.8、8.8、10.9 等强度等级一起讨论。\n\n### 304 不锈钢\n\n- 通用性强，适合普通防腐需求。\n- 常用于设备外观件、普通户外和一般潮湿环境。\n\n### 316 不锈钢\n\n- 耐腐蚀能力高于 304。\n- 适合海边、高盐雾、化工或更严苛腐蚀环境。\n\n## 常见强度等级\n\n### 8.8级\n\n- 常规机械连接常用。\n- 综合性能和成本较平衡。\n\n### 10.9级\n\n- 用于更高载荷和更高机械性能要求。\n- 需注意工艺与使用环境。\n\n### 12.9级\n\n- 常见于高强度内六角螺钉。\n- 适用于模具、治具和更高强度要求场景。\n\n## 客服回复建议\n\n- 客户如果只说“要高强度”，不能直接默认 12.9。\n- 客户如果强调“海边使用”或“化工环境”，不能直接默认 304。\n- 有图纸时应以图纸要求为准；没有图纸时要优先确认工况。",
+            "tags": [
+              "材质与等级",
+              "紧固件"
+            ],
+            "faqQuestions": [],
+            "answerHints": [],
+            "updatedAt": 1775909202148
+          },
+          {
+            "id": "fastener-source-surface",
+            "type": "document",
+            "enabled": true,
+            "category": "表面处理",
+            "title": "表面处理与应用场景",
+            "sourceUrl": "",
+            "sourceLabel": "03-surface-treatment-and-application.md",
+            "summary": "- 常用于普通防锈需求。",
+            "content": "# 表面处理与应用场景\n\n## 常见表面处理\n\n### 镀锌\n\n- 常用于普通防锈需求。\n- 适合一般室内或普通环境机械装配。\n\n### 发黑\n\n- 外观较深，常见于工具、机械内部件。\n- 防腐能力一般，不适合长期高腐蚀环境。\n\n### 达克罗\n\n- 适合较高盐雾要求。\n- 常见于汽车零部件或防腐要求更高的工况。\n\n### 热镀锌\n\n- 常用于户外、结构件、电力或支架类场景。\n- 防腐能力强，但尺寸和外观特征需提前确认。\n\n## 应用场景示例\n\n- 普通设备装配：可优先考虑碳钢镀锌或 304 不锈钢。\n- 户外支架：需确认是否需要热镀锌或不锈钢。\n- 海边项目：优先确认是否需要 316 不锈钢或高耐腐蚀方案。\n- 高强度件：表面处理还需结合氢脆等工艺风险评估。\n\n## 客服沟通提醒\n\n- 表面处理会影响成本和交期。\n- 客户如果只说“防锈”，应追问是普通防锈还是高盐雾防腐。\n- 高强度紧固件不能只看表面处理颜色，还要结合工艺与等级确认。",
+            "tags": [
+              "表面处理",
+              "紧固件"
+            ],
+            "faqQuestions": [],
+            "answerHints": [],
+            "updatedAt": 1775909202148
+          },
+          {
+            "id": "fastener-source-ordering",
+            "type": "document",
+            "enabled": true,
+            "category": "交期与定制",
+            "title": "交期、包装与非标定制",
+            "sourceUrl": "",
+            "sourceLabel": "04-ordering-packaging-customization.md",
+            "summary": "- 标准件优先确认是否为常规规格。",
+            "content": "# 交期、包装与非标定制\n\n## 标准件沟通\n\n- 标准件优先确认是否为常规规格。\n- 常规规格可以按现货或常规排产逻辑回复。\n- 若客户数量较大，需要进一步确认包装方式和发货计划。\n\n## 非标件沟通\n\n对于非标紧固件，客服应优先收集：\n\n1. 图纸或样品\n2. 材质要求\n3. 强度等级\n4. 表面处理\n5. 数量\n6. 包装要求\n7. 目标交期\n\n## 包装方式\n\n- 散装\n- 小盒装\n- 外箱装\n- 托盘出货\n- 出口定制包装\n\n包装方式会影响：\n\n- 单价\n- 物流方式\n- 交货时间\n\n## 客服回复底线\n\n- 不能在没有图纸和关键信息的情况下直接承诺非标件价格。\n- 不能在没有确认工艺能力的情况下直接承诺交期。\n- 应先说明“需技术或业务确认后再回复正式方案”。",
+            "tags": [
+              "交期与定制",
+              "紧固件"
+            ],
+            "faqQuestions": [],
+            "answerHints": [],
+            "updatedAt": 1775909202148
+          }
+        ]
+      },
+      "createdAt": 1775896663336,
+      "updatedAt": 1775909202148
+    },
+    {
+      "id": "tenant-1776150119278",
+      "name": "衡冕个人介绍",
+      "status": "active",
+      "brandName": "衡冕",
+      "themeColor": "#118ab2",
+      "contactPhone": "",
+      "contactEmail": "hengmian@aifactory.website",
+      "contactAddress": "",
+      "systemPrompt": "You are the tenant bot.",
+      "llmEndpoint": "",
+      "llmApiKey": "",
+      "llmModel": "",
+      "reuseAnsweredQuestions": true,
+      "embedKey": "embed-5mndem5z",
+      "ragSettings": {
+        "enabled": false,
+        "industryPreset": "general",
+        "chunkSize": 500,
+        "chunkOverlap": 80,
+        "retrievalTopK": 3,
+        "ingestionStructureTemplate": "标题\n摘要\n关键事实\n参数/步骤\n来源",
+        "answerStructureTemplate": "结论\n依据\n补充说明\n来源",
+        "retrievalPromptTemplate": "你正在回答租户知识库问题。\n请严格基于命中资料回答：{{query}}\n若资料不足，请明确说明资料未直接命中。",
+        "fallbackPromptTemplate": "当前租户资料未直接命中。\n请对问题“{{query}}”给出通用但谨慎的答复。\n不要编造价格、参数或交付承诺。"
+      },
+      "billingSubscription": {
+        "planId": "plan-basic",
+        "startedAt": 1776150119278,
+        "notes": ""
+      },
+      "createdAt": 1776150119278,
+      "updatedAt": 1776150119278
+    }
+  ],
+  "sessions": [],
+  "messages": [],
+  "leads": [],
+  "usage": [],
+  "tenantUsers": [
+    {
+      "id": "tenant-user-tenant-1775896663336",
+      "tenantId": "tenant-1775896663336",
+      "email": "877201213@qq.com",
+      "passwordHash": "1b0d540e1e54539ebb70de328f411d60a2bd6301bf26e6d6c77ce330dd84eb6c",
+      "temporaryPassword": "sJ9EkMCmsQ",
+      "mustChangePassword": true,
+      "status": "active",
+      "createdAt": 1775896663336,
+      "updatedAt": 1775896663336
+    },
+    {
+      "id": "tenant-user-tenant-1776150119278",
+      "tenantId": "tenant-1776150119278",
+      "email": "hengmian@aifactory.website",
+      "passwordHash": "585694bf8a316f19bf7a0ba11ce4a3c14103ed43ab78e402b6d9878bb7059bd5",
+      "temporaryPassword": "jzQmmFy4Sc",
+      "mustChangePassword": true,
+      "status": "active",
+      "createdAt": 1776150119278,
+      "updatedAt": 1776150119278
+    }
+  ],
+  "tenantPasswordResets": [
+    {
+      "id": "tenant-reset-tenant-user-tenant-1775896663336-1776150027673",
+      "tenantUserId": "tenant-user-tenant-1775896663336",
+      "tenantId": "tenant-1775896663336",
+      "email": "877201213@qq.com",
+      "code": "285396",
+      "expiresAt": 1776150927673,
+      "usedAt": 0,
+      "createdAt": 1776150027673
+    }
+  ]
+}
