@@ -1,4 +1,5 @@
 .data/
 .output/
+.worktrees/
 node_modules/.cache/
 node_modules
