@@ -1,4 +1,4 @@
-codex resume 019cd008-0b0d-71f1-9cfd-d49e34e022db
+codex resume 019d8ab1-3de9-7c72-8ac5-4607fe06f73bbac
 # Customer Bot
 
 面向试运营 SaaS 场景的可嵌入网站 AI 客服挂件与管理后台。
